@@ -14,13 +14,13 @@
         url('../fonts/OxfamTSTARPRO-Medium.ttf') format('truetype');
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Oxfam TSTAR PRO Heavy';
     src: url('../fonts/T-StarPro-Heavy.eot?#iefix') format('embedded-opentype'),
          url('../fonts/T-StarPro-Heavy.woff2') format('woff2'),
          url('../fonts/T-StarPro-Heavy.woff') format('woff'),
          url('../fonts/T-StarPro-Heavy.ttf') format('truetype');
-}
+} */
 
 :root {
 
@@ -29,7 +29,7 @@
     --green: #44841A;
 
     /* FONTS */
-    --tstarpro-heavy: 'Oxfam TSTAR PRO Heavy', Arial, Helvetica, sans-serif;
+    /* --tstarpro-heavy: 'Oxfam TSTAR PRO Heavy', Arial, Helvetica, sans-serif; */
     --tstarpro-medium: 'Oxfam TSTAR PRO Medium', Arial, Helvetica, sans-serif;
 }
 h1, .h1, .h1 p, .h1 .fl-heading {

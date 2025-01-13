@@ -1744,7 +1744,7 @@ template: bb-theme
       font-style: normal;
   }
   
-  @font-face {
+  /* @font-face {
       font-family: 'Oxfam TSTAR PRO Heavy';
       src: url('../fonts/OxfamTSTARPRO-Heavy.html');
       src: url('../fonts/OxfamTSTARPRO-Heavyd41d.html?#iefix') format('embedded-opentype'),
@@ -1752,7 +1752,7 @@ template: bb-theme
           url('../fonts/OxfamTSTARPRO-Heavy-3.html') format('woff'),
           url('../fonts/OxfamTSTARPRO-Heavy-4.html') format('truetype'),
           url('../fonts/OxfamTSTARPRO-Heavy-5.html#OxfamTSTARPRO-Heavy') format('svg');
-  }
+  } */
   
   /* ICOMOON */
   @font-face {

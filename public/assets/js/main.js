@@ -1687,71 +1687,71 @@ jQuery(document).ready(function ($) {
 });
 
 jQuery(document).ready(function ($) {
-	let newsCarrousel = $('.carrousel-news');
-	newsCarrousel.each(function () {
-		var arrow = $(this).parent().find(".slider-header .slider-ctl");
-		var dot = $(this).parent().find(".slider-header .slider-dot");
-		$(this).slick({
-			dots: true,
-			infinite: true,
-			speed: 300,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			variableWidth: true,
-			adaptiveHeight: false,
-			appendArrows: arrow,
-			appendDots: dot,
-			prevArrow: '<button type="button" class="slick-prev-news"><img src="./assets/images/g_9360.svg" alt="arrow left"></button>',
-			nextArrow: '<button type="button" class="slick-next-news"><img src="./assets/images/g_9361.svg" alt="arrow right"></button>',
-			responsive: [
-				{
-					breakpoint: 769,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1,
-						variableWidth: true,
-					}
-				}
-			]
-		});
-	});
+	// let newsCarrousel = $('.carrousel-news');
+	// newsCarrousel.each(function () {
+	// 	var arrow = $(this).parent().find(".slider-header .slider-ctl");
+	// 	var dot = $(this).parent().find(".slider-header .slider-dot");
+	// 	$(this).slick({
+	// 		dots: true,
+	// 		infinite: true,
+	// 		speed: 300,
+	// 		slidesToShow: 1,
+	// 		slidesToScroll: 1,
+	// 		variableWidth: true,
+	// 		adaptiveHeight: false,
+	// 		appendArrows: arrow,
+	// 		appendDots: dot,
+	// 		prevArrow: '<button type="button" class="slick-prev-news"><img src="./assets/images/g_9360.svg" alt="arrow left"></button>',
+	// 		nextArrow: '<button type="button" class="slick-next-news"><img src="./assets/images/g_9361.svg" alt="arrow right"></button>',
+	// 		responsive: [
+	// 			{
+	// 				breakpoint: 769,
+	// 				settings: {
+	// 					slidesToShow: 1,
+	// 					slidesToScroll: 1,
+	// 					variableWidth: true,
+	// 				}
+	// 			}
+	// 		]
+	// 	});
+	// });
 
-	setTimeout(function () {
-		$(".slick-dots").find("button").each(
-			function () {
-				$(this).text($(this).attr("aria-label"));
-			}
-		)
-	}, 100);
+	// setTimeout(function () {
+	// 	$(".slick-dots").find("button").each(
+	// 		function () {
+	// 			$(this).text($(this).attr("aria-label"));
+	// 		}
+	// 	)
+	// }, 100);
 
-	$('.home-page-sider').each(function () {
+	// $('.home-page-sider').each(function () {
 
-		var arrow = $(this).parent().find(".slider-header").find(".slider-ctl");
-		var dot = $(this).parent().find(".slider-header").find(".slider-dot");
-		$(this).slick({
-			autoplay: true,
-			autoplaySpeed: 4000,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			fade: true,
-			asNavFor: '.home-page-tabs',
-			focusOnSelect: false,
-			arrows: true,
-			dots: true,
-			appendArrows: arrow,
-			appendDots: dot,
-			prevArrow: '<button type="button" class="slick-prev-two-column"><img src="./assets/images/g_9360.svg" alt="arrow left"></button>',
-			nextArrow: '<button type="button" class="slick-next-two-column"><img src="./assets/images/g_9361.svg" alt="arrow right"></button>'
-		});
-	});
-	$('.home-page-tabs').slick({
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		asNavFor: '.home-page-sider',
-		dots: false,
-		centerMode: true,
-		focusOnSelect: true
-	});
+	// 	var arrow = $(this).parent().find(".slider-header").find(".slider-ctl");
+	// 	var dot = $(this).parent().find(".slider-header").find(".slider-dot");
+	// 	$(this).slick({
+	// 		autoplay: true,
+	// 		autoplaySpeed: 4000,
+	// 		slidesToShow: 1,
+	// 		slidesToScroll: 1,
+	// 		fade: true,
+	// 		asNavFor: '.home-page-tabs',
+	// 		focusOnSelect: false,
+	// 		arrows: true,
+	// 		dots: true,
+	// 		appendArrows: arrow,
+	// 		appendDots: dot,
+	// 		prevArrow: '<button type="button" class="slick-prev-two-column"><img src="./assets/images/g_9360.svg" alt="arrow left"></button>',
+	// 		nextArrow: '<button type="button" class="slick-next-two-column"><img src="./assets/images/g_9361.svg" alt="arrow right"></button>'
+	// 	});
+	// });
+	// $('.home-page-tabs').slick({
+	// 	slidesToShow: 3,
+	// 	slidesToScroll: 1,
+	// 	asNavFor: '.home-page-sider',
+	// 	dots: false,
+	// 	centerMode: true,
+	// 	focusOnSelect: true
+	// });
 
 
 
