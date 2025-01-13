@@ -1689,8 +1689,8 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function ($) {
 	let newsCarrousel = $('.carrousel-news');
 	newsCarrousel.each(function () {
-		var arrow = $(this).parent().find(".slider-header").find(".slider-ctl");
-		var dot = $(this).parent().find(".slider-header").find(".slider-dot");
+		var arrow = $(this).parent().find(".slider-header .slider-ctl");
+		var dot = $(this).parent().find(".slider-header .slider-dot");
 		$(this).slick({
 			dots: true,
 			infinite: true,
