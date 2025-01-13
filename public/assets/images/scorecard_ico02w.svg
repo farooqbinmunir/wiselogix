@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.736" height="38.736" viewBox="0 0 38.736 38.736">
+  <g id="scorecard_ico02" transform="translate(-170 -1247.701)">
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(170 1247.701)" fill="none" stroke="#fff" stroke-width="4">
+      <circle cx="19.368" cy="19.368" r="19.368" stroke="none"/>
+      <circle cx="19.368" cy="19.368" r="17.368" fill="none"/>
+    </g>
+    <path id="Path_451" data-name="Path 451" d="M18.057,7.152c-4.775-.392-8.532,6.889-6.81,10.568s5.012,8.38,6.653,8.454c1.8.079,6.81-8.376,7.2-11.116S22.832,7.544,18.057,7.152Zm2.811,8.594c-1.14,1.49-3.6,2.192-5.086,1.052s-1.959-2.273-1.26-4.013A3.576,3.576,0,0,1,19.909,11.4c1.491,1.143,2.1,2.857.959,4.347Z" transform="translate(171.347 1250.488)" fill="#fff"/>
+  </g>
+</svg>

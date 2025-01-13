@@ -1,0 +1,60 @@
+@media screen and (max-width: 1147px) {
+	body:not(.fl-builder-edit) .fl-row.fl-row-full-width.image_single .bg_img_caption_container {
+		right: 0 !important;
+	}
+}
+/* Medium devices (tablets, 992px and up) */
+@media (max-width: 992px) {
+
+	/* FLYOUT */
+	.flyout_item    {width:50% !important;right:-50% !important;}
+	.flyout_item.active    {right:0%}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+	/* FLYOUT */
+	.flyout_item    {width:100% !important;right:-100% !important}
+	.flyout_item.active    {right:0%}
+
+	.fl-loop-quote.fl-loop-quote-with-image {
+		margin-right:0;
+	}
+
+	.fl-loop-quote-quote > blockquote {
+		font-size: 1.2em;
+		line-height: 1.3em;
+	}
+}
+
+@media (max-width: 680px) {
+	.fl-loop-quote.fl-loop-quote-with-image {
+		padding-left:25%;
+	}
+}
+
+@media (max-width: 480px) {
+	.fl-loop-quote-image {
+		position:initial;
+	}
+	.fl-loop-quote.fl-loop-quote-with-image {
+		position:initial;
+		padding:0;
+		overflow:initial;
+	}
+	.fl-loop-quote.fl-loop-quote-with-image .fl-loop-quote-container {
+		margin: 0;
+	}
+	.fl-loop-quote-container {
+		position:initial;
+		padding: 20px 0;
+	}
+	.fl-loop-quote-container .oxfam_button{
+		margin-left:25px;
+	}
+	.fl-loop-quote-caption {
+		margin-left:10px;
+	}
+}

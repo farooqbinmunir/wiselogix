@@ -1,0 +1,31 @@
+.emergency_customtxt {
+    font: 14px/21px Helvetica, Arial, 'Nimbus Sans L', sans-serif;
+    margin: 1.5em 0px;
+    color: #545454;
+}
+
+.emergency_customtitle {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: Helvetica, Arial, 'Nimbus Sans L', sans-serif;
+    margin: 1.5em 0px;
+    color: #545454;
+}
+
+.emergency_customtxtpurple {
+    color: rgb(90, 26, 132);
+    font-family: OxfamGlobalHeadlineRegular, Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+}
+
+.fontcolorgreen {color: #0c884a}
+.fontsize13 {font-size:1.3em}
+.fontsize15 {font-size:1.5em}
+.lineheight15 {line-height:1.5em}
+
+.width1px {width:1px}
+
+.imgwidth75 {width:75px}
+.imgwidth600 {width:600px}
+.imgwidth400 {width:400px}
+
+.margintop0 {margin-top:0px}
