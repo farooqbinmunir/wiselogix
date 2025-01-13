@@ -2495,12 +2495,12 @@ template: bb-theme
   }
   
   ul.mega-sub-menu.white li#mega-menu-31-0 > ul li#mega-menu-item-custom_html-3 .sub_menu_image {
-      background:url('../images/170930_OGB_Shim-12-holds-an-Oxfam-food-parcel-she-received-from-a-distribution-at-Kutupalong-Camp-Bangladesh.html') center center no-repeat;
+      /* background:url('../images/170930_OGB_Shim-12-holds-an-Oxfam-food-parcel-she-received-from-a-distribution-at-Kutupalong-Camp-Bangladesh.html') center center no-repeat; */
       background-size: cover;
   }
   
   ul.mega-sub-menu.white li#mega-menu-32-0 > ul li#mega-menu-item-custom_html-2 .sub_menu_image {
-      background: url(../images/opheus1.html) center center no-repeat;
+      /* background: url(../images/opheus1.html) center center no-repeat; */
       background-size: cover;
   }
   
@@ -2510,7 +2510,7 @@ template: bb-theme
   }
   
   ul.mega-sub-menu.white li#mega-menu-29939-0 > ul li#mega-menu-item-custom_html-4 .sub_menu_image {
-      background: url(../images/opheus2.html) center center no-repeat;
+      /* background: url(../images/opheus2.html) center center no-repeat; */
       background-size: cover;
   }
   
@@ -4136,7 +4136,7 @@ template: bb-theme
   }
   
   .media_pdf:before {
-      content: url('../images/pdf-icon-rv.html');
+      /* content: url('../images/pdf-icon-rv.html'); */
       width: 32px;
       height: 36px;
       margin-right: 10px;
@@ -7103,9 +7103,7 @@ template: bb-theme
   @font-face {
       font-family: 'tstar_proheavy';
       src: url('../fonts/T-StarPro-Heavy.woff2') format('woff2'),
-           url('../fonts/t-star-heavy-webfont.woff-webfont.html') format('woff'),
            url('../fonts/T-StarPro-Heavy.ttf') format('truetype'),
-           url('../fonts/T-StarPro-Heavy.html#T-StarPro-Heavy') format('svg'),
            url('../fonts/T-StarPro-Heavyd41d.eot?#iefix') format('embedded-opentype');
       font-weight: normal;
       font-style: normal;

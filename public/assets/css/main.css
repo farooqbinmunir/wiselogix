@@ -810,7 +810,7 @@ li#mega-menu-item-29960 a i {
 }
 
 ul.mega-sub-menu.white li#mega-menu-31-0 > ul li#mega-menu-item-custom_html-3 .sub_menu_image {
-    background:url('../images/170930_OGB_Shim-12-holds-an-Oxfam-food-parcel-she-received-from-a-distribution-at-Kutupalong-Camp-Bangladesh.html') center center no-repeat;
+    /* background:url('../images/170930_OGB_Shim-12-holds-an-Oxfam-food-parcel-she-received-from-a-distribution-at-Kutupalong-Camp-Bangladesh.html') center center no-repeat; */
     background-size: cover;
 }
 
@@ -2447,7 +2447,7 @@ body.search main .search_input_wrap {
 }
 
 .media_pdf:before {
-    content: url('../images/pdf-icon-rv.html');
+    /* content: url('../images/pdf-icon-rv.html'); */
     width: 32px;
     height: 36px;
     margin-right: 10px;
