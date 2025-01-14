@@ -9744,7 +9744,8 @@ footer {
     margin: 0 auto;
     position: absolute;
     top: calc(100vh - 120px);
-    right: 0
+    right: 0;
+    z-index: 999;
 }
 
 .home-page-tabs {
