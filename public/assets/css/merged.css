@@ -15335,14 +15335,6 @@ header.scrollfixed #main-menu .menu_main_logo {
     max-width: 160px
 }
 
-.fl-page-header #main-menu a.menu_main_donate:after {
-    content: "\e9cb";
-    font-family: icomoon !important;
-    position: relative;
-    top: 2px;
-    left: 10px
-}
-
 .fl-page-header #main-menu li[data-id=menu-40170-title],
 .fl-page-header #main-menu li[data-id=menu-40171-title],
 .fl-page-header #main-menu li[data-id=menu-40172-title] {
