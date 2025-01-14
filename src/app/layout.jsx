@@ -82,7 +82,7 @@ export default function RootLayout({ children }) {
         {/*<!-- Custon JS Files -->*/}
         {/* <Script src="assets/js/custom.js" /> */}
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} home page-template page-template-single-menuoverlap page-template-single-menuoverlap-php page page-id-43648 fl-builder fl-builder-2-8-3-7 fl-themer-1-4-11 fl-theme-1-7-14 fl-framework-bootstrap fl-preset-default fl-full-width os_Windows`}>
         {/*<!--HEADER -->*/}
         <header
           className="fl-page-header fl-page-header-primary fl-page-nav-centered-inline-logo fl-page-nav-toggle-button fl-page-nav-toggle-visible-mobile header_height_fix"

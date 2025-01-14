@@ -196,7 +196,7 @@ body.fl-builder-edit footer {
 
 .page-template-single-menuoverlap .fl-page-bar {
     border: 0;
-    background-color: black;
+    background-color: black !important;
 }
 .page-template-single-menuoverlap #main-menu {
     background: none;
