@@ -283,7 +283,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="fl-row fl-row-full-width fl-row-bg-color fl-node-he9f0muoi4yc fl-row-default-height fl-row-align-center"
+                  <div id="contributers_section" className="contributers_section fl-row fl-row-full-width fl-row-bg-color fl-node-he9f0muoi4yc fl-row-default-height fl-row-align-center"
                     data-node="he9f0muoi4yc">
                     <div className="fl-row-content-wrap">
                       <div className="fl-row-content fl-row-fixed-width fl-node-content">
