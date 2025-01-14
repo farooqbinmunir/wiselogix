@@ -390,18 +390,6 @@ footer {
 .fl-builder-content .fl-node-slavu4f9j3ko a.fl-button:visited * {
     color: #fff !important
 }
-
-html .button_new2023.arrow_black .fl-button:after,
-html .button_new2023.arrow_pink .fl-button:after {
-    background-image: url(../images/hp2023_arrow_white.svg) !important; 
-}
-html .contributers_section .button_new2023.arrow_pink .fl-button:after{
-    filter: invert(1);
-}
-html .joinusform .joinus_button_submit:after {
-    background: url(../images/hp2023_arrow_black.svg) 50%/contain no-repeat
-}
-
 .fl-builder-content .fl-node-iadf9qgc4m58 .fl-button-wrap a.fl-button,
 .fl-builder-content .fl-node-slavu4f9j3ko a.fl-button,
 .footer_donate_button,
@@ -9106,6 +9094,16 @@ body.fl-builder-edit footer {
 
 .button_new2023.arrow_pink .fl-button:after {
     background: url(../images/hp2023_arrow_pink.svg) 50%/contain no-repeat
+}
+html .button_new2023.arrow_black .fl-button:after,
+html .button_new2023.arrow_pink .fl-button:after {
+    background-image: url(../images/hp2023_arrow_white.svg) !important; 
+}
+html .contributers_section .button_new2023.arrow_pink .fl-button:after{
+    filter: invert(1);
+}
+html .joinusform .joinus_button_submit:after {
+    background: url(../images/hp2023_arrow_black.svg) 50%/contain no-repeat
 }
 
 .button_new2023.arrow_green .fl-button:after {
