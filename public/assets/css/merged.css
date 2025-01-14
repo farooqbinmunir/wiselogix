@@ -224,7 +224,7 @@ span.highligh_green {
 }
 
 .joinusform .en__submit {
-    max-width: none
+    max-width: none;
 }
 
 .hp2023_stats_item>.fl-col-content {
@@ -8633,7 +8633,7 @@ h3 {
 .fl-module:not(.h2):not(.h4):not(.h5):not(.h6) h3:not(.h2):not(.h4):not(.h5):not(.h6):not(.slideup_cont_over):not(.uabb-ultb3-title):before,
 .fl-rich-text h2.h3:before,
 .h3 h2:before {
-    display: none
+    display: none !important;
 }
 
 .p,
@@ -8729,7 +8729,7 @@ div.fl-module-button.oxfam_button a:visited {
 }
 
 .en__field--text {
-    width: 95% !important
+    width: 95% !important;
 }
 
 .joinus-form .joinusform .en__submit {
@@ -8926,12 +8926,6 @@ body.fl-builder-edit footer {
 
 .joinusform .en__submit button {
     padding: 17px 40px
-}
-
-.joinusform .en__submit {
-    right: 0;
-    max-width: 160px;
-    left: auto
 }
 
 .hp2023_stats p {
@@ -11659,7 +11653,7 @@ input.join_input::placeholder {
 
 .en__field--text,
 .en__submit {
-    width: 26% !important;
+    width: 26%;
     display: inline-block !important;
     margin-right: 5px;
     margin-bottom: 5px
@@ -11682,20 +11676,13 @@ input.join_input::placeholder {
     padding: 12px
 }
 
-.joinusform .en__submit {
-    position: absolute;
-    left: 72%;
-    top: 0
-}
-
 .joinusform .en__submit label {
     visibility: hidden
 }
 
 .joinusform .en__submit button {
     width: 100%;
-    padding: 11px;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 #en__field_supporter_questions_147505 {
