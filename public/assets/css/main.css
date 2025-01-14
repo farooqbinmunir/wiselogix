@@ -748,7 +748,6 @@ body.search main .search_button:after {content:initial;}
 [class^="icon-"],
 [class*=" icon-"] {
     font-family: 'icomoon' !important;
-    speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -885,7 +884,7 @@ body.admin-bar header.scrollfixed {
 .oxmm_search_icon {
     color: #fff !important;
     font-size: 3rem;
-    float: right;
+    /* float: right; */
     display: inline-block;
     padding-right: 5px;
 }
@@ -4073,7 +4072,6 @@ a[target="_blank"]:active .acc_external {
     display: block;
     margin: 0;
     margin-bottom: 35px;
-    vertical-align: top;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
@@ -5006,7 +5004,6 @@ body:not(.page-template-single-menuoverlap):not(.landing-page-template-template-
     text-align: left;
     margin: 0;
     padding: 0;
-    vertical-align: top;
     display: block;
     border: 0;
     text-decoration: none;
