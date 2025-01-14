@@ -8866,6 +8866,7 @@ body.os_MacOS span.highligh_green {
 .fl-heading-text span{
     line-height: 1 !important;
     padding: 5px !important;
+    margin: 5px !important;
 }
 
 .h3,
