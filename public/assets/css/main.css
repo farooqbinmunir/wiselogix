@@ -841,7 +841,7 @@ ul.mega-sub-menu.white li#mega-menu-30191-0 > ul li#mega-menu-item-custom_html-6
 
 header {
     position: absolute;
-    z-index: 999;
+    z-index: 9999999;
     width: 100%;
     background-color: transparent !important;
     top:0;
