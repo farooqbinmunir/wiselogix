@@ -13,17 +13,21 @@ import "../../public/assets/css/dashicons.min.css";
 import "../../public/assets/css/focus.css";
 import "../../public/assets/css/focus_responsive.css";
 import "../../public/assets/css/fontawesome.css";
-import "../../public/assets/css/homepage.css";
 import "../../public/assets/css/homepage_responsive.css";
 import "../../public/assets/css/jquery.magnificpopup.css";
-import "../../public/assets/css/layout.css";
-import "../../public/assets/css/main.css";
 import "../../public/assets/css/responsive.css";
-import "../../public/assets/css/skin.css";
-import "../../public/assets/css/style.css";
 import "../../public/assets/css/ultimate-icons.css";
 import "../../public/assets/css/wp-blocks.css";
-import "../../public/assets/css/custom.css";
+
+// Merged Custom CSS
+import "../../public/assets/css/merged.css";
+// Custom CSS
+// import "../../public/assets/css/homepage.css";
+// import "../../public/assets/css/layout.css";
+// import "../../public/assets/css/main.css";
+// import "../../public/assets/css/skin.css";
+// import "../../public/assets/css/style.css";
+// import "../../public/assets/css/custom.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
