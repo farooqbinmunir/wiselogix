@@ -361,12 +361,12 @@ button {
 .footer-nav-donate a,
 .home-page-slide-button,
 button.oxfam_button.donate_submit_button.oxfam_orange_button {
-    background-color: green !important
+    background-color: #008000 !important;
 }
 
 .fl-page-header #main-menu a.menu_main_donate:hover,
 .home-page-slide-button:hover {
-    background-color: orange !important
+    background-color: #FFA500  !important;
 }
 
 .fl-node-7byk0e6rlwdp>.fl-row-content-wrap,
