@@ -2,32 +2,38 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from 'next/script';
 
 // Importing CSS
-import "../../public/assets/css/bb-loop.css";
-import "../../public/assets/css/bb-loop-responsive.css";
-import "../../public/assets/css/bb-theme-accessible.css";
-import "../../public/assets/css/bb-theme-responsive.css";
+
+// Thirdparty Libs CSS
 import "../../public/assets/css/block-liberary.css";
 import "../../public/assets/css/bootstrap-3.4.1.css";
 import "../../public/assets/css/complianz-gdpr.css";
 import "../../public/assets/css/dashicons.min.css";
-import "../../public/assets/css/focus.css";
-import "../../public/assets/css/focus_responsive.css";
 import "../../public/assets/css/fontawesome.css";
-import "../../public/assets/css/homepage_responsive.css";
 import "../../public/assets/css/jquery.magnificpopup.css";
-import "../../public/assets/css/responsive.css";
 import "../../public/assets/css/ultimate-icons.css";
 import "../../public/assets/css/wp-blocks.css";
 
 // Merged Custom CSS
 import "../../public/assets/css/merged.css";
+import "../../public/assets/css/merged-responsive.css";
+
 // Custom CSS
 // import "../../public/assets/css/homepage.css";
 // import "../../public/assets/css/layout.css";
 // import "../../public/assets/css/main.css";
 // import "../../public/assets/css/skin.css";
+// import "../../public/assets/css/bb-loop.css";
+// import "../../public/assets/css/bb-theme-accessible.css";
+// import "../../public/assets/css/focus.css";
 // import "../../public/assets/css/style.css";
 // import "../../public/assets/css/custom.css";
+
+// Responsive CSS
+// import "../../public/assets/css/bb-loop-responsive.css";
+// import "../../public/assets/css/bb-theme-responsive.css";
+// import "../../public/assets/css/focus_responsive.css";
+// import "../../public/assets/css/homepage_responsive.css";
+// import "../../public/assets/css/responsive.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
