@@ -404,17 +404,16 @@ export default function RootLayout({ children }) {
             {/* Footer Column 2 */}
             {/* Footer Column 3 */}
             <div className="footer_col column3">
-              <img className="oxfam_logo" src="assets/images/oxfamcanada_white.webp" aria-hidden="true" alt=""
+              <img className="oxfam_logo" src="assets/images/white-logo.png" aria-hidden="true" alt=""
                 height="144" width="362" />
               <div className="footer_member">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, incidunt!</div>
               <div className="logos_2col">
                 <div className="col1">
                   A member of:
-                  <a href="#"><img
-                      src="assets/images/foot_logo_humcoa.png" alt="Humanitarian Coalition" /></a>
+                  <a href="#"><img src="assets/images/foot_logo_humcoa.png" alt="Humanitarian Coalition" /></a>
                 </div>
                 <div className="col2">
-                  <a href="#"><img src="assets/images/foot_logo_imagine.png" alt="Imagine Canada. Strong Charities. Strong Communities. Accredited since 2016" /></a>
+                  <a href="#"><img src="assets/images/foot_logo_imagine.png" alt="" /></a>
                 </div>
               </div>
             </div>

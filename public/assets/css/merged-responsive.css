@@ -298,7 +298,7 @@
     #main-menu .menu_main_logo {
         width: 125px;
         height: 46px;
-        background: url(../images/logo-oxfam.svg) 50%/cover no-repeat !important
+        background: url(../images/white-logo.png) center center / cover no-repeat !important;
     }
 
     #main-menu>ul>li:last-child {
