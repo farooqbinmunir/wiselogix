@@ -198,7 +198,7 @@ span.highligh_green {
 }
 
 .join-heading {
-    font-size: 3.7rem
+    font-size: 3.7rem !important;
 }
 
 .news-section-text .fl-module-content.fl-node-content {
@@ -8734,7 +8734,8 @@ div.fl-module-button.oxfam_button a:visited {
 
 .joinus-form .joinusform .en__submit {
     order: 4;
-    position: relative
+    position: relative;
+    top: 0;
 }
 
 .en__field--question.en__field--147505.en__field--opt-in,
