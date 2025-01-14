@@ -9133,10 +9133,10 @@ body.fl-builder-edit footer {
 }
 
 #main-menu>ul {
-    max-width: 1366px;
+    max-width: 1366px !important;
     padding-left: 50px;
     padding-right: 50px;
-    justify-content: flex-end
+    justify-content: flex-end;
 }
 
 #main-menu>ul>li:first-child {
