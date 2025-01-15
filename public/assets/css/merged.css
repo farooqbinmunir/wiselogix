@@ -15738,9 +15738,16 @@ ul.footer_useful_links {
     padding: 0 40px;
     margin: auto;
     display: grid;
-    grid-template-columns: 1.1fr 1.3fr .8fr
+    grid-template-columns: 1fr auto;
 }
-
+.postfooter_inner ul {
+	display: flex;
+	align-items: center;
+    padding: 0 !important;
+}
+.postfooter_inner ul > li:first-child a{
+    padding-left: 0 !important;
+}
 .postfooter .col2 {
     text-align: center
 }
@@ -16129,4 +16136,7 @@ body:not(.fl-builder-edit) .fl-row.fl-row-full-width.image_single .bg_img_captio
 
 .margintop0 {
     margin-top: 0
+}
+.footer_donate_button {
+	white-space: nowrap;
 }

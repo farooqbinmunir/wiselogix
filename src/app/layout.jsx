@@ -386,9 +386,6 @@ export default function RootLayout({ children }) {
                 <li><a href="#" target="_self">Resources</a></li>
                 <li><a href="#" target="_self">Contact</a></li>
               </ul>
-              <ul aria-labelledby="footer-useful-title" className="footer_useful_links linostyle nomargin nopadding footer-nav-donate">
-                <li><a href="#" target="_self" className="oxfam_orange_button oxfam_button footer_donate_button">Donate</a></li>
-              </ul>
             </div>
             {/* Footer Column 2 */}
             {/* Footer Column 3 */}
@@ -397,13 +394,7 @@ export default function RootLayout({ children }) {
                 height="144" width="362" />
               <div className="footer_member">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, incidunt!</div>
               <div className="logos_2col">
-                <div className="col1">
-                  A member of:
-                  <a href="#"><img src="assets/images/foot_logo_humcoa.png" alt="Humanitarian Coalition" /></a>
-                </div>
-                <div className="col2">
-                  <a href="#"><img src="assets/images/foot_logo_imagine.png" alt="" /></a>
-                </div>
+			  	<a href="#" target="_self" className="oxfam_orange_button oxfam_button footer_donate_button">Donate</a>
               </div>
             </div>
             {/* Footer Column 3 */}
@@ -411,9 +402,10 @@ export default function RootLayout({ children }) {
           </div>
 
           {/* Post footer */}
-          <div className="postfooter">
+          <div className="postfooter" style={{
+					display: "block",
+				}}>
             <div className="postfooter_inner">
-              <div className="col1 footer_info">Charitable Reg/No. 42342423423</div>
               <div className="col2 footer_info">
                 <h3 id="footer-legal-title" className="sr-only">Legal Links</h3>
                 <ul aria-labelledby="footer-legal-title" className="nopadding nomargin">
