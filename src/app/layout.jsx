@@ -4,11 +4,11 @@ import Script from 'next/script';
 // Importing CSS
 
 // Thirdparty Libs CSS
-import "../../public/assets/css/block-liberary.css";
 import "../../public/assets/css/bootstrap-3.4.1.css";
 import "../../public/assets/css/fontawesome.css";
 import "../../public/assets/css/jquery.magnificpopup.css";
 
+// import "../../public/assets/css/block-liberary.css";
 // import "../../public/assets/css/complianz-gdpr.css";
 // import "../../public/assets/css/wp-blocks.css";
 // import "../../public/assets/css/dashicons.min.css";
@@ -243,7 +243,7 @@ export default function RootLayout({ children }) {
           <nav id="main-menu" aria-label="Site">
             <h2 id="nav-title" className="sr-only">Site Navigation</h2>
             <div className="menu-mobile-header">
-              <a id="menu-40120-title-mobile" href="index.html"
+              <a id="menu-40120-title-mobile" href="/"
                 className="menu_main_logo menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-30765 current_page_item"
                 title="">Oxfam Canada Home Page</a>
               <a className="menu_mobile_donate"
@@ -254,12 +254,12 @@ export default function RootLayout({ children }) {
             <h3 className="sr-only">Menu</h3>
 			<ul className="menu-desktop" aria-labelledby="nav-title">
               	<li>
-                	<a id="menu-41417-title" href="index.html" className="menu_main_logo menu-item menu-item-type-post_type menu-item-object-page" title="">
+                	<a id="menu-41417-title" href="/" className="menu_main_logo menu-item menu-item-type-post_type menu-item-object-page" title="">
                   		<span className="sr-only">Home Page</span>
                 	</a>
               	</li>
 				<li>
-					<a href="index.html" className="menu_main_mobile_shop menu-item">
+					<a href="/" className="menu_main_mobile_shop menu-item">
 						<button id="" aria-expanded="false" className="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">Home</button>
 					</a>
 				</li>
