@@ -17,6 +17,9 @@ import "../../public/assets/css/wp-blocks.css";
 import "../../public/assets/css/merged.css";
 import "../../public/assets/css/merged-responsive.css";
 
+import "../../public/assets/css/custom.css";
+import "../../public/assets/css/responsive.css";
+
 // Custom CSS
 // import "../../public/assets/css/homepage.css";
 // import "../../public/assets/css/layout.css";
@@ -26,14 +29,14 @@ import "../../public/assets/css/merged-responsive.css";
 // import "../../public/assets/css/bb-theme-accessible.css";
 // import "../../public/assets/css/focus.css";
 // import "../../public/assets/css/style.css";
-// import "../../public/assets/css/custom.css";
+
 
 // Responsive CSS
 // import "../../public/assets/css/bb-loop-responsive.css";
 // import "../../public/assets/css/bb-theme-responsive.css";
 // import "../../public/assets/css/focus_responsive.css";
 // import "../../public/assets/css/homepage_responsive.css";
-// import "../../public/assets/css/responsive.css";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -235,7 +238,67 @@ export default function RootLayout({ children }) {
           </div>
           {/*<!-- SIGN UP FORM HEADER -->*/}
 
+          <nav id="main-menu" aria-label="Site">
+            <h2 id="nav-title" class="sr-only">Site Navigation</h2>
+            <div class="menu-mobile-header">
+              <a id="menu-40120-title-mobile" href="index.html"
+                class="menu_main_logo menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-30765 current_page_item"
+                title="">Oxfam Canada Home Page</a>
+              <a class="menu_mobile_donate"
+                href="#">Donate</a>
+              <button class="mobile_menu_toggle" aria-expanded="false" aria-label="Navigation menu"><img
+                  src="assets/images/menu-mobile-hamb.svg" alt="" aria-hidden="true"></button>
+            </div>
+            <h3 class="sr-only">Menu</h3>
 
+            <ul class="menu-desktop" aria-labelledby="nav-title">
+              <li>
+                <a id="menu-41417-title" href="index.html" class="menu_main_logo menu-item menu-item-type-post_type menu-item-object-page" title="">
+                  <span class="sr-only">Home Page</span>
+                </a>
+              </li>
+              <li data-id=""><button id="" aria-expanded="false" class="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">Home</button></li>
+              <li data-id="menu-31-title" class=""><button id="menu-31-title" aria-expanded="false" class="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">About Us</button>
+                <ul data-depth="0" class="sub-menu " aria-labelledby="menu-31-title">
+                  <li data-id="menu-29971-title"><a id="menu-29971-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our Story</a></li>
+                  <li data-id="menu-30184-title"><a id="menu-30184-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our History</a></li>
+                  <li data-id="menu-30218-title"><a id="menu-30218-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our Mission, Vision and Values</a></li>
+                  <li data-id="menu-30220-title"><a id="menu-30220-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our Team</a></li>
+                </ul>
+              </li>
+              <li data-id="menu-32-title" class=""><button id="menu-32-title" aria-expanded="false" class="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">What We Do</button>
+                <ul data-depth="0" class="sub-menu " aria-labelledby="menu-32-title">
+                  <li data-id="menu-30368-title"><a id="menu-30368-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our work with women and children</a></li>
+                  <li data-id="menu-30367-title"><a id="menu-30367-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Assisting widows and the marginalized</a></li>
+                  <li data-id="menu-30227-title"><a id="menu-30227-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Championing Education for the Girl Child</a></li>
+                  <li data-id="menu-30365-title"><a id="menu-30365-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Health</a></li>
+                  <li data-id="menu-30271-title"><a id="menu-30271-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our Projects</a></li>
+                </ul>
+              </li>
+              <li data-id="menu-29941-title" class=""><button id="menu-29941-title" aria-expanded="false" class="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">Get Involved</button>
+                <ul data-depth="0" class="sub-menu " aria-labelledby="menu-29941-title">
+                  <li data-id="menu-30233-title"><a id="menu-30233-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Volunteer Opportunities</a></li>
+                  <li data-id="menu-30480-title"><a id="menu-30480-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Become an Advocate</a></li>
+                  <li data-id="menu-32365-title"><a id="menu-32365-title" href="#" class=" menu-item menu-item-type-custom menu-item-object-custom" title="">Fundraising Event</a></li>
+                </ul>
+              </li>
+              <li data-id="menu-29939-title" class=""><button id="menu-29939-title" aria-expanded="false" class="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">News &amp; Stories</button>
+                <ul data-depth="0" class="sub-menu " aria-labelledby="menu-29939-title">
+                  <li data-id="menu-30024-title"><a id="menu-30024-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">News/Articles</a></li>
+                  <li data-id="menu-32594-title"><a id="menu-32594-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Reports</a></li>
+                </ul>
+              </li>
+              <li data-id="menu-30191-title" class=""><button id="menu-30191-title" aria-expanded="false" class="mainmenu_main menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">Resources & Reports</button>
+                <ul data-depth="0" class="sub-menu " aria-labelledby="menu-30191-title">
+                  <li data-id="menu-37849-title"><a id="menu-37849-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Host Downloadable Reports</a></li>
+                  <li data-id="menu-37848-title"><a id="menu-37848-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Press Releases</a></li>
+                  <li data-id="menu-37996-title"><a id="menu-37996-title" href="#" class=" menu-item menu-item-type-post_type menu-item-object-page" title="">Organization’s Work</a></li>
+                </ul>
+              </li>
+              <li data-id="menu-40171-title"><a id="menu-40171-title" href="#" class="menu_main_mobile_shop menu-item menu-item-type-custom menu-item-object-custom" title="">Contact Us</a></li>
+              <li data-id="menu-29960-title"><a id="menu-29960-title" href="#" class="menu_main_donate menu-itemoxfam_button oxfam_orange_button header-nav-donate" title="">Donate</a></li>
+              </ul>
+          </nav>
 
           {/*<!-- MAIN MENU -->*/}
           <nav id="main-menu" aria-label="Site">
@@ -257,6 +320,7 @@ export default function RootLayout({ children }) {
                   <span className="sr-only">Home Page</span>
                 </a>
               </li>
+
               <li><a href="index.html" className="menu_main_mobile_shop menu-item"><button className="mainmenu_main">Home</button></a></li>
               <li><a href="#" className="menu_main_mobile_shop menu-item"><button className="mainmenu_main">About</button></a></li>
               <li><a href="#" className="menu_main_mobile_shop menu-item"><button className="mainmenu_main">Campaigns</button></a></li>
@@ -461,7 +525,6 @@ export default function RootLayout({ children }) {
         <Script src="assets/js/imagesLoaded.js" />
         <Script src="assets/js/jquery-magnificpopup.js" />
         <Script src="assets/js/bootstrap.js" />
-        <Script src="assets/js/bb-theme.js" />
       </body>
     </html>
   );

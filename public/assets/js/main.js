@@ -3365,9 +3365,9 @@ jQuery(document).ready(function ($) {
 		}
 	};
 
-	$(function () {
-		FLTheme.init();
-	});
+	// $(function () {
+	// 	FLTheme.init();
+	// });
 
 	// Mobile Logo
 	if (!($('html.fl-builder-edit').length !== 0)) {
