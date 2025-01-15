@@ -210,7 +210,8 @@
     #main-menu>ul>li:first-child {
         float: none;
         background: #0c884a;
-        padding: 10px 20px
+        padding: 10px 20px;
+        display: none !important;
     }
 
     #main-menu #searchform_mobile * {
@@ -263,8 +264,8 @@
         transform: rotate(90deg);
         opacity: 1;
         position: absolute;
-        right: 31px;
-        top: 20px
+        right: 4px;
+        top: 20px;
     }
 
     #main-menu button.mainmenu_main {
@@ -291,7 +292,7 @@
 
     #main-menu ul.sub-menu[data-depth="0"]>li {
         border-left: 0;
-        padding: 0 30px;
+        padding: 0 20px;
         margin-left: 0
     }
 
@@ -1360,8 +1361,8 @@
 
     #main-menu>ul,
     .home-page-slide-container {
-        padding-left: 50px !important;
-        padding-right: 50px !important;
+        padding-left: 20px !important;
+        padding-right: 10px !important;
     }
 }
 
@@ -1379,7 +1380,7 @@
     }
 
     #main-menu button.mainmenu_main {
-        padding: 0 8px
+        padding: 0 !important;
     }
 }
 

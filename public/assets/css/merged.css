@@ -9141,11 +9141,6 @@ html .joinusform .joinus_button_submit:after {
     padding-right: 50px;
     justify-content: flex-end;
 }
-
-#main-menu>ul>li:first-child {
-    margin-right: auto
-}
-
 .fl-page-bar .fl-page-bar-container {
     max-width: 1366px;
     margin: auto;
@@ -15396,7 +15391,8 @@ body.noheader header {
 }
 
 #main-menu>ul>li:first-child {
-    float: left
+    margin-right: auto;
+    float: left;
 }
 
 #main-menu:focus-within,

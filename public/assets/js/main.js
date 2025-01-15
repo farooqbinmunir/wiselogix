@@ -201,57 +201,56 @@ jQuery(document).ready(function ($) {
 
 	// Close popups and modals when ESC is pressed
 
-	$(document).on(
-		'keydown', function (event) {
-			var KEYCODE_ESC = 27;
-			var isESCPressed = (event.key === 'Escape' || event.keyCode === KEYCODE_ESC);
-			if (isESCPressed) {
-				// close acc_external
-				if ($(".acc_external").css("display") !== "none") {
-					$(".acc_external").css("display", "none")
-				}
-				// close search modal
-				if ($(".searchbox").hasClass("active")) {
-					searchClose()
-					setTimeout(function () { $(".topbar_search button").focus() }, 50)
-				}
-
-				//close joinus modal
-				else if ($(".joinusbox").hasClass("active")) {
-					joinusClose()
-					setTimeout(function () { $(".topbar_join button").focus() }, 50)
-				}
-
-				//close drop-down menu on small screens
-				else if ($(window).width() <= 992 && $(".menu-desktop").hasClass('active')) {
-					toggleMobileMenu();
-					setTimeout(function () {
-						$(".mobile_menu_toggle").focus()
-					}, 50);
-				}
-
-				// close main menu expanded
-				else if ($("#main-menu>ul>li").hasClass("section_expanded")) {
-					$(".section_expanded >button").focus();
-					$("#main-menu button.mainmenu_main").attr("aria-expanded", "false")
-					$("#main-menu button.mainmenu_main").parent().removeClass("section_expanded")
-				}
-
-				else if ($(".tooltip_description.tooltip_visible").length > 0) {
-					//set focus back to opener
-					$(".tooltip_description.tooltip_visible")
-						.first()
-						.closest('.tooltip_wrapper')
-						.find('.tooltip_term').focus();
-
-					//close tooltips
-					$('.tooltip_term').attr('aria-expanded', 'false');
-					$(".tooltip_description").removeClass("tooltip_visible");
-				}
-
-
+	$(document).on('keydown', function (event) {
+		var KEYCODE_ESC = 27;
+		var isESCPressed = (event.key === 'Escape' || event.keyCode === KEYCODE_ESC);
+		if (isESCPressed) {
+			// close acc_external
+			if ($(".acc_external").css("display") !== "none") {
+				$(".acc_external").css("display", "none")
 			}
-		});
+			// close search modal
+			if ($(".searchbox").hasClass("active")) {
+				searchClose()
+				setTimeout(function () { $(".topbar_search button").focus() }, 50)
+			}
+
+			//close joinus modal
+			else if ($(".joinusbox").hasClass("active")) {
+				joinusClose()
+				setTimeout(function () { $(".topbar_join button").focus() }, 50)
+			}
+
+			//close drop-down menu on small screens
+			else if ($(window).width() <= 992 && $(".menu-desktop").hasClass('active')) {
+				toggleMobileMenu();
+				setTimeout(function () {
+					$(".mobile_menu_toggle").focus()
+				}, 50);
+			}
+
+			// close main menu expanded
+			else if ($("#main-menu>ul>li").hasClass("section_expanded")) {
+				$(".section_expanded >button").focus();
+				$("#main-menu button.mainmenu_main").attr("aria-expanded", "false")
+				$("#main-menu button.mainmenu_main").parent().removeClass("section_expanded")
+			}
+
+			else if ($(".tooltip_description.tooltip_visible").length > 0) {
+				//set focus back to opener
+				$(".tooltip_description.tooltip_visible")
+					.first()
+					.closest('.tooltip_wrapper')
+					.find('.tooltip_term').focus();
+
+				//close tooltips
+				$('.tooltip_term').attr('aria-expanded', 'false');
+				$(".tooltip_description").removeClass("tooltip_visible");
+			}
+
+
+		}
+	});
 
 
 	$("#main-menu ul.sub-menu").each(function () {
@@ -438,32 +437,32 @@ jQuery(document).ready(function ($) {
     `;
 	$('li[data-id="menu-40172-title"]').html(mobile_sn)
 
-	var menu_desktop_main_title = $('#main-menu >ul>li:first-child').html()
-	var mobile_search = `
-        <h2 id="search-menumobile-title" class="sr-only">Search</h2>
-        <form method="get" id="searchform_mobile" action="/">
-            <label for="search_input_mobile">What can we help you find?</label>
-            <input id="search_input_mobile" type="text" name="s" class="search_input">
-        </form>
-        <button class="search_button mobile" form="searchform_mobile">Search</button>
-    `;
+	// var menu_desktop_main_title = $('#main-menu >ul>li:first-child').html()
+	// var mobile_search = `
+    //     <h2 id="search-menumobile-title" class="sr-only">Search</h2>
+    //     <form method="get" id="searchform_mobile" action="/">
+    //         <label for="search_input_mobile">What can we help you find?</label>
+    //         <input id="search_input_mobile" type="text" name="s" class="search_input">
+    //     </form>
+    //     <button class="search_button mobile" form="searchform_mobile">Search</button>
+    // `;
 
-	function mobile_search_swap() {
-		var $w_width = 976;
-		if (isMobile == true) $w_width = 992;
+	// function mobile_search_swap() {
+	// 	var $w_width = 976;
+	// 	if (isMobile == true) $w_width = 992;
 
-		if ($(window).width() < $w_width) {
-			if ($('#main-menu >ul>li:first-child').html() != mobile_search)
-				$('#main-menu >ul>li:first-child').html(mobile_search)
-		} else {
-			$('#main-menu >ul>li:first-child').html(menu_desktop_main_title)
-			$("#main-menu a.menu_main_logo").on('focus', function () {
-				$("#main-menu button.mainmenu_main").attr("aria-expanded", "false");
-				$("#main-menu button.mainmenu_main").closest('.section_expanded').removeClass("section_expanded");
-			});
-		}
-	}
-	mobile_search_swap()
+	// 	if ($(window).width() < $w_width) {
+	// 		if ($('#main-menu >ul>li:first-child').html() != mobile_search)
+	// 			$('#main-menu >ul>li:first-child').html(mobile_search)
+	// 	} else {
+	// 		$('#main-menu >ul>li:first-child').html(menu_desktop_main_title)
+	// 		$("#main-menu a.menu_main_logo").on('focus', function () {
+	// 			$("#main-menu button.mainmenu_main").attr("aria-expanded", "false");
+	// 			$("#main-menu button.mainmenu_main").closest('.section_expanded').removeClass("section_expanded");
+	// 		});
+	// 	}
+	// }
+	// mobile_search_swap()
 
 
 	// MAX MEGA MENU
@@ -1121,18 +1120,6 @@ jQuery(document).ready(function ($) {
 		else return;
 	})
 
-
-
-
-
-
-
-
-
-
-
-
-
 	//////////////////////////
 	// BB Smooth Scroll Fix //
 	//////////////////////////
@@ -1179,9 +1166,7 @@ jQuery(document).ready(function ($) {
 		$("#mega-menu-header > li > .mega-sub-menu").width("0px")
 
 		// Scorecard resize
-		scorecard_fullscreen()
-
-		mobile_search_swap()
+		scorecard_fullscreen();
 
 
 

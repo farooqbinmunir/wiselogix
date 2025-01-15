@@ -88,7 +88,7 @@ export default function RootLayout({ children }) {
         <Script src="/assets/js/isotope.js" strategy="afterInteractive" />
         <Script src="/assets/js/imagesLoaded.js" strategy="afterInteractive" />
         <Script src="/assets/js/filter.js" strategy="afterInteractive" />
-        <Script src="/assets/js/focus.js" strategy="afterInteractive" />
+        {/* <Script src="/assets/js/focus.js" strategy="afterInteractive" /> */}
         <Script src="/assets/js/main.js" strategy="afterInteractive" />
         <Script src="/assets/js/custom.js" strategy="afterInteractive" />
 
@@ -128,7 +128,7 @@ export default function RootLayout({ children }) {
           {/*<!-- .fl-page-bar -->*/}
 
           {/*<!-- SEARCH BOX SLIDE DOWN -->*/}
-          <div className="searchbox" id="searchbox">
+          {/* <div className="searchbox" id="searchbox">
             <div className="search_wrap" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
               <div className="search_inner">
                 <span className="modal-focus-trap" aria-hidden="true" id="search-top" tabIndex="0"
@@ -146,7 +146,7 @@ export default function RootLayout({ children }) {
                   data-target="search"></span>
               </div>
             </div>
-          </div>
+          </div> */}
           {/*<!-- SEARCH BOX SLIDE DOWN -->*/}
 
           {/*<!-- SIGN UP FORM HEADER -->*/}
@@ -262,15 +262,17 @@ export default function RootLayout({ children }) {
 						<button id="" aria-expanded="false" className="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">Home</button>
 					</a>
 				</li>
-				<li data-id="menu-31-title" className=""><button id="menu-31-title" aria-expanded="false" className="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">About Us</button>
-                <ul data-depth="0" className="sub-menu " aria-labelledby="menu-31-title">
-					<li data-id="menu-29971-title"><a id="menu-29971-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our Story</a></li>
-					<li data-id="menu-30184-title"><a id="menu-30184-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our History</a></li>
-					<li data-id="menu-30218-title"><a id="menu-30218-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our Mission, Vision and Values</a></li>
-					<li data-id="menu-30220-title"><a id="menu-30220-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our Team</a></li>
-                </ul>
+				<li data-id="menu-31-title" className="">
+					<button id="menu-31-title" aria-expanded="false" className="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">About Us</button>
+					<ul data-depth="0" className="sub-menu " aria-labelledby="menu-31-title">
+						<li data-id="menu-29971-title"><a id="menu-29971-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our Story</a></li>
+						<li data-id="menu-30184-title"><a id="menu-30184-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our History</a></li>
+						<li data-id="menu-30218-title"><a id="menu-30218-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our Mission, Vision and Values</a></li>
+						<li data-id="menu-30220-title"><a id="menu-30220-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our Team</a></li>
+					</ul>
               	</li>
-              	<li data-id="menu-32-title" className=""><button id="menu-32-title" aria-expanded="false" className="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">What We Do</button>
+              	<li data-id="menu-32-title" className="">
+					<button id="menu-32-title" aria-expanded="false" className="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">What We Do</button>
 					<ul data-depth="0" className="sub-menu " aria-labelledby="menu-32-title">
 						<li data-id="menu-30368-title"><a id="menu-30368-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our work with women and children</a></li>
 						<li data-id="menu-30367-title"><a id="menu-30367-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Assisting widows and the marginalized</a></li>
@@ -279,20 +281,23 @@ export default function RootLayout({ children }) {
 						<li data-id="menu-30271-title"><a id="menu-30271-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Our Projects</a></li>
 					</ul>
               	</li>
-				<li data-id="menu-29941-title" className=""><button id="menu-29941-title" aria-expanded="false" className="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">Get Involved</button>
+				<li data-id="menu-29941-title" className="">
+					<button id="menu-29941-title" aria-expanded="false" className="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">Get Involved</button>
 					<ul data-depth="0" className="sub-menu " aria-labelledby="menu-29941-title">
 						<li data-id="menu-30233-title"><a id="menu-30233-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Volunteer Opportunities</a></li>
 						<li data-id="menu-30480-title"><a id="menu-30480-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Become an Advocate</a></li>
 						<li data-id="menu-32365-title"><a id="menu-32365-title" href="#" className=" menu-item menu-item-type-custom menu-item-object-custom" title="">Fundraising Event</a></li>
 					</ul>
 				</li>
-				<li data-id="menu-29939-title" className=""><button id="menu-29939-title" aria-expanded="false" className="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">News &amp; Stories</button>
+				<li data-id="menu-29939-title" className="">
+					<button id="menu-29939-title" aria-expanded="false" className="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">News &amp; Stories</button>
 					<ul data-depth="0" className="sub-menu " aria-labelledby="menu-29939-title">
 						<li data-id="menu-30024-title"><a id="menu-30024-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">News/Articles</a></li>
 						<li data-id="menu-32594-title"><a id="menu-32594-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Reports</a></li>
 					</ul>
 				</li>
-				<li data-id="menu-30191-title" className=""><button id="menu-30191-title" aria-expanded="false" className="mainmenu_main menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">Resources & Reports</button>
+				<li data-id="menu-30191-title" className="">
+					<button id="menu-30191-title" aria-expanded="false" className="mainmenu_main menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">Resources & Reports</button>
 					<ul data-depth="0" className="sub-menu " aria-labelledby="menu-30191-title">
 						<li data-id="menu-37849-title"><a id="menu-37849-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Host Downloadable Reports</a></li>
 						<li data-id="menu-37848-title"><a id="menu-37848-title" href="#" className=" menu-item menu-item-type-post_type menu-item-object-page" title="">Press Releases</a></li>
