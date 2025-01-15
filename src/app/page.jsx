@@ -21,7 +21,7 @@ export default function Home() {
               <div className="fl-post-content clearfix" itemProp="text">
                 <div className="fl-builder-content fl-builder-content-43648 fl-builder-content-primary fl-builder-global-templates-locked"
                   data-post-id="43648">
-                  <div className="fl-row fl-row-full-width fl-row-bg-none fl-node-glx1n7jzh8yv fl-row-default-height fl-row-align-top nopadding home-hero-row"
+                  <div id="section_banner" className="fl-row fl-row-full-width fl-row-bg-none fl-node-glx1n7jzh8yv fl-row-default-height fl-row-align-top nopadding home-hero-row"
                     data-node="glx1n7jzh8yv">
                     <div className="fl-row-content-wrap">
                       <div className="fl-row-content fl-row-full-width fl-node-content">
@@ -37,7 +37,7 @@ export default function Home() {
                                       <div className="home-page-sider">
                                         <div className="home-page-slide"
                                           style={{
-                                            backgroundImage: `url("assets/images/HOL-Oxfam-InuruID-357084-Turkiye-j.jpg")`,
+                                            backgroundImage: `url("assets/images/Oxfam-InuruID-370859-Kenya-2024-05-29.jpg")`,
                                             backgroundPosition: "center",
                                           }}
                                           >
@@ -164,7 +164,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="fl-row fl-row-full-width fl-row-bg-none fl-node-n4xazeg3chu6 fl-row-default-height fl-row-align-center"
+                  <div id="section_ending_poverty_part_1" className="fl-row fl-row-full-width fl-row-bg-none fl-node-n4xazeg3chu6 fl-row-default-height fl-row-align-center"
                     data-node="n4xazeg3chu6">
                     <div className="fl-row-content-wrap">
                       <div className="fl-row-content fl-row-fixed-width fl-node-content">
@@ -199,7 +199,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="fl-row fl-row-full-width fl-row-bg-none fl-node-i8mk4jf9v70g fl-row-default-height fl-row-align-center"
+                  <div id="section_ending_poverty_part_2" className="fl-row fl-row-full-width fl-row-bg-none fl-node-i8mk4jf9v70g fl-row-default-height fl-row-align-center"
                     data-node="i8mk4jf9v70g">
                     <div className="fl-row-content-wrap">
                       <div className="fl-row-content fl-row-fixed-width fl-node-content">
@@ -283,7 +283,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div id="contributers_section" className="contributers_section fl-row fl-row-full-width fl-row-bg-color fl-node-he9f0muoi4yc fl-row-default-height fl-row-align-center"
+                  <div id="section_contributers" className="contributers_section fl-row fl-row-full-width fl-row-bg-color fl-node-he9f0muoi4yc fl-row-default-height fl-row-align-center"
                     data-node="he9f0muoi4yc">
                     <div className="fl-row-content-wrap">
                       <div className="fl-row-content fl-row-fixed-width fl-node-content">
@@ -489,7 +489,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="fl-row fl-row-full-width fl-row-bg-photo fl-node-7om1xrwdbjes fl-row-default-height fl-row-align-center hp2023_donate_form_new"
+                  <div id="section_support_now" className="fl-row fl-row-full-width fl-row-bg-photo fl-node-7om1xrwdbjes fl-row-default-height fl-row-align-center hp2023_donate_form_new"
                     data-node="7om1xrwdbjes">
                     <div className="fl-row-content-wrap">
                       <div className="fl-row-content fl-row-fixed-width fl-node-content">
@@ -642,7 +642,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="fl-row fl-row-full-width fl-row-bg-color fl-node-fnsv9iphw5y2 fl-row-default-height fl-row-align-center"
+                  <div id="section_human_rights" className="fl-row fl-row-full-width fl-row-bg-color fl-node-fnsv9iphw5y2 fl-row-default-height fl-row-align-center"
                     data-node="fnsv9iphw5y2">
                     <div className="fl-row-content-wrap">
                       <div className="fl-row-content fl-row-fixed-width fl-node-content">
@@ -655,7 +655,7 @@ export default function Home() {
                                 <div className="fl-module-content fl-node-content">
                                   <h2 className="fl-heading">
                                     <span className="fl-heading-text">A Global Human Rights Initiative.
-                                      <span>Event</span></span>
+                                      <span>Upcoming Events</span></span>
                                   </h2>
                                 </div>
                               </div>
@@ -769,270 +769,8 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="fl-row fl-row-full-width fl-row-bg-color fl-node-y054nebhsr8a fl-row-default-height fl-row-align-center"
-                    data-node="y054nebhsr8a">
-                    <div className="fl-row-content-wrap">
-                      <div className="fl-row-content fl-row-fixed-width fl-node-content">
-
-                        <div className="fl-col-group fl-node-hksxy8i4dzbq news-section-wrap" data-node="hksxy8i4dzbq">
-                          <div className="fl-col fl-node-l4qsjirgzc8x" data-node="l4qsjirgzc8x">
-                            <div className="fl-col-content fl-node-content">
-                              <div className="fl-module fl-module-heading fl-node-ylnt90hi3vwc maxwidth700"
-                                data-node="ylnt90hi3vwc">
-                                <div className="fl-module-content fl-node-content news-section-text">
-                                  <h2 className="fl-heading">
-                                    <span className="fl-heading-text">Stay Updated on Women’s Rights
-                                      <span>News</span></span>
-                                  </h2>
-                                  <div className="fl-module-content fl-node-content ">
-                                    <div className="fl-rich-text">
-                                      <p>
-                                        Get the latest updates on stories, initiatives, and progress in the fight for women’s equality worldwide.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="fl-module fl-module-html fl-node-ktlho4d3sawn"
-                                data-node="ktlho4d3sawn">
-                                <div className="fl-module-content fl-node-content">
-                                  <div className="fl-html">
-                                    <div className="slider-header">
-                                      <div className="slider-dot slider-dot-news"></div>
-                                      <div className="slider-ctl slider-ctl-news"></div>
-                                    </div>
-                                    <div className='post-wedget carrousel carrousel-news'>
-                                      <div className="post">
-                                        <div className="postBox">
-                                          <div className="postTop">
-                                            <div className="imgBox">
-                                              <div className="tags">Lorem, ipsum</div>
-                                              <div className="date">01 Jan, 2000</div>
-                                            </div>
-                                            <div className="infoBox">
-                                              <h3><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, omnis?</a></h3>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div className="post">
-                                        <div className="postBox">
-                                          <div className="postTop">
-                                            <div className="imgBox">
-                                              <div className="tags">Lorem, ipsum</div>
-                                              <div className="date">01 Jan, 2000</div>
-                                            </div>
-                                            <div className="infoBox">
-                                              <h3><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, omnis?</a></h3>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div className="post">
-                                        <div className="postBox">
-                                          <div className="postTop">
-                                            <div className="imgBox">
-                                              <div className="tags">Lorem, ipsum</div>
-                                              <div className="date">01 Jan, 2000</div>
-                                            </div>
-                                            <div className="infoBox">
-                                              <h3><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, omnis?</a></h3>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div className="post">
-                                        <div className="postBox">
-                                          <div className="postTop">
-                                            <div className="imgBox">
-                                              <div className="tags">Lorem, ipsum</div>
-                                              <div className="date">01 Jan, 2000</div>
-                                            </div>
-                                            <div className="infoBox">
-                                              <h3><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, omnis?</a></h3>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div className="post">
-                                        <div className="postBox">
-                                          <div className="postTop">
-                                            <div className="imgBox">
-                                              <div className="tags">Lorem, ipsum</div>
-                                              <div className="date">01 Jan, 2000</div>
-                                            </div>
-                                            <div className="infoBox">
-                                              <h3><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, omnis?</a></h3>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div className="post">
-                                        <div className="postBox">
-                                          <div className="postTop">
-                                            <div className="imgBox">
-                                              <div className="tags">Lorem, ipsum</div>
-                                              <div className="date">01 Jan, 2000</div>
-                                            </div>
-                                            <div className="infoBox">
-                                              <h3><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, omnis?</a></h3>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="fl-row fl-row-full-width fl-row-bg-photo fl-node-2ah5kqrmx8gt fl-row-default-height fl-row-align-center hp2023_donate_form_new"
-                    data-node="2ah5kqrmx8gt">
-                    <div className="fl-row-content-wrap">
-                      <div className="fl-row-content fl-row-fixed-width fl-node-content">
-
-                        <div className="fl-col-group fl-node-d2zisq974nc5" data-node="d2zisq974nc5">
-                          <div className="fl-col fl-node-f9kz1sha4obm fl-col-has-cols hp2023 hero_box maxwidth550"
-                            data-node="f9kz1sha4obm">
-                            <div className="fl-col-content fl-node-content">
-                              <div className="fl-col-group fl-node-a369u8fcn0rw fl-col-group-nested fl-col-group-equal-height fl-col-group-align-top"
-                                data-node="a369u8fcn0rw">
-                                <div className="fl-col fl-node-jsxe1h9yc2l5"
-                                  data-node="jsxe1h9yc2l5">
-                                  <div className="fl-col-content fl-node-content">
-                                    <div className="fl-module fl-module-heading fl-node-jnua9stvkog4"
-                                      data-node="jnua9stvkog4">
-                                      <div className="fl-module-content fl-node-content">
-                                        <h2 className="fl-heading">
-                                          <span className="fl-heading-text">A Future Without Poverty Starts with Women's Rights
-                                            <span>Women's Rights</span></span>
-                                        </h2>
-                                      </div>
-                                    </div>
-                                    <div className="fl-module fl-module-modal-popup fl-node-g37r4wlx5ivt hp2023_modalvideo"
-                                      data-node="g37r4wlx5ivt">
-                                      <div className="fl-module-content fl-node-content">
-
-                                        <div
-                                          className="uabb-modal-parent-wrapper uabb-module-content uamodal-g37r4wlx5ivt hp2023_modalvideo-overlay">
-                                          <div className="uabb-modal uabb-drag-fix uabb-center-modal uabb-modal-youtube uabb-modal-custom uabb-effect-1 uabb-aspect-ratio-16_9"
-                                            id="modal-g37r4wlx5ivt"
-                                            data-content="youtube">
-                                            <div className="uabb-content ">
-                                              <span className="uabb-modal-close uabb-close-custom-popup-top-right">
-                                                <i className="uabb-close-icon dashicons dashicons-before dashicons-no-alt"></i>
-                                              </span>
-
-                                              <div className="uabb-modal-text uabb-modal-content-data  fl-clearfix">
-                                                <div
-                                                  className="uabb-video-wrap">
-                                                  <div className="uabb-modal-iframe uabb-video-player"
-                                                    data-src="youtube"
-                                                    data-id="vBG9iW8noGw"
-                                                    data-append="?version=3&enablejsapi=1&rel=0"
-                                                    data-thumb="../i.ytimg.com/vi/vBG9iW8noGw/hqdefault.jpg">
-                                                  </div>
-                                                </div>
-                                              </div>
-
-                                            </div>
-                                          </div>
-
-                                          <div className="uabb-overlay"></div>
-                                        </div>
-
-                                        <div className="uabb-modal-action-wrap">
-
-                                          <div
-                                            className="uabb-module-content uabb-button-wrap uabb-creative-button-wrap uabb-button-width-auto uabb-creative-button-width-auto uabb-button-left uabb-creative-button-left uabb-button-reponsive-left uabb-creative-button-reponsive-left uabb-button-has-icon uabb-creative-button-has-icon">
-                                            <a href="javascript:void(0)"
-                                              target="_self"
-                                              className="uabb-button ast-button uabb-creative-button uabb-creative-default-btn  uabb-trigger "
-                                              data-modal="g37r4wlx5ivt"
-                                              role="button"
-                                              aria-label="Watch the film">
-                                              <span
-                                                className="uabb-button-text uabb-creative-button-text">Watch Button</span>
-                                              <i
-                                                className="uabb-button-icon uabb-creative-button-icon uabb-button-icon-after uabb-creative-button-icon-after ua-icon ua-icon-controller-play"></i>
-
-
-                                            </a>
-                                          </div>
-
-
-
-
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="fl-col-group fl-node-ck5b7qexv2j8" data-node="ck5b7qexv2j8">
-                          <div className="fl-col fl-node-0x5phjqn4zie" data-node="0x5phjqn4zie">
-                            <div className="fl-col-content fl-node-content">
-                              <div className="fl-module fl-module-rich-text fl-node-qen1vblaidwf hero_credit maxwidth500"
-                                data-node="qen1vblaidwf">
-                                <div className="fl-module-content fl-node-content">
-                                  <div className="fl-rich-text">
-                                    <p>Photo: Lorem ipsum dolor</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="fl-row fl-row-full-width fl-row-bg-color fl-node-7byk0e6rlwdp fl-row-default-height fl-row-align-center"
-                    data-node="7byk0e6rlwdp">
-                    <div className="fl-row-content-wrap">
-                      <div className="fl-row-content fl-row-fixed-width fl-node-content">
-
-                        <div className="fl-col-group fl-node-k6ilt8n7hw5z" data-node="k6ilt8n7hw5z">
-                          <div className="fl-col fl-node-rlfnpmst8eu7 fl-col-small"
-                            data-node="rlfnpmst8eu7">
-                            <div className="fl-col-content fl-node-content">
-                              <div className="fl-module fl-module-heading fl-node-7f26bzkaj0wd"
-                                data-node="7f26bzkaj0wd">
-                                <div className="fl-module-content fl-node-content">
-                                  <h2 className="fl-heading">
-                                    <span className="fl-heading-text">Lorem, ipsum.</span>
-                                  </h2>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="fl-col fl-node-p17t80vhfxs9" data-node="p17t80vhfxs9">
-                            <div className="fl-col-content fl-node-content">
-                              <div className="fl-module fl-module-rich-text fl-node-gzdr6lc8bvpt"
-                                data-node="gzdr6lc8bvpt">
-                                <div className="fl-module-content fl-node-content">
-                                  <div className="fl-rich-text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur saepe incidunt tenetur amet reprehenderit commodi, provident officia, voluptates velit accusamus cumque rerum exercitationem architecto, alias natus maxime harum quaerat odit!</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel! Odit eaque voluptas distinctio repudiandae nemo omnis, ad tempore recusandae.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nobis facere necessitatibus eveniet voluptate minima voluptatibus sit, maiores, doloribus sed velit ut doloremque earum harum illo iure voluptas rerum aliquam sint dignissimos aspernatur porro culpa tenetur dolorum. Hic iure voluptas voluptatum est quae harum. Impedit dicta obcaecati facere eligendi quibusdam.</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="fl-row fl-row-full-width fl-row-bg-none fl-node-zhf7rwmgj49t fl-row-default-height fl-row-align-center campaigns-section-wrap"
-                    data-node="zhf7rwmgj49t">
+                  <div id="section_compaigns" className="fl-row fl-row-full-width fl-row-bg-none fl-node-zhf7rwmgj49t fl-row-default-height fl-row-align-center campaigns-section-wrap"
+									data-node="zhf7rwmgj49t">
                     <div className="fl-row-content-wrap">
                       <div className="fl-row-content fl-row-fixed-width fl-node-content">
 
@@ -1231,7 +969,165 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="fl-row fl-row-full-width fl-row-bg-color fl-node-45nyhi8qz6lx fl-row-default-height fl-row-align-center joinus-form"
+                  <div id="section_territorial_acknowledgement" className="fl-row fl-row-full-width fl-row-bg-color fl-node-7byk0e6rlwdp fl-row-default-height fl-row-align-center"
+                    data-node="7byk0e6rlwdp">
+                    <div className="fl-row-content-wrap">
+                      <div className="fl-row-content fl-row-fixed-width fl-node-content">
+
+                        <div className="fl-col-group fl-node-k6ilt8n7hw5z" data-node="k6ilt8n7hw5z">
+                          <div className="fl-col fl-node-rlfnpmst8eu7 fl-col-small"
+                            data-node="rlfnpmst8eu7">
+                            <div className="fl-col-content fl-node-content">
+                              <div className="fl-module fl-module-heading fl-node-7f26bzkaj0wd"
+                                data-node="7f26bzkaj0wd">
+                                <div className="fl-module-content fl-node-content">
+                                  <h2 className="fl-heading">
+                                    <span className="fl-heading-text">Lorem, ipsum.</span>
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="fl-col fl-node-p17t80vhfxs9" data-node="p17t80vhfxs9">
+                            <div className="fl-col-content fl-node-content">
+                              <div className="fl-module fl-module-rich-text fl-node-gzdr6lc8bvpt"
+                                data-node="gzdr6lc8bvpt">
+                                <div className="fl-module-content fl-node-content">
+                                  <div className="fl-rich-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur saepe incidunt tenetur amet reprehenderit commodi, provident officia, voluptates velit accusamus cumque rerum exercitationem architecto, alias natus maxime harum quaerat odit!</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel! Odit eaque voluptas distinctio repudiandae nemo omnis, ad tempore recusandae.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nobis facere necessitatibus eveniet voluptate minima voluptatibus sit, maiores, doloribus sed velit ut doloremque earum harum illo iure voluptas rerum aliquam sint dignissimos aspernatur porro culpa tenetur dolorum. Hic iure voluptas voluptatum est quae harum. Impedit dicta obcaecati facere eligendi quibusdam.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="section_news" className="fl-row fl-row-full-width fl-row-bg-color fl-node-y054nebhsr8a fl-row-default-height fl-row-align-center"
+                    data-node="y054nebhsr8a">
+                    <div className="fl-row-content-wrap">
+                      <div className="fl-row-content fl-row-fixed-width fl-node-content">
+
+                        <div className="fl-col-group fl-node-hksxy8i4dzbq news-section-wrap" data-node="hksxy8i4dzbq">
+                          <div className="fl-col fl-node-l4qsjirgzc8x" data-node="l4qsjirgzc8x">
+                            <div className="fl-col-content fl-node-content">
+                              <div className="fl-module fl-module-heading fl-node-ylnt90hi3vwc maxwidth700"
+                                data-node="ylnt90hi3vwc">
+                                <div className="fl-module-content fl-node-content news-section-text">
+                                  <h2 className="fl-heading">
+                                    <span className="fl-heading-text">Stay Updated on Women’s Rights
+                                      <span>Recent News</span></span>
+                                  </h2>
+                                  <div className="fl-module-content fl-node-content ">
+                                    <div className="fl-rich-text">
+                                      <p>
+                                        Get the latest updates on stories, initiatives, and progress in the fight for women’s equality worldwide.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="fl-module fl-module-html fl-node-ktlho4d3sawn"
+                                data-node="ktlho4d3sawn">
+                                <div className="fl-module-content fl-node-content">
+                                  <div className="fl-html">
+                                    <div className="slider-header">
+                                      <div className="slider-dot slider-dot-news"></div>
+                                      <div className="slider-ctl slider-ctl-news"></div>
+                                    </div>
+                                    <div className='post-wedget carrousel carrousel-news'>
+                                      <div className="post">
+                                        <div className="postBox">
+                                          <div className="postTop">
+                                            <div className="imgBox">
+                                              <div className="tags">Lorem, ipsum</div>
+                                              <div className="date">01 Jan, 2000</div>
+                                            </div>
+                                            <div className="infoBox">
+                                              <h3><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, omnis?</a></h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div className="post">
+                                        <div className="postBox">
+                                          <div className="postTop">
+                                            <div className="imgBox">
+                                              <div className="tags">Lorem, ipsum</div>
+                                              <div className="date">01 Jan, 2000</div>
+                                            </div>
+                                            <div className="infoBox">
+                                              <h3><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, omnis?</a></h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div className="post">
+                                        <div className="postBox">
+                                          <div className="postTop">
+                                            <div className="imgBox">
+                                              <div className="tags">Lorem, ipsum</div>
+                                              <div className="date">01 Jan, 2000</div>
+                                            </div>
+                                            <div className="infoBox">
+                                              <h3><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, omnis?</a></h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div className="post">
+                                        <div className="postBox">
+                                          <div className="postTop">
+                                            <div className="imgBox">
+                                              <div className="tags">Lorem, ipsum</div>
+                                              <div className="date">01 Jan, 2000</div>
+                                            </div>
+                                            <div className="infoBox">
+                                              <h3><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, omnis?</a></h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div className="post">
+                                        <div className="postBox">
+                                          <div className="postTop">
+                                            <div className="imgBox">
+                                              <div className="tags">Lorem, ipsum</div>
+                                              <div className="date">01 Jan, 2000</div>
+                                            </div>
+                                            <div className="infoBox">
+                                              <h3><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, omnis?</a></h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div className="post">
+                                        <div className="postBox">
+                                          <div className="postTop">
+                                            <div className="imgBox">
+                                              <div className="tags">Lorem, ipsum</div>
+                                              <div className="date">01 Jan, 2000</div>
+                                            </div>
+                                            <div className="infoBox">
+                                              <h3><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, omnis?</a></h3>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="section_joinus" className="fl-row fl-row-full-width fl-row-bg-color fl-node-45nyhi8qz6lx fl-row-default-height fl-row-align-center joinus-form"
                     data-node="45nyhi8qz6lx">
                     <div className="fl-row-content-wrap">
                       <div className="fl-row-content fl-row-fixed-width fl-node-content">
@@ -1393,20 +1289,20 @@ export default function Home() {
             <a href="#"
               target="_blank">
               <span className="sr-only">Share to Facebook (opens in new window)</span>
-              <i aria-hidden="true" className="ua-icon ua-icon-facebook-with-circle"></i>
+              <i className="fab fa-facebook"></i>
             </a>
           </li>
           <li>
             <a href="#"
               target="_blank">
               <span className="sr-only">Share to Twitter (opens in new window)</span>
-              <i aria-hidden="true" className="ua-icon ua-icon-twitter-with-circle"></i>
+              <i className="fab fa-twitter"></i>
             </a>
           </li>
           <li>
             <a href="#" data-enc-email="" target="_blank" className="mail-link">
               <span className="sr-only">Share via email (opens in new window)</span>
-              <i aria-hidden="true" className="ua-icon ua-icon-mail2"></i>
+              <i className="fas fa-envelope"></i>
             </a>
           </li>
         </ul>

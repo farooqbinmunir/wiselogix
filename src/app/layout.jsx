@@ -6,12 +6,13 @@ import Script from 'next/script';
 // Thirdparty Libs CSS
 import "../../public/assets/css/block-liberary.css";
 import "../../public/assets/css/bootstrap-3.4.1.css";
-import "../../public/assets/css/complianz-gdpr.css";
-import "../../public/assets/css/dashicons.min.css";
 import "../../public/assets/css/fontawesome.css";
 import "../../public/assets/css/jquery.magnificpopup.css";
-import "../../public/assets/css/ultimate-icons.css";
-import "../../public/assets/css/wp-blocks.css";
+
+// import "../../public/assets/css/complianz-gdpr.css";
+// import "../../public/assets/css/wp-blocks.css";
+// import "../../public/assets/css/dashicons.min.css";
+// import "../../public/assets/css/ultimate-icons.css";
 
 // Merged Custom CSS
 import "../../public/assets/css/merged.css";
@@ -331,27 +332,27 @@ export default function RootLayout({ children }) {
               <ul aria-labelledby="footer-sn-title" className="footer_sn_icons">
                 <li>
                   <a href="#" target="_self" aria-label="Instagram">
-                    <span className="ua-icon ua-icon-instagram-with-circle"></span>
+                    <i className="fab fa-instagram"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#" target="_self" aria-label="Twitter">
-                    <span className="ua-icon ua-icon-twitter-with-circle"></span>
+                    <i className="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#" target="_self" aria-label="Facebook">
-                    <span className="ua-icon ua-icon-facebook-with-circle"></span>
+                    <i className="fab fa-facebook"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#" target="_self" aria-label="Linkedin">
-                    <span className="ua-icon ua-icon-linkedin-with-circle"></span>
+                    <i className="fab fa-linkedin"></i>
                   </a>
                 </li>
-                <li>
-                  <a href="#" target="_self" aria-label="Linkedin">
-                    <span className="ua-icon ua-icon-linkedin-with-circle"></span>
+				<li>
+                  <a href="#" target="_self" aria-label="Tiktok">
+                    <i className="fab fa-tiktok"></i>
                   </a>
                 </li>
               </ul>
@@ -360,15 +361,15 @@ export default function RootLayout({ children }) {
               <div aria-labelledby="footer-sn-contact" className="footer_contact" role="region">
                 {/*<div><i className="ua-icon ua-icon-location-pin" aria-hidden="true"></i>39 McArthur Ave. Ottawa, Ontario, K1L 8L7</div>*/}
                 <div className="contact_item">
-                  <i className="dashicons dashicons-before dashicons-email" aria-hidden="true"></i> 
-                  <a href="mailto:info@gmail.com" data-enc-email="vasb[at]bksnz.pn" className="mail-link" data-wpel-link="ignore">info@gmail.com</a></div>
+					<i className="fas fa-envelope"></i>
+                  <a href="mailto:info@gmail.com" className="mail-link">info@gmail.com</a></div>
                 <div className="contact_item">
-                  <span className="los_icons ua-icon ua-icon-phone3" aria-hidden="true"></span>
-                  <a href="tel:"><span className="sr-only">Phone:&nbsp;</span>+123456789</a>
+					<i className="fas fa-phone"></i>
+                  	<a href="tel:"><span className="sr-only">Phone:&nbsp;</span>+123456789</a>
                 </div>
                 <div className="contact_item">
-                  <span className="los_icons ua-icon ua-icon-direction" aria-hidden="true"></span>
-                  <a href="#">Lorem Acknowledgement</a>
+					<i className="fas fa-paper-plane"></i>
+                  	<a href="#">Lorem Acknowledgement</a>
                 </div>
               </div>
 
@@ -384,6 +385,7 @@ export default function RootLayout({ children }) {
                 <li><a href="#" target="_self">Get Involved</a></li>
                 <li><a href="#" target="_self">Blog</a></li>
                 <li><a href="#" target="_self">Resources</a></li>
+				<li><a href="#" target="_self">Our Gallery</a></li>
                 <li><a href="#" target="_self">Contact</a></li>
               </ul>
             </div>

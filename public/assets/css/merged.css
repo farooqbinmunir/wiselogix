@@ -9180,11 +9180,12 @@ html .joinusform .joinus_button_submit:after {
     font-size: 15px;
     line-height: 18px;
     color: #bfbfbf;
-    margin: 0
+    margin: 0;
 }
 
 .joinusform .en__submit button {
-    padding: 17px 40px
+    padding: 17px 40px !important;
+    line-height: 0 !important;
 }
 
 .hp2023_stats p {
@@ -15675,7 +15676,7 @@ ul.linostyle li {
 .footer_contact .contact_item {
     margin-bottom: 10px;
     display: flex;
-    gap: 5px;
+    gap: 10px;
     align-items: center
 }
 
@@ -16139,4 +16140,20 @@ body:not(.fl-builder-edit) .fl-row.fl-row-full-width.image_single .bg_img_captio
 }
 .footer_donate_button {
 	white-space: nowrap;
+}
+.footer_sn_icons a {
+	background: white;
+	border-radius: 100%;
+	padding: 10px;
+	width: 45px !important;
+	height: 45px !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer_sn_icons a i {
+	color: purple;
+}
+.footer_contact i {
+	font-size: 20px;
 }
