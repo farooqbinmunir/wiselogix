@@ -7,39 +7,14 @@ import { Image } from "next/image";
 // Importing CSS
 
 // Thirdparty Libs CSS
+import "../../public/assets/css/slick/slick.css";
 import "../../public/assets/css/bootstrap-3.4.1.css";
 import "../../public/assets/css/fontawesome.css";
-import "../../public/assets/css/jquery.magnificpopup.css";
-
-// import "../../public/assets/css/block-liberary.css";
-// import "../../public/assets/css/complianz-gdpr.css";
-// import "../../public/assets/css/wp-blocks.css";
-// import "../../public/assets/css/dashicons.min.css";
-// import "../../public/assets/css/ultimate-icons.css";
-
 // Merged Custom CSS
 import "../../public/assets/css/merged.css";
 import "../../public/assets/css/merged-responsive.css";
-
 import "../../public/assets/css/custom.css";
 import "../../public/assets/css/responsive.css";
-
-// Custom CSS
-// import "../../public/assets/css/homepage.css";
-// import "../../public/assets/css/layout.css";
-// import "../../public/assets/css/main.css";
-// import "../../public/assets/css/skin.css";
-// import "../../public/assets/css/bb-loop.css";
-// import "../../public/assets/css/bb-theme-accessible.css";
-// import "../../public/assets/css/focus.css";
-// import "../../public/assets/css/style.css";
-
-
-// Responsive CSS
-// import "../../public/assets/css/bb-loop-responsive.css";
-// import "../../public/assets/css/bb-theme-responsive.css";
-// import "../../public/assets/css/focus_responsive.css";
-// import "../../public/assets/css/homepage_responsive.css";
 
 
 const geistSans = Geist({
@@ -420,22 +395,8 @@ export default function RootLayout({ children }) {
 
 
         </footer>
-        <div role="status" id="site-wide-aria-status" className="sr-only"></div>
 
         {/* Scripts */}
-
-        {/* <Script src="assets/js/dompurify.js" /> */}
-        {/* <Script src="assets/js/waypoints.js" /> */}
-        {/* <Script src="assets/js/fitvids.js" /> */}
-        {/* <Script src="assets/js/cookie-popup.js" /> */}
-        {/* <Script src="assets/js/iframe-master.js" /> */}
-        {/* <Script src="assets/js/thorttle-debounce.js" /> */}
-        {/* <Script src="assets/js/jquery-magnificpopup.js" /> */}
-        {/* <Script src="/assets/js/bb-loop.js" strategy="afterInteractive" /> */}
-        {/* <Script src="/assets/js/isotope.js" strategy="afterInteractive" /> */}
-        {/* <Script src="/assets/js/imagesLoaded.js" strategy="afterInteractive" /> */}
-        {/* <Script src="/assets/js/filter.js" strategy="afterInteractive" /> */}
-        {/* <Script src="/assets/js/focus.js" strategy="afterInteractive" /> */}
         <Script src="assets/js/bootstrap.js" strategy="beforeInteractive" />
         <Script src="/assets/js/main.js" strategy="afterInteractive" />
         <Script src="/assets/js/custom.js" strategy="afterInteractive" />
