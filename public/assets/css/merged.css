@@ -8968,7 +8968,8 @@ div.fl-module-button.oxfam_button a:visited {
 }
 
 #joinusform_0,
-#joinusform_header {
+#joinusform_header,
+#joinusform {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr
