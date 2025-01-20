@@ -16154,3 +16154,6 @@ body:not(.fl-builder-edit) .fl-row.fl-row-full-width.image_single .bg_img_captio
 .footer_contact i {
 	font-size: 20px;
 }
+body:not(.home) header{
+    position: initial !important;
+}

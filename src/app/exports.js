@@ -1,5 +1,4 @@
 export {APIROUT, KEY} from './_data/data';
-export {default as class_Icon} from './_classes/class_icon';
 export {default as Provider} from './_components/Provider';
 export {default as Menu} from './_components/Menu';
 export {default as Header} from './_components/Header';

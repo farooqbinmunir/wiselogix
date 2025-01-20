@@ -1281,31 +1281,31 @@ export default function Home() {
       </div>
 
       {/*  </div> */}  {/* .fl-page-content */}
-      <div className="oxfam_sharing_container">
-        <h2 id="page_social_share_header">Share this page:</h2>
-        <ul aria-labelledby="page_social_share_header">
-          <li>
-            <a href="#"
-              target="_blank">
-              <span className="sr-only">Share to Facebook (opens in new window)</span>
-              <i className="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#"
-              target="_blank">
-              <span className="sr-only">Share to Twitter (opens in new window)</span>
-              <i className="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-enc-email="" target="_blank" className="mail-link">
-              <span className="sr-only">Share via email (opens in new window)</span>
-              <i className="fas fa-envelope"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div className="oxfam_sharing_container">
+          <h2 id="page_social_share_header">Share this page:</h2>
+          <ul aria-labelledby="page_social_share_header">
+            <li>
+              <a href="#"
+                target="_blank">
+                <span className="sr-only">Share to Facebook (opens in new window)</span>
+                <i className="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                target="_blank">
+                <span className="sr-only">Share to Twitter (opens in new window)</span>
+                <i className="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-enc-email="" target="_blank" className="mail-link">
+                <span className="sr-only">Share via email (opens in new window)</span>
+                <i className="fas fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
     </main>
   );
 }

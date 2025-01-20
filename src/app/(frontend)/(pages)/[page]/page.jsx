@@ -1,6 +1,6 @@
 'use client';
 import { useQuery } from "@tanstack/react-query";
-import {APIROUT, getData, Page} from '../../exports';
+import {APIROUT, getData, Page} from '@/app/exports';
 
 export default function SinglePage({params}){
     const pageSlug = params.page;

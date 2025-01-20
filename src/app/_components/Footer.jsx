@@ -45,7 +45,8 @@ export default function Footer() {
                 {/*<div><i className="ua-icon ua-icon-location-pin" aria-hidden="true"></i>39 McArthur Ave. Ottawa, Ontario, K1L 8L7</div>*/}
                 <div className="contact_item">
 					<i className="fas fa-envelope"></i>
-                  	<a href="mailto:info@gmail.com" className="mail-link">info@gmail.com</a></div>
+                  	<a href="mailto:info@gmail.com" className="mail-link">info@gmail.com</a>
+                </div>
                 <div className="contact_item">
 					<i className="fas fa-phone"></i>
                   	<a href="tel:"><span className="sr-only">Phone:&nbsp;</span>+123456789</a>
@@ -68,7 +69,7 @@ export default function Footer() {
                 <li><a href="#" target="_self">Get Involved</a></li>
                 <li><a href="#" target="_self">Blog</a></li>
                 <li><a href="#" target="_self">Resources</a></li>
-				        <li><a href="#" target="_self">Our Gallery</a></li>
+				<li><a href="#" target="_self">Our Gallery</a></li>
                 <li><a href="#" target="_self">Contact</a></li>
               </ul>
             </div>

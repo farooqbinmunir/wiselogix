@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Fyllan from '../_assets/images/fyllan.png';
+// import Fyllan from '../_assets/images/fyllan.png';
 import {Para, Title} from '../exports';
 export default function ModelPopup({id}){
     const short_desc = `Through a wide variety of mobile applications, we’ve developed a unique visual system.`;
@@ -12,7 +12,7 @@ export default function ModelPopup({id}){
                         <div className="mode-banner d-flex align-items-center">
                             <div className="model-banner-img">
                                 <div className="model-banner-img-wrap">
-                                    <Image className="model-banner-img-element" src={Fyllan} alt="Fyllan" title="Fyllan" width="400" height="300" />
+                                    <Image className="model-banner-img-element" src={'#'} alt="Fyllan" title="Fyllan" width="400" height="300" />
                                 </div>
                             </div>
                             <div className="model-banner-meta">

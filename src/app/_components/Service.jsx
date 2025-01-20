@@ -1,7 +1,6 @@
 import Image from "next/image";
 import {Title, Para} from '@/app/exports';
 import Link from "next/link";
-import Right_Arrow_Image from '../_assets/images/arrow-right.png';
 export default function Service ({service}){
     const {id, title, img, slug, description} = service;
     return (
@@ -16,7 +15,7 @@ export default function Service ({service}){
                         <Para text={description} classes="service-excerpt" />
                     </div>
                     <div className="service-arrow-btn">
-                        <Image className="service-arrow-img" src={Right_Arrow_Image} alt="Read More" title="Read More" height="20" width="20" />
+                        <Image className="service-arrow-img" src={'#'} alt="Read More" title="Read More" height="20" width="20" />
                     </div>
                 </div>
             </Link>
