@@ -22,43 +22,44 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <head>
-        <meta charSet="UTF-8" />
-        <title>Wiselogix Technologies</title>
 
-        <meta name="description" content="Wiselogix Technologies offers Web Development, App Development, Software Development and much more..." />
+  	return (
+		<html lang="en">
+		<head>
+			<meta charSet="UTF-8" />
+			<title>Wiselogix Technologies</title>
 
-        <link href="assets/images/favicon.ico" rel="favicon" type="image/x-icon" />
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
+			<meta name="description" content="Wiselogix Technologies offers Web Development, App Development, Software Development and much more..." />
 
-        {/*<!-- JS Files -->*/}
-        {/* Load jQuery first */}
-        <Script
-          src="/assets/js/jquery.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="/assets/js/jquery-migrate.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="/assets/js/slick.js"
-          strategy="afterInteractive"
-        />
-      </head>
-      <body className={`home page-template page-template-single-menuoverlap page-template-single-menuoverlap-php page page-id-43648 fl-builder fl-builder-2-8-3-7 fl-themer-1-4-11 fl-theme-1-7-14 fl-framework-bootstrap fl-preset-default fl-full-width os_Windows`}>
-        <Header />
-        {children}
-        <Footer />
+			<link href="assets/images/favicon.ico" rel="favicon" type="image/x-icon" />
+			<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+			<meta httpEquiv='X-UA-Compatible' content='IE=edge' />
 
-        {/* Scripts */}
-        <Script src="assets/js/bootstrap.js" strategy="beforeInteractive" />
-        <Script src="assets/js/main.js" strategy="afterInteractive" />
-        <Script src="assets/js/custom.js" strategy="afterInteractive" />
-      </body>
-    </html>
+			{/*<!-- JS Files -->*/}
+			{/* Load jQuery first */}
+			<Script
+			src="/assets/js/jquery.js"
+			strategy="beforeInteractive"
+			/>
+			<Script
+			src="/assets/js/jquery-migrate.js"
+			strategy="beforeInteractive"
+			/>
+			<Script
+			src="/assets/js/slick.js"
+			strategy="afterInteractive"
+			/>
+		</head>
+		<body className={`home page-template page-template-single-menuoverlap page-template-single-menuoverlap-php page page-id-43648 fl-builder fl-builder-2-8-3-7 fl-themer-1-4-11 fl-theme-1-7-14 fl-framework-bootstrap fl-preset-default fl-full-width os_Windows`}>
+			<Header />
+			{children}
+			<Footer />
+
+			{/* Scripts */}
+			<Script src="assets/js/bootstrap.js" strategy="beforeInteractive" />
+			<Script src="assets/js/main.js" strategy="afterInteractive" />
+			<Script src="assets/js/custom.js" strategy="afterInteractive" />
+		</body>
+		</html>
   );
 }
