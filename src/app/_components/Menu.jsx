@@ -38,7 +38,7 @@ export default function Menu(){
 				</li>
 				<li
 					data-id="menu-31-title"
-					className="">
+					className="menu-item-has-children">
 					<button
 						id="menu-31-title"
 						aria-expanded="false"
@@ -97,7 +97,7 @@ export default function Menu(){
 				</li>
 				<li
 					data-id="menu-32-title"
-					className="">
+					className="menu-item-has-children">
 					<button
 						id="menu-32-title"
 						aria-expanded="false"
@@ -174,7 +174,7 @@ export default function Menu(){
 				</li>
 				<li
 					data-id="menu-29941-title"
-					className="">
+					className="menu-item-has-children">
 					<button
 						id="menu-29941-title"
 						aria-expanded="false"
@@ -221,7 +221,7 @@ export default function Menu(){
 				</li>
 				<li
 					data-id="menu-29939-title"
-					className="">
+					className="menu-item-has-children">
 					<button
 						id="menu-29939-title"
 						aria-expanded="false"
@@ -256,7 +256,7 @@ export default function Menu(){
 				</li>
 				<li
 					data-id="menu-30191-title"
-					className="">
+					className="menu-item-has-children">
 					<button
 						id="menu-30191-title"
 						aria-expanded="false"
@@ -300,15 +300,8 @@ export default function Menu(){
 						</li>
 					</ul>
 				</li>
-                <li data-id="menu-40171-title">
-                    <a
-                        id="menu-40171-title"
-                        href="#"
-                        className="menu_main_mobile_shop menu-item menu-item-type-custom menu-item-object-custom"
-                        title="">
-                        Contact
-                        Us
-                    </a>
+                <li>
+                    <a href="#" className="menu_main_mobile_shop menu-item menu-item-type-custom menu-item-object-custom">Contact Us</a>
                 </li>
             </ul>
             {/* <ul className='nav-items'>

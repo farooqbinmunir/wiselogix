@@ -23,7 +23,7 @@ export default function Logo(){
         <>
             <div id="logo" className="logo">
                 <div className="logo_wrapper">
-                    <Link href='/' className="logo_link logo_img_link menu_main_logo menu-item menu-item-type-post_type menu-item-object-page" />
+                    <Link href='/' className="logo_link logo_img_link menu_main_logo menu-item">Ognwuche Foundation</Link>
                 </div>
             </div>
             {/* <div className="logo">
