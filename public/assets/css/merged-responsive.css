@@ -233,14 +233,14 @@
     /* #main-menu>ul>li:not(:last-child):after, */
     #main-menu ul.nav-items>li.menu-item-has-children::after {
         content: "";
-        background: url(../images/right_arrow.svg) 50%/cover no-repeat;
+        background: url(/_next/static/media/right_arrow.dc2d6879.svg) 50%/cover no-repeat;
         width: 7px;
         height: 12px;
-        transform: rotate(90deg);
+        transform: translate(0, -50%) rotate(90deg);
         opacity: 1;
         position: absolute;
         right: 4px;
-        top: 20px;
+        top: 50%;
     }
     #main-menu button.mainmenu_main {
         height: auto;
