@@ -220,7 +220,8 @@
         font-size: 16px;
         max-width: 115px
     }
-    #main-menu button.mainmenu_main {
+    #main-menu button.mainmenu_main,
+    #main-menu ul.nav-items>li>a {
         color: #44841a
     }
     #main-menu>ul>li {
