@@ -69,7 +69,7 @@ export default function Footer() {
                 <li><a href="#" target="_self">Get Involved</a></li>
                 <li><a href="#" target="_self">Blog</a></li>
                 <li><a href="#" target="_self">Resources</a></li>
-				<li><a href="#" target="_self">Our Gallery</a></li>
+				        <li><a href="#" target="_self">Our Gallery</a></li>
                 <li><a href="#" target="_self">Contact</a></li>
               </ul>
             </div>
