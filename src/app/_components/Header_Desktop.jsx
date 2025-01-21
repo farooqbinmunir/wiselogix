@@ -7,13 +7,13 @@ export default function Header_Desktop() {
 			<ul
 				className="menu-desktop"
 				aria-labelledby="nav-title">
-				<li>
+				<li className="menu-desktop-logo">
 					<Logo />
 				</li>
-				<li>
+				<li className="menu-desktop-nav">
 					<Menu />
 				</li>
-				<li>
+				<li className="menu-desktop-donate">
 					<Donate_Button />
 				</li>
 			</ul>

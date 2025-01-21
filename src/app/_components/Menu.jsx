@@ -300,9 +300,9 @@ export default function Menu(){
 						</li>
 					</ul>
 				</li>
-                <li>
+                {/* <li>
                     <a href="#" className="menu_main_mobile_shop menu-item menu-item-type-custom menu-item-object-custom">Contact Us</a>
-                </li>
+                </li> */}
             </ul>
             {/* <ul className='nav-items'>
                 {menuItems.map(m => <li key={m.id} id={`nav-item-${m.id}`} data-id={`${m.id}`} className={(m.url).slice(1) + ' nav-item'}><Link className='nav-item-link' href={m.url.split('wp').length > 1 ? m.url.split('wp')[1] : m.url.split('wp')[0]}>{m.title.rendered}</Link></li>)}
