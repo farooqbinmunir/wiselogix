@@ -357,16 +357,18 @@ button {
     border: none !important
 }
 
-.fl-page-header #main-menu a.menu_main_donate,
+#main-menu a.menu_main_donate,
 .footer-nav-donate a,
 .home-page-slide-button,
 button.oxfam_button.donate_submit_button.oxfam_orange_button {
     background-color: #008000 !important;
 }
 
-.fl-page-header #main-menu a.menu_main_donate:hover,
-.home-page-slide-button:hover {
+#main-menu a.menu_main_donate:hover,
+.home-page-slide-button:hover,
+.donate_button_green:hover {
     background-color: #FFA500 !important;
+    color: white !important;
 }
 
 .fl-node-7byk0e6rlwdp>.fl-row-content-wrap,
@@ -5926,41 +5928,35 @@ body.rtl .fl-screen-reader-text {
     margin: 0 auto
 }
 
-.fl-page-header {
-    border-color: #d9d9d9;
-    background-color: #000;
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #757575
 }
 
-.fl-page-header *,
-.fl-page-header h1,
-.fl-page-header h2,
-.fl-page-header h3,
-.fl-page-header h4,
-.fl-page-header h5,
-.fl-page-header h6 {
-    color: #757575
-}
-
-.fl-page-header .navbar-nav li.current-menu-ancestor>a,
-.fl-page-header .navbar-nav li.current-menu-item>a,
-.fl-page-header .navbar-nav li.current-menu-item~li.current-menu-item>a,
-.fl-page-header .navbar-nav li.current-menu-parent>a,
-.fl-page-header .navbar-nav li>a,
-.fl-page-header .navbar-nav li>a:focus,
-.fl-page-header .navbar-nav li>a:hover,
-.fl-page-header a,
-.fl-page-header a *,
-.fl-page-header a.fab,
-.fl-page-header a.fab:focus,
-.fl-page-header a.fab:hover,
-.fl-page-header a.fas,
-.fl-page-header a.fas:focus,
-.fl-page-header a.fas:hover,
-.fl-page-header a:focus,
-.fl-page-header a:focus *,
-.fl-page-header a:hover,
-.fl-page-header a:hover * {
+.navbar-nav li.current-menu-ancestor>a,
+.navbar-nav li.current-menu-item>a,
+.navbar-nav li.current-menu-item~li.current-menu-item>a,
+.navbar-nav li.current-menu-parent>a,
+.navbar-nav li>a,
+.navbar-nav li>a:focus,
+.navbar-nav li>a:hover,
+a,
+a *,
+a.fab,
+a.fab:focus,
+a.fab:hover,
+a.fas,
+a.fas:focus,
+a.fas:hover,
+a:focus,
+a:focus *,
+a:hover,
+a:hover * {
     color: #61a534
 }
 
@@ -8822,7 +8818,8 @@ body.fl-builder-edit footer {
     background: #fff
 }
 
-.fl-page-header #main-menu a.menu_main_donate,
+#main-menu a.menu_main_donate,
+.donate_button_green,
 .joinusform .joinus_button_submit {
     font-family: var(--tstarpro-heavy);
     text-transform: uppercase;
@@ -8839,7 +8836,8 @@ body.fl-builder-edit footer {
     border: 0
 }
 
-.fl-page-header #main-menu a.menu_main_donate:after,
+#main-menu a.menu_main_donate:after,
+.donate_button_green:after,
 .joinusform .joinus_button_submit:after {
     content: "";
     background-image: url(../images/hp2023_arrow_white.svg);
@@ -10309,7 +10307,7 @@ a.uabb-button.hidefocus:focus {
     src: url(../fonts/icomoond41d.eot?#iefix) format("embedded-opentype"), url(../fonts/icomoon.woff) format("woff"), url(../fonts/icomoon.ttf) format("truetype"), url(../fonts/icomoon.svg#icomoon) format("svg")
 }
 
-body.fl-builder-edit header.fl-page-header {
+body.fl-builder-edit header {
     display: none
 }
 
@@ -15261,7 +15259,7 @@ header.scrollfixed #main-menu .menu_main_logo {
     white-space: nowrap
 }
 
-.fl-page-header #main-menu a.menu_mobile_donate {
+#main-menu a.menu_mobile_donate {
     border: 1px solid #fff;
     color: #fff;
     padding: 2px 13px;
@@ -15273,7 +15271,7 @@ header.scrollfixed #main-menu .menu_main_logo {
     text-decoration: none
 }
 
-.fl-page-header #main-menu a.menu_mobile_donate:hover {
+#main-menu a.menu_mobile_donate:hover {
     color: #44841a;
     background: #fff
 }
@@ -15287,7 +15285,7 @@ header.scrollfixed #main-menu .menu_main_logo {
     border-top: 0 solid #bbb
 }
 
-.fl-page-header #main-menu a {
+#main-menu a {
     color: #666;
     font-family: inherit;
     font-size: 1.6rem;
@@ -15299,8 +15297,8 @@ header.scrollfixed #main-menu .menu_main_logo {
     text-decoration: none
 }
 
-.fl-page-header #main-menu a:focus,
-.fl-page-header #main-menu a:hover {
+#main-menu a:focus,
+#main-menu a:hover {
     text-decoration: underline
 }
 
@@ -15351,7 +15349,7 @@ header.scrollfixed #main-menu .menu_main_logo {
     padding-bottom: 30px
 }
 
-.fl-page-header #main-menu a.menu_main_logo {
+#main-menu a.menu_main_logo {
     color: transparent !important;
     margin-right: 20px;
     font-size: 0
@@ -15373,7 +15371,7 @@ header.scrollfixed #main-menu .menu_main_logo {
     transition: all .25s ease;
 }
 
-.fl-page-header #main-menu a.menu_main_donate {
+#main-menu a.menu_main_donate {
     font-size: 2rem;
     padding: 5px 35px 6px;
     position: relative;
@@ -15381,9 +15379,9 @@ header.scrollfixed #main-menu .menu_main_logo {
     max-width: 160px
 }
 
-.fl-page-header #main-menu li[data-id=menu-40170-title],
-.fl-page-header #main-menu li[data-id=menu-40171-title],
-.fl-page-header #main-menu li[data-id=menu-40172-title] {
+#main-menu li[data-id=menu-40170-title],
+#main-menu li[data-id=menu-40171-title],
+#main-menu li[data-id=menu-40172-title] {
     display: none
 }
 

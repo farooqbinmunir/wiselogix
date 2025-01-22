@@ -4,9 +4,7 @@ import Donate_Button from "./Donate_Button";
 export default function Header_Desktop() {
 	return (
 		<>
-			<ul
-				className="menu-desktop"
-				aria-labelledby="nav-title">
+			<ul className="menu-desktop" aria-labelledby="nav-title">
 				<li className="menu-desktop-logo">
 					<Logo />
 				</li>
@@ -14,7 +12,7 @@ export default function Header_Desktop() {
 					<Menu />
 				</li>
 				<li className="menu-desktop-donate">
-					<Donate_Button />
+					<Donate_Button screen="desktop" theme="green" />
 				</li>
 			</ul>
 		</>

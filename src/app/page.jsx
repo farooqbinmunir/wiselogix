@@ -1,168 +1,21 @@
 import Image from "next/image";
+import Banner from "@/app/_components/Banner";
 
 export default function Home() {
   return (
     <main id="fl-main-content" className="fl-page-content" itemProp="mainContentOfPage">
-      {/* <div className="fl-page-content" itemProp="mainContentOfPage"> */}
 
 
       <div className="container">
         <div className="row">
-
-
           <div className="fl-content col-md-12">
 
-            <div className="article-element fl-post post-43648 page type-page status-publish has-post-thumbnail hentry"
-              id="fl-post-43648" itemScope itemType="https://schema.org/BlogPosting">
-
-
-
+            <div className="article-element fl-post post-43648 page type-page status-publish has-post-thumbnail hentry" id="fl-post-43648" itemScope itemType="https://schema.org/BlogPosting">
+			
               <div className="fl-post-content clearfix" itemProp="text">
                 <div className="fl-builder-content fl-builder-content-43648 fl-builder-content-primary fl-builder-global-templates-locked"
                   data-post-id="43648">
-                  <div id="section_banner" className="fl-row fl-row-full-width fl-row-bg-none fl-node-glx1n7jzh8yv fl-row-default-height fl-row-align-top nopadding home-hero-row"
-                    data-node="glx1n7jzh8yv">
-                    <div className="fl-row-content-wrap">
-                      <div className="fl-row-content fl-row-full-width fl-node-content">
-
-                        <div className="fl-col-group fl-node-9znbyoxjad8f" data-node="9znbyoxjad8f">
-                          <div className="fl-col fl-node-s8lh40ibfao9" data-node="s8lh40ibfao9">
-                            <div className="fl-col-content fl-node-content">
-                              <div className="fl-module fl-module-html fl-node-dn7gz1my980q"
-                                data-node="dn7gz1my980q">
-                                <div className="fl-module-content fl-node-content">
-                                  <div className="fl-html">
-                                    <div className="home-page-hero-box">
-                                      <div className="home-page-sider">
-                                        <div className="home-page-slide"
-                                          style={{
-                                            backgroundImage: `url("assets/images/Oxfam-InuruID-370859-Kenya-2024-05-29.jpg")`,
-                                            backgroundPosition: "center",
-                                          }}
-                                          >
-                                          <div className="home-page-slide-container">
-                                            <div className="home-page-slide-info">
-                                              <div
-                                                className="home-page-slide-box">
-                                                <h1
-                                                  className="home-page-slide-title">
-                                                  Empower Women’s Rights</h1>
-                                                <p
-                                                  className="home-page-slide-text">
-                                                  Your donation helps women access equality, justice, and opportunity.
-                                                </p>
-
-                                                <a className="home-page-slide-button"
-                                                  href="#">Donate
-                                                  Now</a>
-                                              </div>
-                                              <div
-                                                className="home-page-slide-credit">
-                                                <span className="white">Photo: wiselogix</span>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div className="home-page-slide"
-                                          style={{
-                                            backgroundImage: `url("assets/images/Oxfam-InuruID-370859-Kenya-2024-05-29.jpg")`,
-                                            backgroundPosition: "center",
-                                          }}
-                                          >
-                                          <div className="home-page-slide-container">
-                                            <div className="home-page-slide-info">
-                                              <div
-                                                className="home-page-slide-box">
-                                                <h1
-                                                  className="home-page-slide-title">
-                                                  Support Women Today</h1>
-                                                <p
-                                                  className="home-page-slide-text">Donate now to protect rights and build brighter futures for women.</p>
-
-                                                <a className="home-page-slide-button"
-                                                  href="#">Donate
-                                                  Now</a>
-                                              </div>
-                                              <div
-                                                className="home-page-slide-credit">
-                                                <span className="white">Photo: wiselogix</span>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div className="home-page-slide"
-                                        style={{
-                                          backgroundImage: `url("assets/images/Oxfam-InuruID-352913-Sierra-Leone-2023-01-09.jpg")`,
-                                          backgroundPosition: "center",
-                                        }}
-                                          >
-                                          <div className="home-page-slide-container">
-                                            <div className="home-page-slide-info">
-                                              <div
-                                                className="home-page-slide-box">
-                                                <h1
-                                                  className="home-page-slide-title">
-                                                  Stand for Women’s Rights</h1>
-                                                <p
-                                                  className="home-page-slide-text">
-                                                  Your support drives change and empowers women globally.
-                                                </p>
-
-                                                <a className="home-page-slide-button"
-                                                  href="#">Donate
-                                                  Now</a>
-                                              </div>
-                                              <div
-                                                className="home-page-slide-credit">
-                                                <span className="white">Photo: Lorem ipsum dolor</span>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div className="home-page-tabs-container">
-                                        <div className="home-page-tabs">
-
-                                          <button className="home-page-tab">
-                                            <span
-                                              className="home-page-tab-index">01</span>
-                                            <span className="home-page-tab-text">Slide 1</span>
-                                          </button>
-
-                                          <button className="home-page-tab">
-                                            <span
-                                              className="home-page-tab-index">02</span>
-                                            <span
-                                              className="home-page-tab-text">Slide 2</span>
-                                          </button>
-
-                                          <button className="home-page-tab">
-                                            <span
-                                              className="home-page-tab-index">03</span>
-                                            <span className="home-page-tab-text">Slide 3</span>
-                                          </button>
-                                        </div>
-                                      </div>
-                                      <div className="slider-header">
-                                        <div
-                                          className="slider-dot slider-dot-two-column">
-                                        </div>
-                                        <div
-                                          className="slider-ctl slider-ctl-two-column">
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <Banner />
                   <div id="section_ending_poverty_part_1" className="fl-row fl-row-full-width fl-row-bg-none fl-node-n4xazeg3chu6 fl-row-default-height fl-row-align-center"
                     data-node="n4xazeg3chu6">
                     <div className="fl-row-content-wrap">
@@ -768,8 +621,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div id="section_compaigns" className="fl-row fl-row-full-width fl-row-bg-none fl-node-zhf7rwmgj49t fl-row-default-height fl-row-align-center campaigns-section-wrap"
-									data-node="zhf7rwmgj49t">
+                  <div id="section_compaigns" className="fl-row fl-row-full-width fl-row-bg-none fl-node-zhf7rwmgj49t fl-row-default-height fl-row-align-center campaigns-section-wrap" data-node="zhf7rwmgj49t">
                     <div className="fl-row-content-wrap">
                       <div className="fl-row-content fl-row-fixed-width fl-node-content">
 
@@ -1263,11 +1115,6 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="uabb-js-breakpoint" 
-                style={{
-                  display: "none",
-                }}
-                ></div>
               </div>
 
 
