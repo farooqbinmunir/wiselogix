@@ -360,13 +360,15 @@ button {
 #main-menu a.menu_main_donate,
 .footer-nav-donate a,
 .home-page-slide-button,
+.standard_button,
 button.oxfam_button.donate_submit_button.oxfam_orange_button {
     background-color: #008000 !important;
 }
 
 #main-menu a.menu_main_donate:hover,
 .home-page-slide-button:hover,
-.donate_button_green:hover {
+.donate_button_green:hover,
+.standard_button:hover {
     background-color: #FFA500 !important;
     color: white !important;
 }
@@ -589,11 +591,9 @@ span.highligh_green {
     .carrousel-news .post h3 {
         width: 310px
     }
-    .home-page-slide-button:after {
+    .home-page-slide-button:after,
+    .standard_button::after {
         top: -5px
-    }
-    body.os_MacOS .home-page-slide-button:after {
-        left: 10px
     }
 }
 
@@ -9425,7 +9425,10 @@ footer {
 
 .home-page-slide-button,
 .home-page-slide-button:focus,
-.home-page-slide-button:hover {
+.home-page-slide-button:hover,
+.standard_button,
+.standard_button:focus,
+.standard_button:hover {
     text-transform: uppercase;
     font-family: var(--tstarpro-heavy);
     font-weight: 400;
@@ -9440,7 +9443,8 @@ footer {
     gap: 14.5px
 }
 
-.home-page-slide-button:after {
+.home-page-slide-button:after,
+.standard_button::after {
     content: "";
     background-image: url(../images/hp2023_arrow_white.svg);
     width: 14px;
@@ -9451,11 +9455,13 @@ footer {
     top: -2px
 }
 
-.home-page-slide-button {
+.home-page-slide-button,
+.standard_button {
     transition: all .25s ease
 }
 
-.home-page-slide-button:hover {
+.home-page-slide-button:hover,
+.standard_button:hover {
     transform: scale(1.05)
 }
 
