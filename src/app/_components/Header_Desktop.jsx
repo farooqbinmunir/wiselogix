@@ -12,7 +12,7 @@ export default function Header_Desktop() {
 					<Menu />
 				</li>
 				<li className="menu-desktop-donate">
-					<Donate_Button screen="desktop" theme="green" />
+					<Donate_Button cls="menu_main_donate header-nav-donate" theme="green" />
 				</li>
 			</ul>
 		</>

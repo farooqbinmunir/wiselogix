@@ -2,9 +2,9 @@
 import Image from 'next/image';
 import { useQuery } from '@tanstack/react-query';
 import {FindWithMe, BestSkills, getHomepage, getHomepageFeaturedImage} from '../exports';
-import Banner_Post from "./Banner_Post";
+import Banner_Slider from "./Banner_Slider";
 
-export default function Banner (){
+export default function Banner ({cls=""}) {
     // let heroImage;
 	// let slug = `home`;
 	// const {data: home} = useQuery({
@@ -43,7 +43,7 @@ export default function Banner (){
 	];
 
     return(
-		<div id="section_banner" className="fl-row fl-row-full-width fl-row-bg-none fl-node-glx1n7jzh8yv fl-row-default-height fl-row-align-top nopadding home-hero-row" data-node="glx1n7jzh8yv">
+		<div id="section_banner" className={`fl-row fl-row-full-width fl-row-bg-none fl-node-glx1n7jzh8yv fl-row-default-height fl-row-align-top nopadding home-hero-row ${cls}`}>
 			<div className="fl-row-content-wrap">
 				<div className="fl-row-content fl-row-full-width fl-node-content">
 					<div className="fl-col-group fl-node-9znbyoxjad8f" data-node="9znbyoxjad8f">
@@ -53,43 +53,7 @@ export default function Banner (){
 								data-node="dn7gz1my980q">
 									<div className="fl-module-content fl-node-content">
 										<div className="fl-html">
-											<div className="home-page-hero-box">
-												<div className="home-page-sider">
-													{
-														bannerPosts.map((post, index) => {
-															return <Banner_Post post={post} index={index} key={index} />;
-														})
-													}
-													
-												</div>
-												<div className="home-page-tabs-container">
-													<div className="home-page-tabs">
-
-														<button className="home-page-tab">
-														<span
-															className="home-page-tab-index">01</span>
-														<span className="home-page-tab-text">Slide 1</span>
-														</button>
-
-														<button className="home-page-tab">
-														<span
-															className="home-page-tab-index">02</span>
-														<span
-															className="home-page-tab-text">Slide 2</span>
-														</button>
-
-														<button className="home-page-tab">
-														<span
-															className="home-page-tab-index">03</span>
-														<span className="home-page-tab-text">Slide 3</span>
-														</button>
-													</div>
-												</div>
-												<div className="slider-header">
-													<div className="slider-dot slider-dot-two-column"></div>
-													<div className="slider-ctl slider-ctl-two-column"></div>
-												</div>
-											</div>
+											<Banner_Slider bannerPosts={bannerPosts} cls="banner_slider_container" />
 										</div>
 									</div>
 								</div>

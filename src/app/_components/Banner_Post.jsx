@@ -10,7 +10,7 @@ export default function Banner_Post({post, index}) {
                 <div className="home-page-slide-box">
                     <h1 className="home-page-slide-title">{post.title}</h1>
                     <p className="home-page-slide-text">{post.desc}</p>
-                    <Donate_Button theme="green" desktop="all" />
+                    <Donate_Button theme="green" desktop="all" cls="home-page-slide-button" />
                     {/* <a className="home-page-slide-button" href="#">Donate Now</a> */}
                 </div>
                 <div className="home-page-slide-credit">

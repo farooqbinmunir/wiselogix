@@ -6,7 +6,7 @@ export default function Header_Mobile() {
             <div className="menu-mobile-header">
                 <Logo />
                 {/* <a href="/" className="menu_main_logo">Oxfam Canada Home Page</a> */}
-                <Donate_Button screen="mobile" theme="orange" />
+                <Donate_Button cls="menu_mobile_donate" theme="orange" />
                 <button
                     className="mobile_menu_toggle"
                     aria-expanded="false"
