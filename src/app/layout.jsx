@@ -37,20 +37,12 @@ export default function RootLayout({ children }) {
 
 			{/*<!-- JS Files -->*/}
 			{/* Load jQuery first */}
-			<Script
-			src="/assets/js/jquery.js"
-			strategy="beforeInteractive"
-			/>
-			<Script
-			src="/assets/js/jquery-migrate.js"
-			strategy="beforeInteractive"
-			/>
-			<Script
-			src="/assets/js/slick.js"
-			strategy="afterInteractive"
-			/>
+			<Script src="/assets/js/jquery.js" strategy="beforeInteractive" />
+			<Script src="/assets/js/jquery-migrate.js" strategy="beforeInteractive" />
+			<Script src="/assets/js/slick.js" strategy="afterInteractive" />
 		</head>
 		<body className={`home page-template page-template-single-menuoverlap page-template-single-menuoverlap-php page page-id-43648 fl-builder fl-builder-2-8-3-7 fl-themer-1-4-11 fl-theme-1-7-14 fl-framework-bootstrap fl-preset-default fl-full-width os_Windows`}>
+			
 			<Header />
 			{children}
 			<Footer />

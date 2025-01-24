@@ -1,6 +1,6 @@
-export default function Hgroup({headingTxt, paraTxt, textHighlight = '', cls="", textAlign = 'left'}) {
+export default function Hgroup({headingTxt, paraTxt, textHighlight = '', cls="", textAlign = 'left', style={}}) {
     return (
-        <hgroup className = {`${cls} standard_hgroup`} style={{textAlign: textAlign}}>
+        <hgroup className = {`${cls} standard_hgroup`} style={{...style, textAlign: textAlign}}>
             <h2 className={`hightlighted_heading fl-heading standard_hgroup_heading`}>
                 <span className="hightlighted_heading_text fl-heading-text">
                     {headingTxt}
