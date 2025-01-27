@@ -2,7 +2,8 @@ import Script from 'next/script';
 import { Link } from 'next/link';
 import { Head } from "next/head";
 import { Image } from "next/image";
-import {Header, Footer} from "@/app/exports";
+import Header from '@/app/_components/Header';
+import Footer from '@/app/_components/Footer';
 
 // IMPORTING CSS
 
@@ -20,7 +21,6 @@ export const metadata = {
   title: "Wiselogix Nextjs Application",
   description: "by Farooq Bin Munir",
 };
-
 export default function RootLayout({ children }) {
 
   	return (

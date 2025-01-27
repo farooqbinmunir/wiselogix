@@ -1,4 +1,3 @@
-'use client';
 import {Container, APIROUT, getData, Loading, Title} from '@/app/exports';
 import {useQuery} from '@tanstack/react-query';
 export default function Service({params}){

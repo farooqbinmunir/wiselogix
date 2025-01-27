@@ -1,30 +1,32 @@
-'use client';
 import Link from "next/link";
-import { getMenus, getMenusItems} from "../exports";
-import {useQuery, useSuspenseQuery} from '@tanstack/react-query';
-export default function Menu(){
-
-    // let menuItems;
-    // const menuSlug = `primary`;
-    // const {data: menus} = useQuery({
-    //     queryKey: ['getMenu', menuSlug],
-    //     queryFn: getMenus,
-    // });
-    // const menuId = menus?.[0].id;
-    // const {status, data} = useQuery({
-    //     queryKey: ['getMenuItems', menuId],
-    //     queryFn: getMenusItems,
-    //     enabled: !!menuId,
-    // });
-    // if(status == 'pending') return <h3>&#127744; Loading...</h3>;
-    // if(status == 'success'){
-    //     menuItems = data;
-    // }
+import client from "../../../config.js";
+export default async function Menu(){
+	let menuQuery = `query menuQuery {
+		menu(id: "4", idType: DATABASE_ID) {
+			menuItems {
+			edges {
+				node {
+				label
+				url
+				title
+				}
+			}
+			}
+		}
+	}`;
+	let {menu: {menuItems: {edges: allMenuItems}}} = await client.request(menuQuery);
 	
     return(
         <>
             <ul className='nav-items'>
-                <li>
+				{allMenuItems.map((menuItem, index) => (
+					<li key={index}>
+						<a href={menuItem.node.url} className="menu_main_mobile_shop menu-item">
+							<button id="" aria-expanded="false" className="mainmenu_main menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">{menuItem.node.label}</button>
+						</a>
+					</li>
+				))}
+                {/* <li>
 					<a
 						href="/"
 						className="menu_main_mobile_shop menu-item">
@@ -299,7 +301,7 @@ export default function Menu(){
 							</a>
 						</li>
 					</ul>
-				</li>
+				</li> */}
                 {/* <li>
                     <a href="#" className="menu_main_mobile_shop menu-item menu-item-type-custom menu-item-object-custom">Contact Us</a>
                 </li> */}

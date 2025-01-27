@@ -1,4 +1,3 @@
-"use client";
 import Header_TopBar from "./Header_TopBar";
 import Header_MainRow from "./Header_MainRow";
 export default function Header() {

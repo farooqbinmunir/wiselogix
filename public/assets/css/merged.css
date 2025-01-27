@@ -8751,18 +8751,16 @@ div.fl-module-button.oxfam_button a:visited {
 #joinusform {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .en__submit {
     position: relative;
     right: auto
 }
-
 .en__field--text {
     width: 95% !important
 }
-
 .joinus-form .joinusform .en__submit {
 	position: relative;
 	top: 0;
@@ -8809,7 +8807,6 @@ body.fl-builder-edit footer {
     z-index: -1;
     background: linear-gradient(180deg, #000 20%, transparent)
 }
-
 .page-template-single-menuoverlap #main-menu:hover {
     background: #fff
 }
@@ -15203,7 +15200,7 @@ header.scrollfixed #main-menu button.mainmenu_main {
     color: #44841a
 }
 
-#main-menu:focus-within .menu_main_logo,
+/* #main-menu:focus-within .menu_main_logo,
 #main-menu .menu_main_logo {
     background: url(../images/white-logo.png) center center / cover no-repeat;
 }
@@ -15211,7 +15208,7 @@ header.scrollfixed #main-menu button.mainmenu_main {
 header #main-menu:hover .menu_main_logo,
 header.scrollfixed #main-menu .menu_main_logo {
     background: url(../images/black-logo.png) center center / cover no-repeat;
-}
+} */
 
 #main-menu button.mainmenu_main {
     font-family: Oxfam TSTAR PRO bold;
@@ -15368,7 +15365,7 @@ header.scrollfixed #main-menu .menu_main_logo {
 } */
 
 #main-menu .menu_main_logo {
-    width: 1200%;
+    /* width: 1200%; */
     height: 77px;
     text-decoration: none;
     transition: all .25s ease;
