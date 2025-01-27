@@ -1,29 +1,23 @@
-export default function Share_This_Page_Links({cls="", style={}}) {
+import client from '../../../config.js';
+export default async function Share_This_Page_Links({cls="", style={}}) {
+
+
+    const shareThisPageLinksQuery = `query FooterBottomHTML {
+		pages(where: {id: 42}) { # Page id for (Custom Data) page, all custom data we'll get from this page using ACF
+			edges {
+				node {
+					customData {
+						shareThisPageSection
+					}
+				}
+			}
+		}
+	}`;
+	const {pages: {edges} } = await client.request(shareThisPageLinksQuery);
+	const shareThisPageHTML = edges[0]?.node?.customData?.shareThisPageSection;
     return (
         <>
-        <div id="share_this_page_links" className={`${cls} oxfam_sharing_container`} style={style}>
-            <h2 id="page_social_share_header">Share this page:</h2>
-            <ul aria-labelledby="page_social_share_header">
-                <li>
-                    <a href="#" target="_blank">
-                        <span className="sr-only">Share to Facebook (opens in new window)</span>
-                        <i className="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <span className="sr-only">Share to Twitter (opens in new window)</span>
-                        <i className="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" data-enc-email="" target="_blank" className="mail-link">
-                        <span className="sr-only">Share via email (opens in new window)</span>
-                        <i className="fas fa-envelope"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <div id="share_this_page_links" dangerouslySetInnerHTML={{__html: shareThisPageHTML}} className="oxfam_sharing_container"></div>
         </>
     );
 }

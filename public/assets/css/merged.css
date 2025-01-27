@@ -8764,17 +8764,17 @@ div.fl-module-button.oxfam_button a:visited {
 }
 
 .joinus-form .joinusform .en__submit {
-    order: 4;
-    position: relative;
-    top: 0;
-    right: auto !important;
-    left: 0 !important
+	position: relative;
+	top: 0;
+	right: auto !important;
+	left: 0 !important;
+	grid-column: 4 / span 1;
+	grid-row: 1 / span 1;
 }
 
-.en__field--question.en__field--147505.en__field--opt-in,
+.en__field--question.en__field--147505.en__field--opt-in, 
 .en__field--question.en__field--147505_inheader.en__field--opt-in {
-    order: 5;
-    grid-column: 1/5
+	grid-column: 1 / 5;
 }
 
 .page-id-43112 .oxfam_sharing_container {
