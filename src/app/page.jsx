@@ -3,8 +3,8 @@ import Banner from "@/app/_components/Banner";
 import Section_EndingPoverty from "@/app/_components/Section_EndingPoverty";
 import Section_Contributers from "@/app/_components/Section_Contributers";
 import Section_SupportNow from "@/app/_components/Section_SupportNow";
-import Section_HumanRights from "@/app/_components/Section_HumanRights";
-import Section_Compaigns from "@/app/_components/Section_Compaigns";
+import Section_Events from "@/app/_components/Section_Events";
+import Section_Projects from "@/app/_components/Section_Projects";
 import Section_TerritoryAcknowledge from "@/app/_components/Section_TerritoryAcknowledge";
 import Section_News from "@/app/_components/Section_News";
 import Section_Joinus from "@/app/_components/Section_Joinus";
@@ -27,8 +27,8 @@ export default function Home() {
 								<Section_EndingPoverty cls="ending_poverty_component" />
 								<Section_Contributers cls="contributers_component" />
 								<Section_SupportNow cls="support_now_component" />
-								<Section_HumanRights cls="human_rights_component" />
-								<Section_Compaigns cls="compaigns_component" />
+								<Section_Events cls="events_component" />
+								<Section_Projects cls="compaigns_component" />
 								<Section_TerritoryAcknowledge cls="territory_acknowledge_component" />
 								<Section_News cls="news_component" />
 								<Section_Joinus cls="joinus_component" />

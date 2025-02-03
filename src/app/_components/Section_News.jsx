@@ -1,6 +1,17 @@
 import Hgroup from "./Hgroup";
 import Slider_News from "./Slider_News";
-export default function Section_News({cls="", style={}}){
+import client from '../../../config.js';
+export default async function Section_News({cls="", style={}}){
+    const newsHeaderQuery = `{
+        themeSettings {
+            homeRecentNews {
+                recentNewsHeading
+                recentNewsSubheadingHighlighted
+                recentNewsDesc
+            }
+        }
+    }`;
+    const {themeSettings: {homeRecentNews: newsHeader}} = await client.request(newsHeaderQuery);
     return (
         <>
             <div id="section_news" className={`${cls} fl-row fl-row-full-width fl-row-bg-color fl-node-y054nebhsr8a fl-row-default-height fl-row-align-center`} data-node="y054nebhsr8a" style={style}>
@@ -12,9 +23,9 @@ export default function Section_News({cls="", style={}}){
                             <div className="fl-col fl-node-l4qsjirgzc8x" data-node="l4qsjirgzc8x">
                                 <div className="fl-col-content fl-node-content">
                                     <Hgroup 
-                                        headingTxt="Stay Updated on Women’s Rights"
-                                        textHighlight="Recent News"
-                                        paraTxt="Get the latest updates on stories, initiatives, and progress in the fight for women’s equality worldwide."
+                                        headingTxt={newsHeader.recentNewsHeading}
+                                        textHighlight={newsHeader.recentNewsSubheadingHighlighted}
+                                        paraTxt={newsHeader.recentNewsDesc}
                                         cls="fl-node-ylnt90hi3vwc"
                                         style={{width: '60%'}}
                                     />

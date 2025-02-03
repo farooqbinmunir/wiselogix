@@ -1,10 +1,19 @@
 import Hgroup from "./Hgroup";
-export default function EndingPoverty_Header({cls = ""}) {
-    const headerInfo = {
-        title: "Ending Poverty, Promoting Equality.",
-        highlightedText: "United for Change.",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tellus venenatis, luctus leo sit amet, mollis risus. Aenean elementum quis nunc eu auctor. Vivamus elementum sapien a lobortis rhoncus. Sed bibendum nisl non nulla dictum scelerisque. Integer ac libero orci. Quisque posuere ante nec nibh sodales dictum:"
-    };
+import client from "../../../config.js";
+export default async function EndingPoverty_Header({cls = ""}) {
+
+    const endingPovertyHeaderQuery = `query endingPoverty {
+        themeSettings {
+            homeEndingPovertySection {
+                endingPovertyTitle
+                endingPovertyHighlightedSubheading
+                endingPovertyDescription
+            }
+        }
+    }`;
+
+    const {themeSettings: {homeEndingPovertySection: endingPoverty}} = await client.request(endingPovertyHeaderQuery);
+
     return (
         <div id="section_ending_poverty_header" className={`${cls} fl-row fl-row-full-width fl-row-bg-none fl-node-n4xazeg3chu6 fl-row-default-height fl-row-align-center`} data-node="n4xazeg3chu6">
             <div className="fl-row-content-wrap">
@@ -13,9 +22,9 @@ export default function EndingPoverty_Header({cls = ""}) {
                         <div className="fl-col fl-node-l5zxri1gmafd" data-node="l5zxri1gmafd">
                             <div className="fl-col-content fl-node-content">
                                 <Hgroup 
-                                    headingTxt={headerInfo.title} 
-                                    paraTxt={headerInfo.desc} 
-                                    textHighlight={headerInfo.highlightedText} 
+                                    headingTxt={endingPoverty.endingPovertyTitle} 
+                                    paraTxt={endingPoverty.endingPovertyDescription} 
+                                    textHighlight={endingPoverty.endingPovertyHighlightedSubheading} 
                                     textAlign="center" 
                                 />
                             </div>

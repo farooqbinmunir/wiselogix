@@ -1,3 +1,4 @@
+import Donate_Button from "./Donate_Button";
 import client from '../../../config.js';
 export default async function Footer() {
 	// /* Footer Social Links */
@@ -47,6 +48,21 @@ export default async function Footer() {
 	}`;
 	const {menu: {menuItems: {edges: linkItems}}} = await client.request(usefulLinksQuery);
 
+	const col_3_query = `{
+		themeSettings {
+			frontEndSettings {
+				footerColumn3 {
+					footerColumn3Desc
+					footerLogo {
+						node {
+							sourceUrl
+						}
+					}
+				}
+			}
+		}
+	}`;
+	const {themeSettings: {frontEndSettings: {footerColumn3}}} = await client.request(col_3_query);
     return (
 		<>
 		{/* {console.log(fw1_first_elementObject)} */}
@@ -104,7 +120,12 @@ export default async function Footer() {
 				{/* Footer Column 2 */}
 
 				{/* Footer Column 3 */}
-				{/* <div className="footer_col column3" dangerouslySetInnerHTML={{ __html: fw3_first_elementObject.content }}></div> */}
+				<div className="footer_col column3">
+					<img className="oxfam_logo" src={footerColumn3.footerLogo.node.sourceUrl} aria-hidden="true" alt=""
+						height="144" width="362" />
+					<div className="footer_member">{footerColumn3.footerColumn3Desc}</div>
+					<Donate_Button cls={`footer_donate_button`} theme="oranage" />
+				</div>
 				{/* Footer Column 3 */}
           	</div>
 

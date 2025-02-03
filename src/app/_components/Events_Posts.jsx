@@ -1,5 +1,6 @@
-import HR_Post from "./HR_Post";
-export default function HR_Posts({cls = ""}){
+import Events_Post from "./Events_Post";
+import client from '../../../config.js';
+export default async function Events_Posts({cls = ""}){
     const posts = [
         {
             id: 1,
@@ -33,12 +34,37 @@ export default function HR_Posts({cls = ""}){
             terms: "Lorem ipsum dolor sit."
         }
     ];
+
+
+    const eventPostsQuery = `{
+        ourEvents(first: 6) {
+            nodes {
+                databaseId
+                title
+                uri
+                featuredImage {
+                    node {
+                        sourceUrl
+                    }
+                }
+                eventCategories {
+                    nodes {
+                        name
+                    }
+                }
+            }
+        }
+    }`;
+
+    const {ourEvents: {nodes: eventPosts}} = await client.request(eventPostsQuery);
     return(
         <div className="fl-module fl-module-html fl-node-91in6bdw2yhc" data-node="91in6bdw2yhc">
             <div className="fl-module-content fl-node-content">
                 <div className="fl-html">
                     <div className='posts stories'>
-                        {posts.map((post, index) => <HR_Post key={index} post={post} />)}
+                        {eventPosts.map((post, index) => (
+                            <Events_Post key={index} post={post} />
+                        ))}
                     </div>
                 </div>
             </div>
