@@ -85,6 +85,7 @@ html header.scrollfixed #main-menu button.mainmenu_main{
 body, p, a, input, span, li,
 h1, h2, h3, h4, h5, h6, button{
     font-family: Arial, 'Helvetica' !important;
+    /* font-family: 'Oxfam TSTAR PRO bold', Arial, Helvetica, sans-serif !important; */
 }
 
 button{
@@ -193,6 +194,752 @@ span.highligh_green,
 }
 .postfooter{
     display: none;
+}
+
+/* Our Project */
+
+.section_pad{
+    padding: 50px;
+}
+.banner_section{
+    background-image: url(../images/development-projects-women-talking-in-tent.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 85vh;
+    padding: 150px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner_section .section_heading {
+    max-width: 900px;
+    width: 100%;
+}
+.banner_section h1{
+    color: #fff;
+    font-size: 6.5rem;
+    line-height: 6.7rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+.banner_section p{
+    color: #fff !important;
+    font-size: 1.9rem;
+}
+.banner_button .fl-button-text {
+    font-weight: 700;
+}
+.under_banner_section,
+.get_involved_section{
+    background-color: #FFFFFF;
+}
+.under_banner_section h2{
+    /* text-align: left !important; */
+    margin-bottom: 30px !important;
+    margin-top: 30px;
+}
+.projects_section{
+    background-color: #EAEADF;
+}
+
+.projects_item {
+    background: #fff;
+    display: flex;
+    margin-bottom: 40px;
+}
+.projects_img,
+.projects_text {
+    width: 50%;
+}
+.projects_img > div{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.projects_text{
+    padding: 65px;
+}
+.under_banner_section {
+    max-width: 1070px;
+    width: 100%;
+    margin: auto;
+}
+.section_heading h2{
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 700;
+    color: #44841A;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section_heading p{
+    font-size: 2rem;
+    color: #333333;
+    text-align: center;
+}
+.projects_text h3{
+    color: #44841A;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+}
+.projects_item .project_readmore {
+    margin: 30px 0 0;
+}
+.involved_icon_section_wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.involved_icon_item {
+    width: 33%;
+    text-align: center;
+    padding: 30px 10px 50px;
+}
+.involved_icon_item:nth-child(2){
+    border-style: solid;
+    border-width: 0;
+    background-clip: border-box;
+    border-color: #acacac;
+    border-right-width: 1px;
+    border-left-width: 1px;
+}
+
+.involved_icon {
+    margin-bottom: 30px;
+}
+.involved_icon i {
+    font-size: 120px;
+    color: #44841A;
+}
+.icon-oxfam-icon-heart-2:before {
+    content: "\e958";
+}
+.icon-oxfam-icon-lightbulb:before {
+    content: "\e96a";
+}
+.icon-oxfam-icon-dollar-circle:before {
+    content: "\e934";
+}
+.involved_text a {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+.oxfam_sharing_container{
+    background-color: #EAEADF;
+}
+
+/* blog */
+
+.blogs-page #main-menu {
+    background: #fff !important;
+}
+.blogs-page #main-menu button.mainmenu_main {
+    color: #000;
+}
+.blogs-page #main-menu:before {
+    background: none !important;
+}
+.blogs-page header #main-menu .menu_main_logo {
+    background: url(../images/black-logo.png) center center / cover no-repeat;
+}
+.blog_banner_section {
+    padding: 200px 50px 50px;
+    background-color: #EAEADE;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+.banner_mata_part {
+    padding-left: 20px;
+    padding-top: 20px;
+    border-style: solid;
+    border-width: 0;
+    background-clip: border-box;
+    border-color: #61a534;
+    border-left-width: 4px;
+}
+.banner_text_part {
+    padding-top: 20px;
+}
+.reach_us_part h2 {
+    margin-top: 30px;
+    font-size: 2.8rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+}
+.banner_text_part h1 {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+}
+.blogs_section {
+    padding: 50px 100px;
+    background: #EAEADE;
+}
+.blogs_item {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.blogs_title h3 {
+    padding: 0;
+    font-size: 2rem;
+    line-height: 2.9rem;
+}
+.blog_date,
+.blog_link a{
+    font-size: 1.4rem;
+}
+.blog_link a{
+    background-color: #008000;
+    color: #fff;
+    padding: 12px;
+}
+.blogs_meta {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    position: relative;
+    left: -50px;
+}
+.show_blogs_btn {
+    text-align: center;
+}
+.show_blogs_btn button {
+    padding: 15px 30px;
+    border-radius: 0;
+    background: #008000;
+}
+
+
+/* our story */
+
+.our-story-page .banner_section {
+    background-image: url(../images/our-story-women-in-line.jpg);
+}
+.story_under_banner h2 {
+    margin: 0;
+}
+.quote_sectiion {
+    padding-top: 0;
+}
+.quote_inner_sectiion {
+    position: relative;
+    padding-top: 60px;
+    padding-left: 280px;
+    padding-bottom: 70px;
+    margin-right: 90px;
+    overflow: hidden;
+}
+.quote_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.quote_text {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    background-color: #eaeade;
+    padding: 30px 30px 20px 20px;
+    margin: 0 20px 0 0;
+}
+.women_rights a {
+    color: #333333;
+}
+.why_women_section {
+    background-color: #44841A;
+}
+.why_women_section h2 {
+    color: #fff;
+}
+.why_women_section h2 {
+    color: #fff;
+    text-align: left;
+    margin: 0;
+}
+.why_women_text_section p,
+.why_women_text_section li{
+    color: #fff;
+}
+.why_women_counter_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.women_counter_item {
+    background: #fff;
+    padding: 35px;
+}
+.women_counter_item h4 {
+    font-size: 55px;
+    color: #44841A;
+}
+.women_counter_item p {
+    margin-bottom: 0;
+}
+.women_rights {
+    background-color: #EAEADF;
+    /* background-image: url(https://www.oxfam.ca/wp-content/uploads/2018/09/oxfam-pattern-gray-small-1.png); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.poverty_section_1 p:nth-child(1) {
+    border-left: 5px solid #61A534 !important;
+    padding: 10px 20px;
+}
+.poverty_section_2 h3 {
+    color: #44841A;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+.poverty_section {
+    background: #EAEADF;
+}
+.poverty_section_2 p:last-child {
+    margin: 0;
+}
+span.caption-two {
+    padding: 0 0 0 25px;
+    display: block;
+    font-size: 1.6rem;
+}
+.icon-oxfam-icon-quotes {
+    position: relative;
+    top: -8px;
+    color: #44841a;
+    font-size: 60px;
+}
+.icon-oxfam-icon-quotes:before{
+    content: "\e9a6";
+}
+.quote_description {
+    display: flex;
+    margin-bottom: 20px;
+}
+.quote_description span {
+    padding-left: 10px;
+}
+.quote_description span {
+    padding-left: 10px;
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+}
+.quote-caption {
+    padding-left: 70px;
+}
+.icon-oxfam-icon-mother-daughter:before {
+    content: "\e97d";
+}
+.icon-oxfam-icon-handshake:before {
+    content: "\e956";
+}
+.icon-oxfam-icon-sound:before {
+    content: "\e9b3";
+}
+
+/* our team */
+.our-story-page .banner_section {
+    background-image: url(../images/our-story-women-in-line.jpg);
+}
+.board_directors,
+.senior_leadership {
+    background: #EAEADE;
+}
+.team_item {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    max-width: 1070px;
+    width: 100%;
+    margin: auto;
+}
+.person_img_wrap {
+    position: relative;
+    height: fit-content;
+}
+.person_mask {
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.gray_mask{
+    background: url(../images/people_mask_beige2.png);
+}
+.white_mask{
+    background: url(../images/people_mask_white.png);
+}
+button:focus {
+    outline: none !important;
+}
+.board_directors h2 {
+    color: #333333;
+}
+.person_name {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+.person_designation {
+    font-size: 2.2rem;
+    color: #44841A;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.person_twitter:before {
+    margin-right: -2px;
+}
+.person_linkedin a {
+    text-decoration: none;
+}
+
+/* project single page */
+
+.project-single-page .under_banner_section {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+}
+.project-single-page .under_banner_section h2 {
+    text-align: left;
+    margin: 0;
+    padding-bottom: 50px;
+}
+.project_info {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 20px;
+}
+.project_meta {
+    border-style: solid;
+    border-width: 0;
+    background-clip: border-box;
+    border-color: #61a534;
+    border-left-width: 3px;
+    padding-left: 15px;
+}
+.project_info h3 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+}
+.project_meta h4,
+.we_doing .involved_text h4 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 700;
+    padding-bottom: 0;
+}
+.project_meta p,
+.we_doing .involved_text p {
+    margin-bottom: 20px;
+}
+.impact_btn .project_readmore {
+    margin-bottom: 1px;
+}
+.icon-oxfam-icon-sunshine:before {
+    content: "\e9bd";
+}
+.icon-oxfam-icon-hand-1:before {
+    content: "\e955";
+}
+.achieved_section {
+    background: #EAEADF;
+}
+.achieved_text_1 h3,
+.achieved_text_2 h3 {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 700;
+    color: #44841A;
+}
+.banner_section h3 {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 0;
+}
+
+/* contact us */
+
+.contact-us-page .banner_section {
+    background-image: url(../images/contact-us-woman-in-village.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    position: relative;
+}
+.banner_section {
+    position: relative;
+}
+.banner_section::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.banner_section > div{
+    position: relative;
+    z-index: 11;
+}
+.contact-us-page .under_banner_section {
+    max-width: 100%;
+}
+.contact-us-page .section_heading h2 {
+    text-align: left;
+    margin-top: 0;
+    padding-bottom: 30px;
+}
+.contact-us-page .under_banner_section .section_heading h3 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+}
+.contact-us-page .under_banner_section .section_heading p {
+    text-align: left;
+}
+.contact-us-page .under_banner_section .section_heading {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    max-width: 100%;
+    margin: auto;
+}
+.contact_info_section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 0;
+    grid-gap: 25px;
+}
+.contact_info h4 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.Confidentially_section {
+    background: #44841A;
+}
+.Confidentially_section h2 {
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 700;
+}
+.Confidentially_section p{
+    color: #fff;
+}
+.Confidentially_section p:last-child,
+.contact_info p:last-child{
+    margin-bottom: 0;
+}
+.contact-us-page .banner_section p {
+    text-align: left;
+}
+
+/* faqs */
+
+.our-mission-page .banner_section{
+    background-image: url(../images/our-mission-header-girl-drinking-water.jpg);
+}
+
+.our-mission-page h2 {
+    text-align: center;
+}
+.faq_text h3 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+}
+.faqs_question {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+.faqs_question h3 {
+    padding: 0;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.faqs_answer {
+    max-height: 0;
+    padding: 0 30px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faqs_answer_show {
+    max-height: 300px;
+    padding: 20px 30px;
+}
+.faqs_question { 
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: #EAEADF;
+    padding: 10px;
+}
+.faqs_item{
+    margin-bottom: 15px;
+}
+
+/* privacy page */
+
+.privacy-policy-page .banner_section{
+    background-image: url(../images/provacy-policy-woman-behind-metal-sheet.jpg);
+}
+.privacy-policy-page .banner_section p {
+    text-align: left;
+}
+.privacy-policy-page .under_banner_section {
+    max-width: 100%;
+    background-color: #EAEADF;
+}
+.privacy_faqs h2{
+    margin-bottom: 20px;
+}
+.faq_text{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.faq_section{
+    padding-bottom: 0px;
+}
+
+/* Accessibility */
+
+.accessibility-page .banner_section {
+    background-image: url(../images/why-women-mother-and-daughter-sudan.jpg);
+}
+.banner_section p{
+    text-align: left;
+}
+.accessibility-page .under_banner_section {
+    max-width: 100%;
+    background-color: #EAEADF;
+}
+
+/* careers */
+
+.careers-page .banner_section {
+    background-image: url(../images/careers.jpg);
+}
+
+.careers-page .under_banner_section {
+    max-width: 100%;
+}
+
+/* gallery */
+
+.gallery_section {
+    background: #EAEADF;
+}
+.gallery_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.gallery_section .gallery_img img {
+    width: 295px;
+    height: 195px;
+    object-fit: cover;
+    object-position: center;
+}
+.gallery_section h2 {
+    margin-bottom: 30px;
+}
+.gallery_wrapper p {
+    margin-bottom: 0;
+}
+
+/* light box */
+
+.gallery_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gallery_item {
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+}
+.gallery_img img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+/* light box */
+
+.lightbox {
+    position: fixed !important;
+    inset: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lb-data .lb-number {
+    display: inline-block !important;
+    padding-bottom: 0 !important;
+    font-size: 16px !important;
+    color: #fff !important;
+}
+
+.lb-nav a.lb-prev {
+    width: 2% !important;
+    background-image: url(../images/left-arrow.png) !important;
+    opacity: 1 !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    margin-left: 20px;
+}
+.lb-nav a.lb-next {
+    width: 2% !important;
+    background-image: url(../images/right-arrow.png) !important;
+    opacity: 1 !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    margin-right: 20px;
+}
+.lb-data .lb-close {
+    width: 2% !important;
+    background: url(../images/close-btn.png) !important;
+    opacity: 1 !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
 }
 
 

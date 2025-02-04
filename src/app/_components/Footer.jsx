@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import Donate_Button from "./Donate_Button";
+import GetInvolved from "./GetInvolved";
 import client from '../../../config.js';
 export default async function Footer() {
 	// /* Footer Social Links */
@@ -63,6 +65,30 @@ export default async function Footer() {
 		}
 	}`;
 	const {themeSettings: {frontEndSettings: {footerColumn3}}} = await client.request(col_3_query);
+
+	const footerBottomMenuQuery = `{
+		menu(id: "legal-links", idType: SLUG) {
+			databaseId
+			slug
+			menuItems {
+				nodes {
+					label
+					uri
+				}
+			}
+		}
+	}`;
+	const {menu: {databaseId: legalLinksMenuID, slug: fbMenuSlug, menuItems: {nodes: footerBottomMenuItems}}} = await client.request(footerBottomMenuQuery);
+	const copyrightTextQuery = `{
+		themeSettings {
+			frontEndSettings {
+				copyRightArea {
+					copyRightText
+				}
+			}
+		}
+	}`;
+	const {themeSettings: {frontEndSettings: {copyRightArea: {copyRightText}}}} = await client.request(copyrightTextQuery);
     return (
 		<>
 		{/* {console.log(fw1_first_elementObject)} */}
@@ -70,25 +96,29 @@ export default async function Footer() {
 
           	<h2 className="sr-only">Footer</h2>
 
+			{/*<!-- Footer Get Involved Section -->*/}
+			<GetInvolved />
+			{/*<!-- Footer Get Involved Section -->*/}
+
           	<div className="footer_wrapper">
 				{/*<!-- Footer Column 1 -->*/}
 				<div className="footer_col column1">
 					<div className="h5 white">Lorem ipsum dolor sit amet consectetur.</div>
 					<ul aria-labelledby="footer-sn-title" className="footer_sn_icons">
 						<li>
-							<a href={socialLink.instagramLink} target="_self" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+							<Link href={socialLink.instagramLink} target="_self" aria-label="Instagram"><i className="fab fa-instagram"></i></Link>
 						</li>
 						<li>
-							<a href={socialLink.twitterLink} target="_self" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
+							<Link href={socialLink.twitterLink} target="_self" aria-label="Twitter"><i className="fab fa-twitter"></i></Link>
 						</li>
 						<li>
-							<a href={socialLink.facebookLink} target="_self" aria-label="Facebook"><i className="fab fa-facebook"></i></a>
+							<Link href={socialLink.facebookLink} target="_self" aria-label="Facebook"><i className="fab fa-facebook"></i></Link>
 						</li>
 						<li>
-							<a href={socialLink.linkdinLink} target="_self" aria-label="Linkedin"><i className="fab fa-linkedin"></i></a>
+							<Link href={socialLink.linkdinLink} target="_self" aria-label="Linkedin"><i className="fab fa-linkedin"></i></Link>
 						</li>
 						<li>
-							<a href={socialLink.tiktolkLink} target="_self" aria-label="Tiktok"><i className="fab fa-tiktok"></i></a>
+							<Link href={socialLink.tiktolkLink} target="_self" aria-label="Tiktok"><i className="fab fa-tiktok"></i></Link>
 						</li>
 					</ul>
 
@@ -96,11 +126,11 @@ export default async function Footer() {
 					<div aria-labelledby="footer-sn-contact" className="footer_contact" role="region">
 						<div className="contact_item">
 							<i className="fas fa-envelope"></i>
-							<a href={`mailto:${contactInformation.contactEMail}`} className="mail-link">{contactInformation.contactEMail}</a>
+							<Link href={`mailto:${contactInformation.contactEMail}`} className="mail-link">{contactInformation.contactEMail}</Link>
 						</div>
 						<div className="contact_item">
 							<i className="fas fa-phone"></i>
-							<a href={`mailto:${contactInformation.contactPhone}`}><span className="sr-only">Phone:&nbsp;</span>{contactInformation.contactPhone}</a>
+							<Link href={`mailto:${contactInformation.contactPhone}`}><span className="sr-only">Phone:&nbsp;</span>{contactInformation.contactPhone}</Link>
 						</div>
 						<div className="contact_item">
 							<i className="fas fa-paper-plane"></i>
@@ -111,10 +141,10 @@ export default async function Footer() {
 				{/* Footer Column 1 */}
 
 				{/* Footer Column 2 */}
-				<div className="footer_col column2">
+				<div className="footer_col column2 jjkjkjkjk">
 					<h3 id="footer-useful-title" className="footer-nav-heading white">Useful Links</h3>
 					<ul aria-labelledby="footer-useful-title" className="footer_useful_links linostyle nomargin nopadding footer-nav-links">
-						{linkItems.map((link, index) => <li className="footer_useful_link_item" key={index}><a href={link.node.url} target="_self">{link.node.label}</a></li>)}
+						{linkItems.map((link, index) => <li className="footer_useful_link_item" key={index}><Link href={link.node.url} target="_self">{link.node.label}</Link></li>)}
 					</ul>
 				</div>
 				{/* Footer Column 2 */}
@@ -122,8 +152,7 @@ export default async function Footer() {
 				
 				{/* Footer Column 3 */}
 				<div className="footer_col column3">
-					<img className="oxfam_logo" src={footerColumn3.footerLogo.node.sourceUrl} aria-hidden="true" alt=""
-						height="144" width="362" />
+					<img className="oxfam_logo" src={footerColumn3.footerLogo.node.sourceUrl} aria-hidden="true" alt="" height="144" width="362" />
 					<div className="footer_member">{footerColumn3.footerColumn3Desc}</div>
 					<Donate_Button cls={`footer_donate_button`} theme="oranage" />
 				</div>
@@ -131,7 +160,19 @@ export default async function Footer() {
           	</div>
 
 			{/* Footer Bottom */}
-			{/* <div id="footer_bottom" dangerouslySetInnerHTML={{__html: footerBottomHtml}}></div> */}
+			<div id="footer_bottom" className="postfooter" style={{"display": "block"}} data-menu-id={legalLinksMenuID} data-menu-slug={fbMenuSlug} >
+				<div className="postfooter_inner">
+					<div className="col2 footer_info">
+						<h3 id="footer-legal-title" className="sr-only">Legal Links</h3>
+						<ul aria-labelledby="footer-legal-title" className="nopadding nomargin">
+							{footerBottomMenuItems.map((menuItem, index) => <li key={index} className="footer_info_item"><Link className="white" href={menuItem.uri}>{menuItem.label}</Link></li>)}
+						</ul>
+					</div>
+					<div className="col3 footer_info">{copyRightText}</div>
+				</div>
+			</div>
+
+			<div className="footer_bottomline"></div>
 			{/* Footer Bottom end */}
 
 

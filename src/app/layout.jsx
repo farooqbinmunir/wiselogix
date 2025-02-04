@@ -19,7 +19,7 @@ import "../../public/assets/css/responsive.css";
 
 export const metadata = {
   title: "Wiselogix Nextjs Application",
-  description: "by Farooq Bin Munir",
+  description: "Lorem ipsum dolor sit amet",
 };
 export default function RootLayout({ children }) {
 

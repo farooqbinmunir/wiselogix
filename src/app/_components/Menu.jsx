@@ -39,7 +39,7 @@ export default async function Menu(){
 									<ul className="sub-menu" data-depth="0" aria-labelledby={`menu-${menuItem.menuItemId}-title`}>
 										{menuItem.childItems.nodes.map((submenuItem, i) => (
 											<li data-id={`menu-${submenuItem.menuItemId}-title`} className="sub-menu-item" key={i}>
-												<a href={submenuItem.url} className="menu-item-link menu-item" title={submenuItem.label}>{submenuItem.label}</a>
+												<Link href={submenuItem.url} className="menu-item-link menu-item" title={submenuItem.label}>{submenuItem.label}</Link>
 											</li>
 										 ))}
 										

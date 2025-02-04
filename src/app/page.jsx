@@ -38,8 +38,6 @@ export default function Home() {
           		</div>
         	</div>
       	</div>
-
-		<Share_This_Page_Links cls="share_this_page_links_component" />
 		
     </main>
   );

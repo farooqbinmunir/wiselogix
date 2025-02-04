@@ -15975,3 +15975,6 @@ body:not(.home) header {
     font-size: 2.8rem;
     line-height: 1.357;
 }
+.col3.footer_info {
+	color: white;
+}
