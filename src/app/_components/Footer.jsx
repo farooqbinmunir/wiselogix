@@ -119,6 +119,7 @@ export default async function Footer() {
 				</div>
 				{/* Footer Column 2 */}
 
+				
 				{/* Footer Column 3 */}
 				<div className="footer_col column3">
 					<img className="oxfam_logo" src={footerColumn3.footerLogo.node.sourceUrl} aria-hidden="true" alt=""

@@ -1,0 +1,253 @@
+@media screen and (min-width: 1366px) {
+    .action-carousel-row .slider-header{
+        margin-right: calc(50vw - 693px);
+        padding-right: 50px;
+    }
+    .action-carousel-desc{
+        margin-right: calc(50vw - 693px);
+        padding-right: 50px;
+    }
+    .action-carousel-header{
+        margin-left: calc(50vw - 693px);
+    }
+    .action-carousel-image-box .fl-col-content{
+        margin-left: calc(50vw - 693px);
+    }
+}
+@media screen and (max-width: 1148px) {
+    .fl-row-align-bottom.hp2023_donate_form_new>.fl-row-content-wrap{
+        padding-left:36px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .action-carousel-row .slider-header{
+        margin-right: 0px;
+        padding-right: 50px;
+    }
+    .action-carousel-desc{
+        margin-right: 0px;
+        padding-right: 50px;
+    }
+    .action-carousel-header{
+        margin-left: 0px;
+    }
+    .action-carousel-image-box .fl-col-content{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 1036px) {
+    .fl-module.focus_btn_group{
+        display: grid;
+        gap: 26px;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 505px) {
+    .fl-module.focus_btn_group{
+        display: flex;
+        gap:16px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 992px) {
+    .fl-row-align-bottom.hp2023_donate_form_new>.fl-row-content-wrap{
+        padding-left:0px;
+    }
+    body:not(.fl-builder-edit) .fl-row-align-bottom.hp2023_donate_form_new .action-carousel-topbar{
+        transform: translateY(-100%);
+        width:calc(100% - 16px)!important;
+    }
+    .hero_box_side{
+        display: none!important;
+    }
+    .hero_box_main{
+        flex-basis: unset;
+    }
+    body:not(.fl-builder-edit) .info_card_box{
+        max-width:calc(100% - 26px);
+        padding: 26px 26px 36px;
+    }
+    .action-carousel-image, .action-carousel-header{
+        padding-right:66px;
+    }
+    .action-carousel-header h2, .action-carousel-desc p{
+        text-align: center;
+    }
+    .video-carousel-row .slider-header{
+        justify-content: flex-end;
+    }
+    .action-carousel-image, .action-carousel-image img{
+        height:unset!important;
+        aspect-ratio: 1;
+    }
+    .action-carousel-row .slider-header{
+        padding-right:66px;
+        padding-top: 26px;
+    }
+
+    .action-carousel-desc{
+        padding-right:66px;
+    }
+    body:not(.fl-builder-edit) .focus_three_col_row .fl-col-group{
+        flex-direction: column;
+        gap: 0;
+    }
+    .video-carousel-header{
+        margin:auto;
+    }
+    body:not(.fl-builder-edit) .video-carousel-img,
+    body:not(.fl-builder-edit) .video-carousel-img .fl-photo-content,
+    body:not(.fl-builder-edit) .video-carousel-img img{
+        height: 515px;
+        width: 100%;
+        transition: all 0.5s ease;
+        margin:auto;
+        object-fit: cover;
+    }
+    body:not(.fl-builder-edit) .slick-center .video-carousel-img,
+    body:not(.fl-builder-edit) .slick-center .video-carousel-img .fl-photo-content,
+    body:not(.fl-builder-edit) .slick-center .video-carousel-img img{
+        height: 515px;
+        width: 100%;
+    }
+    body:not(.fl-builder-edit) .video-carousel-row .video-carousel-slide.fl-col,
+    body:not(.fl-builder-edit) .video-carousel-row .video-carousel-slide.fl-col .fl-col-content{
+        width:calc(100vw - 72px);
+        max-width: unset;
+        overflow: hidden;
+        justify-content: flex-start;
+    }
+    .video-carousel-slider{
+        overflow: hidden;
+    }
+    body:not(.fl-builder-edit) .action-carousel-row > .fl-row-content-wrap > .fl-row-content{
+        display: flex;
+        flex-direction: column;
+    }
+    body:not(.fl-builder-edit) .action-carousel-row > .fl-row-content-wrap > .fl-row-content > .fl-col-group:nth-child(2){
+        order: 1;
+    }
+    .focus_stas .fl-number-string, 
+    .focus_stas .fl-number .fl-number-text .fl-number-string, 
+    .focus_stas .fl-number .fl-number-text .fl-number-string span{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    body:not(.fl-builder-edit) .video-carousel-row > .fl-row-content-wrap > .fl-row-content > .fl-col-group:first-child{
+        padding-left:0;
+        padding-right:0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .focus_hero_box{
+        flex-direction: column!important;
+        align-items: stretch!important;
+    }
+    .focus_hero_box_side_img img{
+        width:100%;
+        aspect-ratio: unset;
+        max-width: unset!important;
+    }
+    .focus_hero_box_side_img .fl-photo-content,
+    .focus_hero_box_side_img .fl-module-box,
+    .focus_hero_box_main_img .fl-photo-content{
+        width:100%;
+    }
+    .focus_hero_box_main_img img{
+        width:100%;
+        aspect-ratio: unset;
+        max-width: unset!important;
+    }
+    .hp2023_donate_form_new .hero_credit {
+        margin: auto;
+        max-width: 550px;
+    }
+    .action-carousel-image, .action-carousel-header{
+        padding-right:0;
+    }
+    .action-carousel-image{
+        height: 360px !important;
+        aspect-ratio: unset;
+    }
+
+    body:not(.fl-builder-edit) .action-carousel-slider > .fl-col-content .fl-col{
+        max-width: calc(100vw - 36px);
+        min-height: unset!important;
+    }
+    body:not(.fl-builder-edit) .info_card_box{
+        max-width:calc(100% - 16px);
+        padding: 16px 16px 26px;
+    }
+    .action-carousel-row .slider-header{
+        padding-right:0px;
+    
+    }
+    .action-carousel-desc{
+        padding-right:0px;
+    }
+    .action-carousel-desc p{
+        padding-bottom:13px;
+    }
+    body:not(.fl-builder-edit) .video-carousel-img,
+    body:not(.fl-builder-edit) .video-carousel-img .fl-photo-content,
+    body:not(.fl-builder-edit) .video-carousel-img img{
+        height: 475px;
+        width: 100%;
+        transition: all 0.5s ease;
+        margin:auto;
+        object-fit: cover;
+    }
+    body:not(.fl-builder-edit) .slick-center .video-carousel-img,
+    body:not(.fl-builder-edit) .slick-center .video-carousel-img .fl-photo-content,
+    body:not(.fl-builder-edit) .slick-center .video-carousel-img img{
+        height: 340px;
+        width: 100%;
+    }
+    body:not(.fl-builder-edit) .video-carousel-row .video-carousel-slide.fl-col,
+    body:not(.fl-builder-edit) .video-carousel-row .video-carousel-slide.fl-col .fl-col-content{
+        width:calc(100vw - 36px);
+        max-width: unset;
+        overflow: hidden;
+        height: 475px;
+    }
+    .video-carousel-box{
+        width: 375px;
+    }
+    body:not(.fl-builder-edit) .video-carousel-box-top,
+    body:not(.fl-builder-edit) .video-carousel-box-bottom,
+    body:not(.fl-builder-edit) .slick-center .video-carousel-box{
+        gap:16px;
+    }
+    body:not(.fl-builder-edit) .video-carousel-box-top,
+    body:not(.fl-builder-edit) .video-carousel-box-bottom{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .hero_credit_col{
+        margin:0;
+        max-width: calc(100vw - 72px);
+    }
+}
+@media screen and (max-width: 600px){
+    .focus_hero_box_main_img img{
+        width: 100%;
+        aspect-ratio: unset !important;
+        height: 320px !important;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 480px){
+    .action-carousel-image{
+        padding-right:0;
+        height: 240px !important;
+        aspect-ratio: unset;
+    }
+    .fl-col-small {
+        max-width: calc(100vw - 36px)!important;
+    }
+    .video-carousel-box{
+        width: 320px;
+    }
+}

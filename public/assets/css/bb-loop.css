@@ -1,0 +1,259 @@
+/**********/
+/* QUOTE */
+/**********/
+.fl-loop-quote {
+    padding: 0;
+    margin: 0;
+}
+
+.fl-loop-quote.fl-loop-quote-with-image {
+    position: relative;
+    padding-top: 60px;
+    padding-left: 280px;
+    padding-bottom: 70px;
+    margin-right: 90px;
+    overflow: hidden;
+}
+
+.fl-loop-quote-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.fl-loop-quote-image-center {
+    bottom: 0;
+    margin: auto 0;
+}
+
+.fl-loop-quote-image-bottom {
+    top: initial;
+    bottom: 0;
+}
+
+.fl-loop-quote-container {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    background-color: #eaeade;
+    padding: 30px 30px 20px 20px;
+}
+
+.fl-loop-quote.fl-loop-quote-with-image .fl-loop-quote-container {
+    margin: 0 20px 0 0;
+}
+
+.fl-loop-quote-quote {
+    margin: 0;
+    display: flex;
+}
+
+.fl-loop-quote-quote > .icon-oxfam-icon-quotes {
+    color: #44841a;
+    font-size: 60px;
+}
+
+.fl-loop-quote-quote > blockquote {
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    padding: 0 10px;
+    margin: 0 0 16px;
+    word-break: break-word;
+    border-left: none !important;
+}
+
+.fl-loop-quote-caption {
+    padding: 0 10px 0 40px;
+    margin-left: 60px;
+    position: relative;
+}
+
+.fl-loop-quote-caption > .ua-icon-minus {
+    font-size: 30px;
+    color: #44841A;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.fl-loop-quote-caption-one {
+    padding: 0;
+    display: block;
+    font-weight: 700;
+}
+
+.fl-loop-quote-caption-two {
+    padding: 0;
+    display: block;
+    font-size: 1.6rem;
+}
+
+.fl-loop-quote-container .oxfam_button {
+    padding: 14px 28px;
+    margin: 30px 0 0 70px;
+    display: inline-block;
+    max-width: 80%;
+}
+
+.fl-loop-quote-container .oxfam_button .icon-oxfam-icon-triangle {
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+
+/**********/
+/* BACKGROUND IMAGE CAPTION */
+/**********/
+
+.bg_img_caption_container{
+    color: #fff!important;
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    text-align: right;
+    margin: 0;
+}
+
+body:not(.fl-builder-edit) .image_single {
+    /*this class should be applied by authors to the row or column that has the background image on it*/
+    position:relative;
+}
+
+body:not(.fl-builder-edit) .image_single .bg_img_caption_container {
+    position: absolute;
+    display:none; /*these are shown with javascript after being moved in the dom*/
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 9;
+    max-width: 100%;
+}
+
+body:not(.fl-builder-edit) .fl-row.fl-row-full-width.image_single .bg_img_caption_container{
+    right: 15px !important; /*this is because full width rows have -15px margins when the screen width is > 1147px*/
+}
+
+.bg_img_caption_description {
+    /*screen readers only*/
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+body .flyout_item .fl-row:is(.fl-row-full-width,.fl-row-fixed-width) .bg_img_caption_container {
+    right: 0 !important;
+}
+
+.bg_img_caption_text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.bg_img_caption_description_warning{
+    display:none;
+}
+
+body.fl-builder-edit .bg_img_caption_description_warning {
+    display:block;
+    background-color:white;
+    color:red !important;
+}
+
+body .fl-row.fl-row-full-width .scorecard_column1 .bg_img_caption_container {
+    /*not totally sure if this is required...*/
+    right: 50% !important;
+    position: fixed;
+}
+
+/**********/
+/* FLYOUT */
+/**********/
+	.flyout_image
+    {
+        width:100%;
+        height:500px;
+    }
+    
+    .flyout_item
+    {
+    	position:fixed;
+        top:0;
+        right:0;
+        height:100%;
+        background: #fff;
+        z-index:999999;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transition: all 0.3s ease;
+        visibility:hidden;
+    }
+	body.admin-bar .flyout_item {top:32px}
+    .flyout_content_wrapper .fl-row-content-wrap
+    {
+        padding-left:40px;
+        padding-right:40px;
+    }
+    
+    .flyout_item.active {
+        right:0 !important;
+        visibility:visible;
+    }
+    
+    .flyout_close {
+        padding: 15px 20px;
+        background: #44841a;
+        position: fixed;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        right: -100px;
+        font-family: cursive;
+        z-index: 9;
+        border-radius:0;
+        border-width:0;
+    }
+    .flyout_close:hover {
+        border-width:0;
+    }
+    .flyout_close:active,
+    .flyout_close:focus{
+        position:fixed;
+        border-width:0;
+        top:initial;
+    }
+    .flyout_close:focus {
+        outline-style: auto;
+        outline-width: thick;
+        outline-offset: 0;
+    }
+	.flyout_close.active {right:initial}
+	
+	.flyout_active {
+		overflow:hidden !important;
+		margin-right:16px;
+	}
+	
+	.flyout_overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.85);
+		z-index: 99999;
+		transition: all 0.2s ease;
+		opacity:0;
+		pointer-events: none;
+		
+	}
+	.flyout_overlay.active {
+		opacity:1;
+		pointer-events: initial;
+	}

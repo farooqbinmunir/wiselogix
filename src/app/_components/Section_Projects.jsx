@@ -9,7 +9,7 @@ export default async function Section_Projects({cls=""}){
                 projectHeading
                 projectSubheadingHighlighted
                 projectDesc
-                viewAllButton {
+                seeAllButton {
                     buttonText
                     buttonLink
                 }
@@ -35,8 +35,8 @@ export default async function Section_Projects({cls=""}){
                                 <Project_Posts />
                                 
                                 <Button 
-                                    btnTxt={projectsHeader.viewAllButton.buttonText}
-                                    link={projectsHeader.viewAllButton.buttonLink} 
+                                    btnTxt={projectsHeader.seeAllButton.buttonText}
+                                    link={projectsHeader.seeAllButton.buttonLink} 
                                     align="center" 
                                     style={{marginTop: "30px", textTransform: "uppercase"}} />
                             </div>
