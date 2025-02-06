@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function GetInvolved({cls = '', style={}}) {
     return (
         <div className={`${cls} section_pad get_involved_section`} style={style}>
@@ -10,7 +11,7 @@ export default function GetInvolved({cls = '', style={}}) {
                         <i className="icon-oxfam-icon-heart-2" aria-hidden="true"></i>
                     </div>
                     <div className="involved_text">
-                        <a href="#">Volunteer</a>
+                        <Link href="#">Volunteer</Link>
                     </div>
                 </div>
                 <div className="involved_icon_item">
@@ -18,7 +19,7 @@ export default function GetInvolved({cls = '', style={}}) {
                         <i className="icon-oxfam-icon-lightbulb" aria-hidden="true"></i>
                     </div>
                     <div className="involved_text">
-                        <a href="#">Fundraise For Oxfam</a>
+                        <Link href="#">Fundraise For Oxfam</Link>
                     </div>
                 </div>
                 <div className="involved_icon_item">
@@ -26,7 +27,7 @@ export default function GetInvolved({cls = '', style={}}) {
                         <i className="icon-oxfam-icon-dollar-circle" aria-hidden="true"></i>
                     </div>
                     <div className="involved_text">
-                        <a href="#">Donate</a>
+                        <Link href="#">Donate</Link>
                     </div>
                 </div>
             </div>

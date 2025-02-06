@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export const metadata = {
     title: "Our Story - Wiselogix Technologies",
     description: "Lorem ipsum dolor sitm...",
@@ -20,7 +23,7 @@ export default function OurStory(){
                         </div>
                         <div className="banner_button">
                             <div className="project_readmore">
-                                <a className="oxfam_button" href="#" >Donate Now</a>
+                                <Link className="oxfam_button" href="#" >Donate Now</Link>
                             </div>
                         </div>
                     </div>
@@ -38,7 +41,7 @@ export default function OurStory(){
                     <div className="section_pad quote_sectiion">
                         <div className="quote_inner_sectiion">
                             <div className="quote_img">
-                                <img src="/assets/images/test-image-of-woman.jpg" alt="" />
+                                <Image width={`100`} height={`100`} src="/assets/images/test-image-of-woman.jpg" alt="" />
                             </div>
                             <div className="quote_text">
                                 <div className="quote_description">
@@ -69,7 +72,7 @@ export default function OurStory(){
                                     <i className="icon-oxfam-icon-mother-daughter" aria-hidden="true"></i>
                                 </div>
                                 <div className="involved_text">
-                                    <a href="#">We design every project with and for women</a>
+                                    <Link href="#">We design every project with and for women</Link>
                                 </div>
                             </div>
                             <div className="involved_icon_item">
@@ -77,7 +80,7 @@ export default function OurStory(){
                                     <i className="icon-oxfam-icon-handshake" aria-hidden="true"></i>
                                 </div>
                                 <div className="involved_text">
-                                    <a href="#">We work with partners and women's rights organizations</a>
+                                    <Link href="#">We work with partners and women's rights organizations</Link>
                                 </div>
                             </div>
                             <div className="involved_icon_item">
@@ -85,7 +88,7 @@ export default function OurStory(){
                                     <i className="icon-oxfam-icon-sound" aria-hidden="true"></i>
                                 </div>
                                 <div className="involved_text">
-                                    <a href="#">We challenge policies and hold the powerful accountable</a>
+                                    <Link href="#">We challenge policies and hold the powerful accountable</Link>
                                 </div>
                             </div>
                         </div>

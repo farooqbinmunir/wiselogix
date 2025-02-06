@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Hgroup from "./Hgroup";
 import Donation_Form from "./Donation_Form";
 import Photo_Credit from "./Photo_Credit";
@@ -22,11 +23,12 @@ export default function Section_SupportNow({cls=""}) {
                                                     itemType="https://schema.org/ImageObject">
                                                     <div
                                                         className="fl-photo-content fl-photo-img-svg">
-                                                        <img loading="lazy" decoding="async"
+                                                        <Image loading="lazy" decoding="async"
                                                         className="fl-photo-img wp-image-43129 size-full"
                                                         src="assets/images/icon_new_heart.svg"
                                                         alt="icon_new_heart"
-                                                        itemProp="image" height="54"
+                                                        itemProp="image" 
+                                                        height="54"
                                                         width="64"
                                                         title="icon_new_heart" />
                                                     </div>

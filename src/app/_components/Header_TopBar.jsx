@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function Header_TopBar() {
     return (
         <div className="header_top_bar fl-page-bar">
@@ -29,9 +30,7 @@ export default function Header_TopBar() {
                     id="menu-item-36"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-36 nav-item"
                 >
-                    <a href="#" className="nav-link" target="_self">
-                    Shop Unwrapped
-                    </a>
+                    <Link href="#" className="nav-link" target="_self">Shop Unwrapped</Link>
                 </li>
                 <li
                     id="menu-item-29966"

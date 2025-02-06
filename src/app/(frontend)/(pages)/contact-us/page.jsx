@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export const metadata = {
     title: "Contact Us - Wiselogix Technologies",
     description: "Lorem ipsum dolor sitm...",
@@ -20,7 +21,7 @@ export default function ContactUs(){
                         </div>
                         <div className="banner_button">
                             <div className="project_readmore">
-                                <a className="oxfam_button" href="#" >Donate Now</a>
+                                <Link className="oxfam_button" href="#" >Donate Now</Link>
                             </div>
                         </div>
                     </div>
@@ -46,11 +47,11 @@ export default function ContactUs(){
                             <h4>Mailing Address</h4>
                             <strong>Lorem ipsum</strong>
                             <p>Guatemala</p>
-                            <a href="#" target="_blank">
+                            <Link href="#" target="_blank">
                                 See Map
                                 <span className="sr-only">Opens in a new window</span>
                                 <i className="fas fa-external-link-alt" aria-hidden="true"></i>
-                            </a>
+                            </Link>
                         </div>
                         <div className="contact_info phone_part">
                             <h4>Contact Us By Phone</h4>

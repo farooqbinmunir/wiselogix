@@ -2,8 +2,8 @@ import Hgroup from "./Hgroup";
 import client from "../../../config.js";
 export default async function EndingPoverty_Header({cls = ""}) {
 
-    const endingPovertyHeaderQuery = `query endingPoverty {
-        themeSettings {
+    const endingPovertyHeaderQuery = `{
+        page(id: "home", idType: URI) {
             homeEndingPovertySection {
                 endingPovertyTitle
                 endingPovertyHighlightedSubheading
@@ -12,7 +12,7 @@ export default async function EndingPoverty_Header({cls = ""}) {
         }
     }`;
 
-    const {themeSettings: {homeEndingPovertySection: endingPoverty}} = await client.request(endingPovertyHeaderQuery);
+    const {page: {homeEndingPovertySection: endingPoverty}} = await client.request(endingPovertyHeaderQuery);
 
     return (
         <div id="section_ending_poverty_header" className={`${cls} fl-row fl-row-full-width fl-row-bg-none fl-node-n4xazeg3chu6 fl-row-default-height fl-row-align-center`} data-node="n4xazeg3chu6">

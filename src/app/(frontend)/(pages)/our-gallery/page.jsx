@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export const metadata = {
     title: "Gallery - Wiselogix Technologies",
     description: "Lorem ipsum dolor sitm...",
@@ -16,7 +19,7 @@ export default function Gallery(){
                         </div>
                         <div className="banner_button">
                             <div className="project_readmore">
-                                <a className="oxfam_button" href="#" >Donate Now</a>
+                                <Link className="oxfam_button" href="#" >Donate Now</Link>
                             </div>
                         </div>
                     </div>
@@ -35,60 +38,60 @@ export default function Gallery(){
                         </div>
                         <div className="gallery_wrapper">
                             <figure className="gallery_item">
-                                <a href="/assets/images/our-mission-header-girl-drinking-water.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
+                                <Link href="/assets/images/our-mission-header-girl-drinking-water.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
                                     <div className="gallery_img">
-                                        <img src="/assets/images/our-mission-header-girl-drinking-water.jpg" alt="" />
+                                        <Image width={`100`} height={`100`} src="/assets/images/our-mission-header-girl-drinking-water.jpg" alt="" />
                                     </div>
-                                </a>
+                                </Link>
                             </figure>
                             <figure className="gallery_item">
-                                <a href="/assets/images/careers.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
+                                <Link href="/assets/images/careers.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
                                     <div className="gallery_img">
-                                        <img src="/assets/images/careers.jpg" alt="" />
+                                        <Image width={`100`} height={`100`} src="/assets/images/careers.jpg" alt="" />
                                     </div>
-                                </a>
+                                </Link>
                             </figure>
                             <figure className="gallery_item">
-                                <a href="/assets/images/provacy-policy-woman-behind-metal-sheet.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
+                                <Link href="/assets/images/provacy-policy-woman-behind-metal-sheet.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
                                     <div className="gallery_img">
-                                        <img src="/assets/images/provacy-policy-woman-behind-metal-sheet.jpg" alt="" />
+                                        <Image width={`100`} height={`100`} src="/assets/images/provacy-policy-woman-behind-metal-sheet.jpg" alt="" />
                                     </div>
-                                </a>
+                                </Link>
                             </figure>
                             <figure className="gallery_item">
-                                <a href="/assets/images/contact-us-woman-in-village.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
+                                <Link href="/assets/images/contact-us-woman-in-village.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
                                     <div className="gallery_img">
-                                        <img src="/assets/images/contact-us-woman-in-village.jpg" alt="" />
+                                        <Image width={`100`} height={`100`} src="/assets/images/contact-us-woman-in-village.jpg" alt="" />
                                     </div>
-                                </a>
+                                </Link>
                             </figure>
                             <figure className="gallery_item">
-                                <a href="/assets/images/our-story-women-in-line.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
+                                <Link href="/assets/images/our-story-women-in-line.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
                                     <div className="gallery_img">
-                                        <img src="/assets/images/our-story-women-in-line.jpg" alt="" />
+                                        <Image width={`100`} height={`100`} src="/assets/images/our-story-women-in-line.jpg" alt="" />
                                     </div>
-                                </a>
+                                </Link>
                             </figure>
                             <figure className="gallery_item">
-                                <a href="/assets/images/OGB_111967_Elizabeth-and-her-son.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
+                                <Link href="/assets/images/OGB_111967_Elizabeth-and-her-son.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
                                     <div className="gallery_img">
-                                        <img src="/assets/images/OGB_111967_Elizabeth-and-her-son.jpg" alt="" />
+                                        <Image width={`100`} height={`100`} src="/assets/images/OGB_111967_Elizabeth-and-her-son.jpg" alt="" />
                                     </div>
-                                </a>
+                                </Link>
                             </figure>
                             <figure className="gallery_item">
-                                <a href="/assets/images/Hist-Polochic.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
+                                <Link href="/assets/images/Hist-Polochic.jpg" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
                                     <div className="gallery_img">
-                                        <img src="/assets/images/Hist-Polochic.jpg" alt="" />
+                                        <Image width={`100`} height={`100`} src="/assets/images/Hist-Polochic.jpg" alt="" />
                                     </div>
-                                </a>
+                                </Link>
                             </figure>
                             <figure className="gallery_item">
-                                <a href="/assets/images/InuruID-Indonesia.jpg">
+                                <Link href="/assets/images/InuruID-Indonesia.jpg">
                                     <div className="gallery_img" data-lightbox="gallery" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit." title="This is a caption for the first image.">
-                                        <img src="/assets/images/InuruID-Indonesia.jpg" alt="" />
+                                        <Image width={`100`} height={`100`} src="/assets/images/InuruID-Indonesia.jpg" alt="" />
                                     </div>
-                                </a>
+                                </Link>
                             </figure>
                         </div>
                     </div>

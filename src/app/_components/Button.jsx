@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function Button({btnTxt, link = '', cls="", style={}, align="left", fullWidth=false}) {
     let alignCss = {};
     let buttonCss = {
@@ -26,7 +27,7 @@ export default function Button({btnTxt, link = '', cls="", style={}, align="left
 
     return (
         <>
-            {link && <div style={alignCss}><a href={link} className={`standard_button ${cls}`} style={buttonCss}><span className={`fl-button-text`} style={{color: "white"}}>{btnTxt}</span></a></div>}
+            {link && <div style={alignCss}><Link href={link} className={`standard_button ${cls}`} style={buttonCss}><span className={`fl-button-text`} style={{color: "white"}}>{btnTxt}</span></Link></div>}
             {!link && <div style={alignCss}><button className={`standard_button ${cls}`} style={buttonCss}><span className={`fl-button-text`} style={{color: "white"}}>{btnTxt}</span></button></div>}        
         </>
     );

@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Blog({params}){
     let page = '';
     const blogSlug = params.slug;
@@ -14,7 +17,7 @@ export default function Blog({params}){
                             </div>
                             <div className="banner_mata_part">
                                 <div className="logo_part">
-                                    <img src="assets/images/black-logo.png" alt="" />
+                                    <Image src='/assets/images/black-logo.png' alt="Ognwuche Foundation Logo - Black" width={100} height={60} />
                                 </div>
                                 <div className="reach_us_part">
                                     <h2>
@@ -22,8 +25,8 @@ export default function Blog({params}){
                                     </h2>
                                     <p>
                                         <strong>Akram Malik</strong><br />
-                                        <a href="mailto:info@gmail.com" className="mail-link">info@gmail.com</a><br />
-                                        <a href="tel:"><span className="sr-only">Phone:&nbsp;</span>+123456789</a>
+                                        <Link href="mailto:info@gmail.com" className="mail-link">info@gmail.com</Link><br />
+                                        <Link href="tel:"><span className="sr-only">Phone:&nbsp;</span>+123456789</Link>
                                     </p>
                                 </div>
                             </div>

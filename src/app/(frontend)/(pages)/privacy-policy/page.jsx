@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export const metadata = {
     title: "Privacy Policy - Wiselogix Technologies",
     description: "Lorem ipsum dolor sitm...",
@@ -20,7 +21,7 @@ export default function PrivacyPolicy(){
                         </div>
                         <div className="banner_button">
                             <div className="project_readmore">
-                                <a className="oxfam_button" href="#" >Explore Projects</a>
+                                <Link className="oxfam_button" href="#" >Explore Projects</Link>
                             </div>
                         </div>
                     </div>
@@ -148,7 +149,7 @@ export default function PrivacyPolicy(){
                                         <i className="icon-oxfam-icon-heart-2" aria-hidden="true"></i>
                                     </div>
                                     <div className="involved_text">
-                                        <a href="#">Volunteer</a>
+                                        <Link href="#">Volunteer</Link>
                                     </div>
                                 </div>
                                 <div className="involved_icon_item">
@@ -156,7 +157,7 @@ export default function PrivacyPolicy(){
                                         <i className="icon-oxfam-icon-lightbulb" aria-hidden="true"></i>
                                     </div>
                                     <div className="involved_text">
-                                        <a href="#">Fundraise For Oxfam</a>
+                                        <Link href="#">Fundraise For Oxfam</Link>
                                     </div>
                                 </div>
                                 <div className="involved_icon_item">
@@ -164,7 +165,7 @@ export default function PrivacyPolicy(){
                                         <i className="icon-oxfam-icon-dollar-circle" aria-hidden="true"></i>
                                     </div>
                                     <div className="involved_text">
-                                        <a href="#">Donate</a>
+                                        <Link href="#">Donate</Link>
                                     </div>
                                 </div>
                             </div>
@@ -173,22 +174,22 @@ export default function PrivacyPolicy(){
                             <h2 id="page_social_share_header">Share this page:</h2>
                             <ul aria-labelledby="page_social_share_header">
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <Link href="#" target="_blank">
                                         <span className="sr-only">Share to Facebook (opens in new window)</span>
                                         <i className="fab fa-facebook"></i>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <Link href="#" target="_blank">
                                         <span className="sr-only">Share to Twitter (opens in new window)</span>
                                         <i className="fab fa-twitter"></i>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="javascript:;" data-enc-email="" target="_blank" className="mail-link" data-wpel-link="ignore">
+                                    <Link href="javascript:;" data-enc-email="" target="_blank" className="mail-link" data-wpel-link="ignore">
                                         <span className="sr-only">Share via email (opens in new window)</span>
                                         <i className="fas fa-envelope"></i>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

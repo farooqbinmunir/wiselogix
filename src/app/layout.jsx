@@ -1,6 +1,5 @@
 import Script from 'next/script';
 import { Link } from 'next/link';
-import { Head } from "next/head";
 import { Image } from "next/image";
 import Header from '@/app/_components/Header';
 import Footer from '@/app/_components/Footer';
@@ -11,6 +10,7 @@ import Footer from '@/app/_components/Footer';
 import "../../public/assets/css/slick/slick.css";
 import "../../public/assets/css/bootstrap-3.4.1.css";
 import "../../public/assets/css/fontawesome.css";
+import "../../public/assets/css/lightbox.min.css";
 // Merged Custom CSS
 import "../../public/assets/css/merged.css";
 import "../../public/assets/css/merged-responsive.css";
@@ -49,6 +49,7 @@ export default function RootLayout({ children }) {
 
 			{/* Scripts */}
 			<Script src="assets/js/bootstrap.js" strategy="beforeInteractive" />
+			<Script src="assets/js/lightbox.min.js" strategy="beforeInteractive" />
 			<Script src="assets/js/main.js" strategy="afterInteractive" />
 			<Script src="assets/js/custom.js" strategy="afterInteractive" />
 		</body>

@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export const metadata = {
     title: "Blogs - Wiselogix Technologies",
     description: "Lorem ipsum dolor sitm...",
@@ -21,7 +24,7 @@ export default function ContactUs(){
                             </div>
                             <div className="banner_mata_part">
                                 <div className="logo_part">
-                                    <img src="assets/images/black-logo.png" alt="" />
+                                    <Image width={'100'} height={`100`} src="assets/images/black-logo.png" alt="Black Logo" />
                                 </div>
                                 <div className="reach_us_part">
                                     <h2>
@@ -29,8 +32,8 @@ export default function ContactUs(){
                                     </h2>
                                     <p>
                                         <strong>Akram Malik</strong><br />
-                                        <a href="mailto:info@gmail.com" className="mail-link">info@gmail.com</a><br />
-                                        <a href="tel:"><span className="sr-only">Phone:&nbsp;</span>+123456789</a>
+                                        <Link href="mailto:info@gmail.com" className="mail-link">info@gmail.com</Link><br />
+                                        <Link href="tel:"><span className="sr-only">Phone:&nbsp;</span>+123456789</Link>
                                     </p>
                                 </div>
                             </div>
@@ -40,90 +43,90 @@ export default function ContactUs(){
                                 <div className="blogs_item">
                                     <div className="blogs_meta">
                                         <div className="blog_link">
-                                            <a href="#" rel="tag" className="press-release">Press Release</a>
+                                            <Link href="#" rel="tag" className="press-release">Press Release</Link>
                                         </div>
                                         <div className="blog_date">January 15, 2025</div>
                                     </div>
                                     <div className="blogs_title">
                                         <h3>
-                                            <a href="#">
+                                            <Link href="#">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tellus venenatis, luctus leo sit amet, mollis risus.
-                                            </a>
+                                            </Link>
                                         </h3>
                                     </div>
                                 </div>
                                 <div className="blogs_item">
                                     <div className="blogs_meta">
                                         <div className="blog_link">
-                                            <a href="#" rel="tag" className="press-release">Press Release</a>
+                                            <Link href="#" rel="tag" className="press-release">Press Release</Link>
                                         </div>
                                         <div className="blog_date">January 15, 2025</div>
                                     </div>
                                     <div className="blogs_title">
                                         <h3>
-                                            <a href="#">
+                                            <Link href="#">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tellus venenatis, luctus leo sit amet, mollis risus.
-                                            </a>
+                                            </Link>
                                         </h3>
                                     </div>
                                 </div>
                                 <div className="blogs_item">
                                     <div className="blogs_meta">
                                         <div className="blog_link">
-                                            <a href="#" rel="tag" className="press-release">Press Release</a>
+                                            <Link href="#" rel="tag" className="press-release">Press Release</Link>
                                         </div>
                                         <div className="blog_date">January 15, 2025</div>
                                     </div>
                                     <div className="blogs_title">
                                         <h3>
-                                            <a href="#">
+                                            <Link href="#">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tellus venenatis, luctus leo sit amet, mollis risus.
-                                            </a>
+                                            </Link>
                                         </h3>
                                     </div>
                                 </div>
                                 <div className="blogs_item">
                                     <div className="blogs_meta">
                                         <div className="blog_link">
-                                            <a href="#" rel="tag" className="press-release">Press Release</a>
+                                            <Link href="#" rel="tag" className="press-release">Press Release</Link>
                                         </div>
                                         <div className="blog_date">January 15, 2025</div>
                                     </div>
                                     <div className="blogs_title">
                                         <h3>
-                                            <a href="#">
+                                            <Link href="#">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tellus venenatis, luctus leo sit amet, mollis risus.
-                                            </a>
+                                            </Link>
                                         </h3>
                                     </div>
                                 </div>
                                 <div className="blogs_item">
                                     <div className="blogs_meta">
                                         <div className="blog_link">
-                                            <a href="#" rel="tag" className="press-release">Press Release</a>
+                                            <Link href="#" rel="tag" className="press-release">Press Release</Link>
                                         </div>
                                         <div className="blog_date">January 15, 2025</div>
                                     </div>
                                     <div className="blogs_title">
                                         <h3>
-                                            <a href="#">
+                                            <Link href="#">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tellus venenatis, luctus leo sit amet, mollis risus.
-                                            </a>
+                                            </Link>
                                         </h3>
                                     </div>
                                 </div>
                                 <div className="blogs_item">
                                     <div className="blogs_meta">
                                         <div className="blog_link">
-                                            <a href="#" rel="tag" className="press-release">Press Release</a>
+                                            <Link href="#" rel="tag" className="press-release">Press Release</Link>
                                         </div>
                                         <div className="blog_date">January 15, 2025</div>
                                     </div>
                                     <div className="blogs_title">
                                         <h3>
-                                            <a href="#">
+                                            <Link href="#">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tellus venenatis, luctus leo sit amet, mollis risus.
-                                            </a>
+                                            </Link>
                                         </h3>
                                     </div>
                                 </div>

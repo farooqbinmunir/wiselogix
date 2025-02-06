@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Button from './Button';
 export default async function Project_Post({post, cls=""}) {
     return (
@@ -7,7 +8,7 @@ export default async function Project_Post({post, cls=""}) {
                     <div className="fl-module-content fl-node-content">
                         <div className="fl-photo fl-photo-align-center" itemScope itemType="https://schema.org/ImageObject">
                             <div className="fl-photo-content fl-photo-img-svg">
-                                <img loading="lazy" decoding="async" className="fl-photo-img wp-image-43139 size-full" src={post.featuredImage.node.sourceUrl} alt={post.title} title={post.title} />
+                                <Image loading="lazy" decoding="async" className="fl-photo-img wp-image-43139 size-full" src={post.featuredImage.node.sourceUrl} alt={post.title} title={post.title} width="100" height="60" />
                             </div>
                         </div>
                     </div>

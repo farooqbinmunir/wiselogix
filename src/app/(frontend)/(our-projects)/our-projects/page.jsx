@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export const metadata = {
     title: "Our Projects - Wiselogix Technologies",
     description: "Lorem ipsum dolor sitm...",
@@ -18,7 +19,7 @@ export default function OurProjects(){
                         </div>
                         <div className="banner_button">
                             <div className="project_readmore">
-                                <a className="oxfam_button" href="#" >Explore Projects</a>
+                                <Link className="oxfam_button" href="#" >Explore Projects</Link>
                             </div>
                         </div>
                     </div>
@@ -56,7 +57,7 @@ export default function OurProjects(){
                                         </p>
                                     </div>
                                     <div className="project_readmore">
-                                        <a className="oxfam_button" href="#" >Learn more</a>
+                                        <Link className="oxfam_button" href="#" >Learn more</Link>
                                     </div>
                                 </div>
                             </div>
@@ -76,7 +77,7 @@ export default function OurProjects(){
                                         </p>
                                     </div>
                                     <div className="project_readmore">
-                                        <a className="oxfam_button" href="#" >Learn more</a>
+                                        <Link className="oxfam_button" href="#" >Learn more</Link>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +97,7 @@ export default function OurProjects(){
                                         </p>
                                     </div>
                                     <div className="project_readmore">
-                                        <a className="oxfam_button" href="#" >Learn more</a>
+                                        <Link className="oxfam_button" href="#" >Learn more</Link>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +117,7 @@ export default function OurProjects(){
                                         </p>
                                     </div>
                                     <div className="project_readmore">
-                                        <a className="oxfam_button" href="#" >Learn more</a>
+                                        <Link className="oxfam_button" href="#" >Learn more</Link>
                                     </div>
                                 </div>
                             </div>

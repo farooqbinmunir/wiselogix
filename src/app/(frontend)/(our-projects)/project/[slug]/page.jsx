@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import GACParternshipColourLogo from '../../../../../../public/assets/images/GAC-parternship-colour-logo.webp';
 export default function Project({params}){
@@ -20,7 +21,7 @@ export default function Project({params}){
                         </div>
                         <div className="banner_button">
                             <div className="project_readmore">
-                                <a className="oxfam_button" href="#" >Explore Projects</a>
+                                <Link className="oxfam_button" href="#" >Explore Projects</Link>
                             </div>
                         </div>
                     </div>
@@ -71,7 +72,7 @@ export default function Project({params}){
                                 </div>
                                 <div className="impact_btn">
                                     <div className="project_readmore">
-                                        <a className="oxfam_button" href="#" >Our Impact in 2023 </a>
+                                        <Link className="oxfam_button" href="#" >Our Impact in 2023 </Link>
                                     </div>
                                 </div>
                             </div>

@@ -5,7 +5,7 @@ import client from "../../../config.js";
 export default async function Section_HumanRights({cls=""}){
 
     const eventsHeaderQuery = `{
-        themeSettings {
+        page(id: "home", idType: URI){
             homeUpcomingEvents {
                 eventsHeading
                 eventsSubheadingHighlighted
@@ -18,7 +18,7 @@ export default async function Section_HumanRights({cls=""}){
         }
     }`;
 
-    const {themeSettings: {homeUpcomingEvents: events}} = await client.request(eventsHeaderQuery);
+    const {page: {homeUpcomingEvents: events}} = await client.request(eventsHeaderQuery);
 
     return (
         <div id="section_human_rights" className={`${cls} fl-row fl-row-full-width fl-row-bg-color fl-node-fnsv9iphw5y2 fl-row-default-height fl-row-align-center`} data-node="fnsv9iphw5y2">

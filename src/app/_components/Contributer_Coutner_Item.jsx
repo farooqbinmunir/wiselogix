@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Contributer_Coutner_Item({item, cls=""}) {
     return (
         <div className="fl-col-group fl-node-082xyt4h56e1 fl-col-group-nested fl-col-group-equal-height fl-col-group-align-top" data-node="082xyt4h56e1">
@@ -7,7 +9,7 @@ export default function Contributer_Coutner_Item({item, cls=""}) {
                         <div className="fl-module-content fl-node-content">
                             <div className="fl-photo fl-photo-align-left" itemScope itemType="https://schema.org/ImageObject">
                                 <div className="fl-photo-content fl-photo-img-svg">
-                                    <img loading="lazy" decoding="async" className="fl-photo-img wp-image-43622 size-full" src={item.counter_icon_url} itemProp="image" height="100" width="125" title="oxfam-urgent-assistance-icon" />
+                                    <Image alt="Image" width={`100`} height={`100`} loading="lazy" decoding="async" className="fl-photo-img wp-image-43622 size-full" src={item.counter_icon_url} itemProp="image" height="100" width="125" title="oxfam-urgent-assistance-icon" />
                                 </div>
                             </div>
                         </div>

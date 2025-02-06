@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import CandiceShawImgURL from "../../../../../public/assets/images/Candice-Shaw-700-px.webp";
 import linkedinIconURL from "../../../../../public/assets/images/linkedin_icon.webp";
@@ -25,7 +26,7 @@ export default function OurTeam(){
                         </div>
                         <div className="banner_button">
                             <div className="project_readmore">
-                                <a className="oxfam_button" href="#" >Donate Now</a>
+                                <Link className="oxfam_button" href="#" >Donate Now</Link>
                             </div>
                         </div>
                     </div>
@@ -50,7 +51,7 @@ export default function OurTeam(){
                             <div className="team_item">
                                 <div className="person_img_wrap">
                                     <div className="person_img">
-                                        <Image src={CandiceShawImgURL} alt="" width={true} height={true} />
+                                        <Image src={CandiceShawImgURL} alt="" width={`100`} height={`100`} />
                                     </div>
                                     <div className="person_mask gray_mask"></div>
                                 </div>
@@ -59,10 +60,10 @@ export default function OurTeam(){
                                     <div className="person_designation">Board of Directors</div>
                                     <div className="person_social">
                                         <div className="person_linkedin">
-                                            <a href="#" target="_blank">
-                                                <Image className="linkedin_icon" src={linkedinIconURL} alt="" width={true} height={true} />
+                                            <Link href="#" target="_blank">
+                                                <Image className="linkedin_icon" src={linkedinIconURL} alt="" width={`100`} height={`100`} />
                                                 <i className="fas fa-external-link-alt" aria-hidden="true"></i>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="person_shortbio">
@@ -94,7 +95,7 @@ export default function OurTeam(){
                             <div className="team_item">
                                 <div className="person_img_wrap">
                                     <div className="person_img">
-                                        <Image src={lrhsImageURL} alt="" width={true} height={true} />
+                                        <Image src={lrhsImageURL} alt="" width={`100`} height={`100`} />
                                     </div>
                                     <div className="person_mask white_mask"></div>
                                 </div>
@@ -103,15 +104,15 @@ export default function OurTeam(){
                                     <div className="person_designation">Board of Directors</div>
                                     <div className="person_social">
                                         <div className="person_twitter">
-                                            <a href="#" target="_blank">
+                                            <Link href="#" target="_blank">
                                                 <i className="fas fa-external-link-alt" aria-hidden="true"></i>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="person_linkedin">
-                                            <a href="#" target="_blank">
-                                                <Image className="linkedin_icon" src={linkedinIconURL} alt="" width={true} height={true} />
+                                            <Link href="#" target="_blank">
+                                                <Image className="linkedin_icon" src={linkedinIconURL} alt="" width={`100`} height={`100`} />
                                                 <i className="fas fa-external-link-alt" aria-hidden="true"></i>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="person_shortbio">
@@ -143,7 +144,7 @@ export default function OurTeam(){
                             <div className="team_item">
                                 <div className="person_img_wrap">
                                     <div className="person_img">
-                                        <Image src={CarolinaPalaciosImageURL} alt="" width={true} height={true} />
+                                        <Image src={CarolinaPalaciosImageURL} alt="" width={`100`} height={`100`} />
                                     </div>
                                     <div className="person_mask gray_mask"></div>
                                 </div>
@@ -152,10 +153,10 @@ export default function OurTeam(){
                                     <div className="person_designation">Board of Directors</div>
                                     <div className="person_social">
                                         <div className="person_linkedin">
-                                            <a href="#" target="_blank">
-                                                <Image className="linkedin_icon" src={linkedinIconURL} alt="" width={true} height={true} />
+                                            <Link href="#" target="_blank">
+                                                <Image className="linkedin_icon" src={linkedinIconURL} alt="" width={`100`} height={`100`} />
                                                 <i className="fas fa-external-link-alt" aria-hidden="true"></i>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="person_shortbio">

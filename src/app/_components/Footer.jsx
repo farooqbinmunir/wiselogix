@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Donate_Button from "./Donate_Button";
 import GetInvolved from "./GetInvolved";
 import client from '../../../config.js';
@@ -152,7 +153,7 @@ export default async function Footer() {
 				
 				{/* Footer Column 3 */}
 				<div className="footer_col column3">
-					<img className="oxfam_logo" src={footerColumn3.footerLogo.node.sourceUrl} aria-hidden="true" alt="" height="144" width="362" />
+				<Image  className="oxfam_logo" src={footerColumn3.footerLogo.node.sourceUrl} aria-hidden="true" alt="Image" height="144" width="362" />
 					<div className="footer_member">{footerColumn3.footerColumn3Desc}</div>
 					<Donate_Button cls={`footer_donate_button`} theme="oranage" />
 				</div>

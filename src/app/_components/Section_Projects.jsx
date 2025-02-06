@@ -4,7 +4,7 @@ import Project_Posts from "./Project_Posts";
 import client from "../../../config.js";
 export default async function Section_Projects({cls=""}){
     const projectHeaderQuery = `{
-        themeSettings {
+        page(id: "home", idType: URI) {
             homeOurProjects {
                 projectHeading
                 projectSubheadingHighlighted
@@ -16,7 +16,7 @@ export default async function Section_Projects({cls=""}){
             }
         }
     }`;
-    const {themeSettings: {homeOurProjects: projectsHeader}} = await client.request(projectHeaderQuery);
+    const {page: {homeOurProjects: projectsHeader}} = await client.request(projectHeaderQuery);
     return (
         <>
         <div id="section_compaigns" className={`${cls} fl-row fl-row-full-width fl-row-bg-color fl-node-fnsv9iphw5y2 fl-row-default-height fl-row-align-center`} data-node="fnsv9iphw5y2">

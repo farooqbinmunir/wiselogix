@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export const metadata = {
     title: "About Us - Wiselogix Technologies",
     description: "Lorem ipsum dolor sitm...",
@@ -16,7 +17,7 @@ export default function Careers(){
                         </div>
                         <div className="banner_button">
                             <div className="project_readmore">
-                                <a className="oxfam_button" href="#" >Explore Projects</a>
+                                <Link className="oxfam_button" href="#" >Explore Projects</Link>
                             </div>
                         </div>
                     </div>

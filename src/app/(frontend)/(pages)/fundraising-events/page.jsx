@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export const metadata = {
     title: "Fundraising Events - Wiselogix Technologies",
     description: "Lorem ipsum dolor sitm...",
@@ -18,7 +19,7 @@ export default function FundraisingEvents(){
                         </div>
                         <div className="banner_button">
                             <div className="project_readmore">
-                                <a className="oxfam_button" href="#" >Get Started</a>
+                                <Link className="oxfam_button" href="#" >Get Started</Link>
                             </div>
                         </div>
                     </div>
@@ -57,7 +58,7 @@ export default function FundraisingEvents(){
                                         </p>
                                     </div>
                                     <div className="project_readmore">
-                                        <a className="oxfam_button" href="#" >Get Started</a>
+                                        <Link className="oxfam_button" href="#" >Get Started</Link>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +78,7 @@ export default function FundraisingEvents(){
                                         </p>
                                     </div>
                                     <div className="project_readmore">
-                                        <a className="oxfam_button" href="#" >Learn more</a>
+                                        <Link className="oxfam_button" href="#" >Learn more</Link>
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +98,7 @@ export default function FundraisingEvents(){
                                         </p>
                                     </div>
                                     <div className="project_readmore">
-                                        <a className="oxfam_button" href="#" >Learn more</a>
+                                        <Link className="oxfam_button" href="#" >Learn more</Link>
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +118,7 @@ export default function FundraisingEvents(){
                                         </p>
                                     </div>
                                     <div className="project_readmore">
-                                        <a className="oxfam_button" href="#" >Learn more</a>
+                                        <Link className="oxfam_button" href="#" >Learn more</Link>
                                     </div>
                                 </div>
                             </div>

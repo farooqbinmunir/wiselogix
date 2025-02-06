@@ -1,8 +1,8 @@
 import EndingPoverty_Post from './EndingPoverty_Post';
 import client from "../../../config.js";
 export default async function EndingPoverty_Posts({cls=""}) {
-    const endingPovertyPostsQuery = `query endingPoverty {
-        themeSettings {
+    const endingPovertyPostsQuery = `{
+        page(id: "home", idType: URI) {
             homeEndingPovertySection {
                 endingPovertyPosts {
                     post1 {
@@ -22,7 +22,7 @@ export default async function EndingPoverty_Posts({cls=""}) {
         }
     }`;
 
-    const {themeSettings: {homeEndingPovertySection: {endingPovertyPosts}}} = await client.request(endingPovertyPostsQuery);
+    const {page: {homeEndingPovertySection: {endingPovertyPosts}}} = await client.request(endingPovertyPostsQuery);
     return (
         <div id="section_ending_poverty_posts" className={`${cls} fl-row fl-row-full-width fl-row-bg-none fl-node-i8mk4jf9v70g fl-row-default-height fl-row-align-center`} data-node="i8mk4jf9v70g">
             <div className="fl-row-content-wrap">
