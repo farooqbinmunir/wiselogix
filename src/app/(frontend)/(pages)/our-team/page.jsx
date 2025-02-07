@@ -1,35 +1,23 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import client from '../../../../../config.js';
 import CandiceShawImgURL from "../../../../../public/assets/images/Candice-Shaw-700-px.webp";
 import linkedinIconURL from "../../../../../public/assets/images/linkedin_icon.webp";
 import lrhsImageURL from "../../../../../public/assets/images/LRHS.png";
 import CarolinaPalaciosImageURL from "../../../../../public/assets/images/Carolina-Palacios.png";
+
+import BannerGlobal from "../../../_components/BannerGlobal";
 export const metadata = {
     title: "Our Team - Wiselogix Technologies",
     description: "Lorem ipsum dolor sitm...",
 };
 export default function OurTeam(){
-
     return(
         <>
         <main id="fl-main-content" className="fl-page-content">
             <div className="container">
                 <div className="row">
-                    <div className="section_pad banner_section">
-                        <div className="section_heading">
-                            <h1>
-                                Our Dedicated Team of Passionate Individuals
-                            </h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tellus venenatis, luctus leo sit amet, mollis risus.
-                            </p>
-                        </div>
-                        <div className="banner_button">
-                            <div className="project_readmore">
-                                <Link className="oxfam_button" href="#" >Donate Now</Link>
-                            </div>
-                        </div>
-                    </div>
+                    <BannerGlobal pageSlug="our-team" />
                     <div className="section_pad under_banner_section story_under_banner">
                         <div className="section_heading">
                             <h2>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BannerGlobal from "../../../_components/BannerGlobal";
 
 export const metadata = {
     title: "Who we are",
@@ -6,7 +7,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main id="fl-main-content" className="fl-page-content" itemProp="mainContentOfPage">
-        <h1>Who We Are page</h1>
+        <BannerGlobal pageSlug="who-we-are" />
     </main>
   );
 }

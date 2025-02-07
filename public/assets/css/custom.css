@@ -202,7 +202,7 @@ span.highligh_green,
     padding: 50px;
 }
 .banner_section{
-    background-image: url(../images/development-projects-women-talking-in-tent.jpg);
+    background-image: url(../images/banner-global-placeholder.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: scroll;
@@ -418,10 +418,6 @@ span.highligh_green,
 
 
 /* our story */
-
-.our-story-page .banner_section {
-    background-image: url(../images/our-story-women-in-line.jpg);
-}
 .story_under_banner h2 {
     margin: 0;
 }
@@ -548,9 +544,6 @@ span.caption-two {
 }
 
 /* our team */
-.our-story-page .banner_section {
-    background-image: url(../images/our-story-women-in-line.jpg);
-}
 .board_directors,
 .senior_leadership {
     background: #EAEADE;
@@ -678,7 +671,7 @@ button:focus {
 /* contact us */
 
 .contact-us-page .banner_section {
-    background-image: url(../images/contact-us-woman-in-village.jpg);
+    /* background-image: url(../images/contact-us-woman-in-village.jpg); */
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -762,10 +755,6 @@ button:focus {
 
 /* faqs */
 
-.our-mission-page .banner_section{
-    background-image: url(../images/our-mission-header-girl-drinking-water.jpg);
-}
-
 .our-mission-page h2 {
     text-align: center;
 }
@@ -810,10 +799,6 @@ button:focus {
 }
 
 /* privacy page */
-
-.privacy-policy-page .banner_section{
-    background-image: url(../images/provacy-policy-woman-behind-metal-sheet.jpg);
-}
 .privacy-policy-page .banner_section p {
     text-align: left;
 }
@@ -837,10 +822,6 @@ button:focus {
 }
 
 /* Accessibility */
-
-.accessibility-page .banner_section {
-    background-image: url(../images/why-women-mother-and-daughter-sudan.jpg);
-}
 .banner_section p{
     text-align: left;
 }
@@ -850,11 +831,6 @@ button:focus {
 }
 
 /* careers */
-
-.careers-page .banner_section {
-    background-image: url(../images/careers.jpg);
-}
-
 .careers-page .under_banner_section {
     max-width: 100%;
 }

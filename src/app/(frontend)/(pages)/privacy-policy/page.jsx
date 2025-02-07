@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import BannerGlobal from "../../../_components/BannerGlobal";
+
 export const metadata = {
     title: "Privacy Policy - Wiselogix Technologies",
     description: "Lorem ipsum dolor sitm...",
@@ -10,21 +12,8 @@ export default function PrivacyPolicy(){
         <main id="fl-main-content" className="fl-page-content">
             <div className="container">
                 <div className="row">
-                    <div className="section_pad banner_section">
-                        <div className="section_heading">
-                            <h1>
-                                Policy for Ensuring Privacy
-                            </h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tellus venenatis, luctus leo sit amet, mollis risus. Aenean elementum quis nunc eu auctor.
-                            </p>
-                        </div>
-                        <div className="banner_button">
-                            <div className="project_readmore">
-                                <Link className="oxfam_button" href="#" >Explore Projects</Link>
-                            </div>
-                        </div>
-                    </div>
+                    <BannerGlobal pageSlug="privacy-policy" />
+
                     <div className="section_pad under_banner_section">
                         <div className="section_heading">
                             <h2>

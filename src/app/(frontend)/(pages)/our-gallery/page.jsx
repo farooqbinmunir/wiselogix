@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import BannerGlobal from "../../../_components/BannerGlobal";
+<BannerGlobal pageSlug="our-story" />
 
 export const metadata = {
     title: "Gallery - Wiselogix Technologies",

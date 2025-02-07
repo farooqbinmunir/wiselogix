@@ -5,7 +5,6 @@ import Header from '@/app/_components/Header';
 import Footer from '@/app/_components/Footer';
 
 // IMPORTING CSS
-
 // Thirdparty Libs CSS
 import "../../public/assets/css/slick/slick.css";
 import "../../public/assets/css/bootstrap-3.4.1.css";
@@ -22,7 +21,6 @@ export const metadata = {
   description: "Lorem ipsum dolor sit amet",
 };
 export default function RootLayout({ children }) {
-
   	return (
 		<html lang="en">
 		<head>
