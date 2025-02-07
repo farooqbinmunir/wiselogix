@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import BannerGlobal from "../../../_components/BannerGlobal";
-<BannerGlobal pageSlug="our-story" />
+
 
 export const metadata = {
     title: "Gallery - Wiselogix Technologies",
@@ -14,17 +14,7 @@ export default function Gallery(){
         <main id="fl-main-content" className="fl-page-content">
             <div className="container">
                 <div className="row">
-                    <div className="section_pad banner_section">
-                        <div className="section_heading">
-                            <h1>Our Gallery</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tellus venenatis, luctus leo sit amet, mollis risus.</p>
-                        </div>
-                        <div className="banner_button">
-                            <div className="project_readmore">
-                                <Link className="oxfam_button" href="#" >Donate Now</Link>
-                            </div>
-                        </div>
-                    </div>
+                    <BannerGlobal pageSlug="our-gallery" />
                     <div className="section_pad under_banner_section gallery_under_banner">
                         <div className="section_heading">
                             <h2>Fight Inequality. Beat Poverty.</h2>

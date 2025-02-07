@@ -3,7 +3,14 @@ import Image from 'next/image';
 import Donate_Button from "./Donate_Button";
 import GetInvolved from "./GetInvolved";
 import client from '../../../config.js';
+
 export default async function Footer() {
+
+
+	  
+
+
+
 	// /* Footer Social Links */
 	const socialIconsQuery = `query socialIcons {
 		themeSettings {
@@ -42,7 +49,7 @@ export default async function Footer() {
 			menuItems {
 				edges {
 					node {
-						url
+						uri
 						label
 					}
 				}
@@ -100,7 +107,6 @@ export default async function Footer() {
 			{/*<!-- Footer Get Involved Section -->*/}
 			<GetInvolved />
 			{/*<!-- Footer Get Involved Section -->*/}
-
           	<div className="footer_wrapper">
 				{/*<!-- Footer Column 1 -->*/}
 				<div className="footer_col column1">
@@ -145,7 +151,7 @@ export default async function Footer() {
 				<div className="footer_col column2 jjkjkjkjk">
 					<h3 id="footer-useful-title" className="footer-nav-heading white">Useful Links</h3>
 					<ul aria-labelledby="footer-useful-title" className="footer_useful_links linostyle nomargin nopadding footer-nav-links">
-						{linkItems.map((link, index) => <li className="footer_useful_link_item" key={index}><Link href={link.node.url} target="_self">{link.node.label}</Link></li>)}
+						{linkItems.map((link, index) => <li className="footer_useful_link_item" key={index}><Link href={link.node.uri} target="_self">{link.node.label}</Link></li>)}
 					</ul>
 				</div>
 				{/* Footer Column 2 */}

@@ -1,3 +1,4 @@
+import axios from "axios";
 import { GraphQLClient } from "graphql-request";
 
 // Set your WordPress URL and application password
@@ -11,3 +12,16 @@ const client = new GraphQLClient(wpGraphqlUrl, {
   },
 });
 export default client;
+
+
+
+// JWT Token Authentication
+
+const AXIOS = axios.create({
+  baseURL: "hhttps://wordpress-821607-5011314.cloudwaysapps.com/wp-json", // Change this to your WordPress site
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+
+export {AXIOS};
