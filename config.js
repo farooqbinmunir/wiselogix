@@ -1,26 +1,30 @@
 import { GraphQLClient } from "graphql-request";
-// import axios from "axios";
+import axios from "axios";
 
-// Set your WordPress URL and application password
-const wpGraphqlUrl = process.env.WORDPRESS_GRAPHQL_URL;
-const username = "nayyer516@gmail.com"; // Replace with your WordPress username
-const password = "0TYp 4WNE n89i Sku0 rAPc W4rA"; // Use the application password you generated
+// Ensure `wpGraphqlUrl` is always defined
+const wpGraphqlUrl = process.env.NEXT_PUBLIC_WORDPRESS_GRAPHQL_URL;
+if (!wpGraphqlUrl) {
+  throw new Error("❌ Missing environment variable: NEXT_PUBLIC_WORDPRESS_GRAPHQL_URL");
+}
+
+// Use environment variables for authentication (safer)
+const username = process.env.WORDPRESS_USERNAME;
+const password = process.env.WORDPRESS_APP_PASSWORD;
 
 const client = new GraphQLClient(wpGraphqlUrl, {
   headers: {
     Authorization: `Basic ${Buffer.from(`${username}:${password}`).toString("base64")}`,
   },
 });
+
 export default client;
 
+// Axios instance
+const AXIOS = axios.create({
+  baseURL: process.env.NEXT_PUBLIC_WORDPRESS_API_URL, // Use env variable instead of hardcoding
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
 
-
-// // JWT Token Authentication
-// const AXIOS = axios.create({
-//   baseURL: "https://wordpress-821607-5011314.cloudwaysapps.com/wp-json",
-//   headers: {
-//     "Content-Type": "application/json",
-//   },
-// });
-
-// export {AXIOS};
+export { AXIOS };
