@@ -16,7 +16,6 @@ export default client;
 
 
 // JWT Token Authentication
-
 const AXIOS = axios.create({
   baseURL: "https://wordpress-821607-5011314.cloudwaysapps.com/wp-json",
   headers: {
