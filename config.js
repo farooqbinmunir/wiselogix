@@ -1,5 +1,5 @@
-import axios from "axios";
 import { GraphQLClient } from "graphql-request";
+// import axios from "axios";
 
 // Set your WordPress URL and application password
 const wpGraphqlUrl = process.env.WORDPRESS_GRAPHQL_URL;
@@ -15,12 +15,12 @@ export default client;
 
 
 
-// JWT Token Authentication
-const AXIOS = axios.create({
-  baseURL: "https://wordpress-821607-5011314.cloudwaysapps.com/wp-json",
-  headers: {
-    "Content-Type": "application/json",
-  },
-});
+// // JWT Token Authentication
+// const AXIOS = axios.create({
+//   baseURL: "https://wordpress-821607-5011314.cloudwaysapps.com/wp-json",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+// });
 
-export {AXIOS};
+// export {AXIOS};

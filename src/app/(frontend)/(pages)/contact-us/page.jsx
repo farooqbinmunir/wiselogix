@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import BannerGlobal from "../../../_components/BannerGlobal";
 import Form from "../../../_components/Form";
-import FetchData from "../../../_components/FetchData";
 
 
 
@@ -18,7 +17,6 @@ export default function ContactUs(){
                 <div className="row">
                     <BannerGlobal pageSlug="contact-us" />
                     <Form />
-                    <FetchData />
                     <div className="section_pad under_banner_section">
                         <div className="section_heading">
                             <h2>
