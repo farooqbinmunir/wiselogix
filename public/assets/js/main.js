@@ -190,14 +190,16 @@ jQuery(document).ready(function($) {
             nextArrow: '<button type="button" class="slick-next-two-column"><img src="../assets/images/g_9361.svg" alt="arrow right"></button>'
         });
     });
-    $('.home-page-tabs').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.home-page-sider',
-        dots: false,
-        centerMode: true,
-        focusOnSelect: true
-    });
+    if($('.home-page-tabs').length){
+        $('.home-page-tabs').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.home-page-sider',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true
+        });
+    }
 
     $(".home-page-tab").on('click', function(event) {
         $('.home-page-sider').slick('slickPause');

@@ -12,7 +12,7 @@ export default function OurProjects(){
         <main id="fl-main-content" className="fl-page-content">
             <div className="container">
                 <div className="row">
-                    <BannerGlobal pageSlug="our-projects" />
+                    <BannerGlobal pageSlug="projects" />
                     <div className="section_pad under_banner_section">
                         <div className="section_heading">
                             <h2>
