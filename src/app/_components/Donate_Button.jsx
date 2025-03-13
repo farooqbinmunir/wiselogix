@@ -3,7 +3,7 @@ import client from '../../../config.js';
 export default async function Donate_Button({cls = "", theme = "green"}) {
     let buttonClass = "donate_button";
     buttonClass += theme === "green" ? " donate_button_green" : " donate_button_orange";
-    buttonClass += ` ${cls}`;
+    buttonClass += ` ${cls}`; 
 
     const themeSettingsQuery = `query donateButton {
         themeSettings {
