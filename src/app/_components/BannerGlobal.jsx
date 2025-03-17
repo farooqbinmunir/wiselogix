@@ -20,7 +20,6 @@ export default async function BannerGlobal({pageSlug}){
     }`;
     const {page} = await client.request(bannerQuery);
     const imgURL = page?.featuredImage?.node?.sourceUrl ? page?.featuredImage?.node?.sourceUrl : false;
-    console.log(page, 'page');
     let bgImage = {};
     if(imgURL){
         bgImage = {
