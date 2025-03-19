@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
         if (title_id) $(this).attr("aria-labelledby", title_id)
     })
 
-    $("#main-menu button.mainmenu_main").on('click', function(e) {
+    $("#main-menu .mainmenu_main").on('click', function(e) {
         $(".section_expanded").removeClass("section_expanded");
         var aria_expanded = $(this).attr("aria-expanded")
         if (aria_expanded == "false") {
@@ -24,18 +24,18 @@ jQuery(document).ready(function($) {
 
             }
         }
-        $("#main-menu button.mainmenu_main").not(this).attr("aria-expanded", "false")
+        $("#main-menu .mainmenu_main").not(this).attr("aria-expanded", "false")
     })
 
     $("#main-menu").on({
         'mouseleave': function() {
-            $("#main-menu button.mainmenu_main").not(this).attr("aria-expanded", "false").blur()
+            $("#main-menu .mainmenu_main").not(this).attr("aria-expanded", "false").blur()
             $(".section_expanded").removeClass("section_expanded");
         }
     })
 
     if ($(window).width() > 992) {
-        $("#main-menu button.mainmenu_main").on('mouseover', function(e) {
+        $("#main-menu .mainmenu_main").on('mouseover', function(e) {
             $(".section_expanded").removeClass("section_expanded");
             var aria_expanded = $(this).attr("aria-expanded")
             if (aria_expanded == "false") {
@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
 
                 }
             }
-            $("#main-menu button.mainmenu_main").not(this).attr("aria-expanded", "false")
+            $("#main-menu .mainmenu_main").not(this).attr("aria-expanded", "false")
         })
 
     };
@@ -59,7 +59,7 @@ jQuery(document).ready(function($) {
         let hamburgerMenu = $(".mobile_menu_toggle");
         if (hamburgerMenu.attr("aria-expanded") === "true") {
             hamburgerMenu.attr("aria-expanded", "false");
-            let mainMenuItems = $("#main-menu button.mainmenu_main");
+            let mainMenuItems = $("#main-menu .mainmenu_main");
             mainMenuItems.attr("aria-expanded", "false");
             mainMenuItems.parent().removeClass("section_expanded");
         } else {

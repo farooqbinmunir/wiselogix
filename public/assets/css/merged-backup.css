@@ -70,7 +70,7 @@ a.menu-item:hover {
     padding: 22px 35px 10px 30px !important
 }
 
-html header.scrollfixed #main-menu button.mainmenu_main {
+html header.scrollfixed #main-menu .mainmenu_main {
     color: #000 !important
 }
 
@@ -15146,11 +15146,11 @@ header.scrollfixed #main-menu {
     background: #fff
 }
 
-#main-menu:focus-within button.mainmenu_main,
-#main-menu:hover button.mainmenu_main,
-.story-template-default #main-menu button.mainmenu_main,
-body:not(.page-template-single-menuoverlap):not(.landing-page-template-template-davos) #main-menu button.mainmenu_main,
-header.scrollfixed #main-menu button.mainmenu_main {
+#main-menu:focus-within .mainmenu_main,
+#main-menu:hover .mainmenu_main,
+.story-template-default #main-menu .mainmenu_main,
+body:not(.page-template-single-menuoverlap):not(.landing-page-template-template-davos) #main-menu .mainmenu_main,
+header.scrollfixed #main-menu .mainmenu_main {
     color: #44841a
 }
 
@@ -15162,7 +15162,7 @@ header.scrollfixed #main-menu .menu_main_logo {
     background: url(../images/logo-oxfam-pink-text.svg) 50%/cover no-repeat
 }
 
-#main-menu button.mainmenu_main {
+#main-menu .mainmenu_main {
     font-family: Oxfam TSTAR PRO bold;
     min-height: 3rem;
     padding: 0 1.5rem;
@@ -15174,11 +15174,11 @@ header.scrollfixed #main-menu .menu_main_logo {
     font-size: 1.8rem
 }
 
-#main-menu button.mainmenu_main:hover {
+#main-menu .mainmenu_main:hover {
     color: #336114
 }
 
-#main-menu button.mainmenu_main:focus {
+#main-menu .mainmenu_main:focus {
     border: 1px solid #000
 }
 
@@ -15228,7 +15228,7 @@ header.scrollfixed #main-menu .menu_main_logo {
     background: #fff
 }
 
-#main-menu button.mainmenu_main[aria-expanded=true]~ul {
+#main-menu .mainmenu_main[aria-expanded=true]~ul {
     visibility: visible;
     opacity: 1;
     background: #fff;

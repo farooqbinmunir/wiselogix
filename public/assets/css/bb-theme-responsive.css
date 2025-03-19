@@ -26,7 +26,7 @@
     body .fl-row.fl-row-full-width .image_info_outer {right:0 !important;}
 
 
-    #main-menu button.mainmenu_main {
+    #main-menu .mainmenu_main {
         padding: 0px 10px 0px 10px;
         font-size: 1.6rem;
     }
@@ -162,7 +162,7 @@
                 font-size: 16px;
                 max-width: 115px;
             }
-    #main-menu button.mainmenu_main { color:#44841a;}
+    #main-menu .mainmenu_main { color:#44841a;}
 
     #main-menu >ul >li {
                 display: block;
@@ -184,7 +184,7 @@
             }
 
 
-            #main-menu button.mainmenu_main {
+            #main-menu .mainmenu_main {
                 height: initial;
                 padding: 8px 15px 8px 25px;
                 width:100%;
@@ -200,7 +200,7 @@
 
             #main-menu h3 {padding-top:20px;}
 
-            #main-menu button.mainmenu_main[aria-expanded="true"] ~ ul {position:relative;}
+            #main-menu .mainmenu_main[aria-expanded="true"] ~ ul {position:relative;}
             #main-menu ul.sub-menu[data-depth="0"] >li{
                 border-left: 0;
                 padding: 0 30px 0;
@@ -245,7 +245,7 @@
                 outline-offset: 0;
             }
 
-            #main-menu button.mainmenu_main[aria-expanded="true"] ~ ul{ 
+            #main-menu .mainmenu_main[aria-expanded="true"] ~ ul{ 
                 box-shadow: none;
                 border-width:0;
                 background:#F0F0F0;

@@ -72,7 +72,7 @@ a.menu-item:hover{
     padding: 22px 35px 10px 30px !important;
 }
 
-html header.scrollfixed #main-menu button.mainmenu_main{
+html header.scrollfixed #main-menu .mainmenu_main{
     color: #000000 !important;
 }
 
@@ -340,7 +340,7 @@ span.highligh_green,
 .blogs-page #main-menu {
     background: #fff !important;
 }
-.blogs-page #main-menu button.mainmenu_main {
+.blogs-page #main-menu .mainmenu_main {
     color: #000;
 }
 .blogs-page #main-menu:before {

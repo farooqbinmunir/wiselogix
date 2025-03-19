@@ -1,0 +1,83 @@
+[12:39:54.310] Running build in Washington, D.C., USA (East) – iad1
+[12:39:54.404] Cloning github.com/farooqbinmunir/wiselogix (Branch: main, Commit: 02c47e6)
+[12:39:54.417] Skipping build cache, deployment was triggered without cache.
+[12:39:57.832] Cloning completed: 3.427s
+[12:39:58.474] Running "vercel build"
+[12:39:58.857] Vercel CLI 41.4.1
+[12:39:59.189] Installing dependencies...
+[12:40:09.261] 
+[12:40:09.261] added 335 packages in 10s
+[12:40:09.261] 
+[12:40:09.261] 135 packages are looking for funding
+[12:40:09.262]   run `npm fund` for details
+[12:40:09.327] Detected Next.js version: 15.1.4
+[12:40:09.330] Running "npm run build"
+[12:40:09.446] 
+[12:40:09.447] > wiselogix@0.1.0 build
+[12:40:09.447] > next build
+[12:40:09.447] 
+[12:40:10.109] Attention: Next.js now collects completely anonymous telemetry regarding usage.
+[12:40:10.110] This information is used to shape Next.js' roadmap and prioritize features.
+[12:40:10.110] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[12:40:10.110] https://nextjs.org/telemetry
+[12:40:10.110] 
+[12:40:10.169]    ▲ Next.js 15.1.4
+[12:40:10.169]    - Environments: .env.local
+[12:40:10.169] 
+[12:40:10.244]    Creating an optimized production build ...
+[12:40:23.650]  ✓ Compiled successfully
+[12:40:23.654]    Skipping linting
+[12:40:23.654]    Checking validity of types ...
+[12:40:23.725]    Collecting page data ...
+[12:40:26.528]    Generating static pages (0/19) ...
+[12:41:13.784]    Generating static pages (4/19) 
+[12:42:12.770]    Generating static pages (9/19) 
+[12:42:14.899] Failed to build /(frontend)/(pages)/contact-us/page: /contact-us (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+[12:42:14.900] Failed to build /(frontend)/(pages)/careers/page: /careers (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+[12:42:14.900] Failed to build /(frontend)/(pages)/fundraising-events/page: /fundraising-events (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+[12:42:14.900] Failed to build /(frontend)/(pages)/our-gallery/page: /our-gallery (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+[12:42:14.900] Failed to build /(frontend)/(pages)/our-history/page: /our-history (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+[12:42:14.900] Failed to build /(frontend)/(pages)/our-story/page: /our-story (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+[12:42:14.900] Failed to build /(frontend)/(pages)/privacy-policy/page: /privacy-policy (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+[12:42:17.583]    Generating static pages (14/19) 
+[12:43:13.646]  ✓ Generating static pages (19/19)
+[12:43:41.073]    Finalizing page optimization ...
+[12:43:41.073]    Collecting build traces ...
+[12:43:41.088] 
+[12:43:41.101] Route (app)                              Size     First Load JS
+[12:43:41.101] ┌ ○ /                                    192 B           114 kB
+[12:43:41.101] ├ ○ /_not-found                          979 B           106 kB
+[12:43:41.101] ├ ○ /about-us                            197 B           109 kB
+[12:43:41.101] ├ ○ /accessibility                       197 B           109 kB
+[12:43:41.101] ├ ƒ /blog/[slug]                         186 B           114 kB
+[12:43:41.101] ├ ○ /blogs                               186 B           114 kB
+[12:43:41.101] ├ ○ /careers                             197 B           109 kB
+[12:43:41.101] ├ ○ /contact-us                          197 B           109 kB
+[12:43:41.101] ├ ○ /fundraising-events                  197 B           109 kB
+[12:43:41.101] ├ ○ /our-gallery                         192 B           114 kB
+[12:43:41.102] ├ ○ /our-history                         197 B           109 kB
+[12:43:41.102] ├ ○ /our-mission                         197 B           109 kB
+[12:43:41.102] ├ ○ /our-story                           192 B           114 kB
+[12:43:41.102] ├ ○ /our-team                            1.23 kB         115 kB
+[12:43:41.102] ├ ○ /privacy-policy                      197 B           109 kB
+[12:43:41.102] ├ ƒ /project/[slug]                      506 B           115 kB
+[12:43:41.103] ├ ○ /projects                            197 B           109 kB
+[12:43:41.103] └ ○ /who-we-are                          192 B           114 kB
+[12:43:41.103] + First Load JS shared by all            105 kB
+[12:43:41.103]   ├ chunks/4bd1b696-20882bf820444624.js  52.9 kB
+[12:43:41.103]   ├ chunks/517-4122b31d994211b5.js       50.5 kB
+[12:43:41.103]   └ other shared chunks (total)          1.92 kB
+[12:43:41.103] 
+[12:43:41.103] 
+[12:43:41.103] ○  (Static)   prerendered as static content
+[12:43:41.103] ƒ  (Dynamic)  server-rendered on demand
+[12:43:41.103] 
+[12:43:41.380] Traced Next.js server files in: 111.965ms
+[12:43:41.500] Created all serverless functions in: 120.225ms
+[12:43:41.571] Collected static files (public/, static/, .next/static): 66.411ms
+[12:43:41.676] Build Completed in /vercel/output [4m]
+[12:43:41.922] Deploying outputs...
+[12:43:49.434] 
+[12:43:50.329] Deployment completed
+[12:43:56.251] Uploading build cache [139.88 MB]...
+[12:43:57.556] Build cache uploaded: 1.304s

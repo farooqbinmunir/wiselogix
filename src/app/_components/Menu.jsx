@@ -32,7 +32,7 @@ export default async function Menu(){
             <ul className='nav-items menu menu-desktop' aria-labelledby="nav-title">
 				{parentMenus.map((menuItem, index) => (
 					<li className={'menu-list-item'} key={index} data-id={`menu-${menuItem.menuItemId}-title`}>
-						<button id={`menu-${menuItem.menuItemId}-title`} aria-expanded="false" className="mainmenu_main menu-item menu-item-has-children">{menuItem.label}</button>
+						<Link href={`${menuItem.url}`} id={`menu-${menuItem.menuItemId}-title`} aria-expanded="false" className="mainmenu_main menu-item menu-item-has-children">{menuItem.label}</Link>
 						{(() => {
 							if(menuItem.childItems.nodes.length){
 								return (
