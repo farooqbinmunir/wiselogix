@@ -15979,3 +15979,8 @@ body:not(.home) header {
 .col3.footer_info {
 	color: white;
 }
+/* CSS by Farooq on date 19-03-2025 */
+.contributers_text_section > .button_wrapper {
+	display: block !important;
+	margin-bottom: 10px;
+}

@@ -27,7 +27,7 @@ export default function Section_Contributers({cls=""}) {
 
                     <div className="fl-col-group fl-node-lcek2916r4b5" data-node="lcek2916r4b5">
                         <div className="fl-col fl-node-p8qzoxa42y71 fl-col-small" data-node="p8qzoxa42y71">
-                            <div className="fl-col-content fl-node-content">
+                            <div className="fl-col-content fl-node-content contributers_text_section">
                                 <Hgroup 
                                     headingTxt="Your Contribution Brings Hope to Those in" 
                                     paraTxt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tellus venenatis, luctus leo sit amet, mollis risus." 
