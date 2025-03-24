@@ -32,6 +32,14 @@ export default function ContactUs(){
                             </p>
                         </div>
                     </div>
+                    <div className="section_pad contact_form_section">
+                        <div className="contact_form">
+                            <h2>
+                                Contact Us
+                            </h2>
+                            <iframe src="https://wordpress-821607-5011314.cloudwaysapps.com/contact-form/" frameborder="0"></iframe>
+                        </div>
+                    </div>
                     <div className="section_pad contact_info_section">
                         <div className="contact_info address_part">
                             <h4>Mailing Address</h4>

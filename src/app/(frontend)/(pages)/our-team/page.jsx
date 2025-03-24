@@ -1,14 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import client from '../../../../../config.js';
-// import CandiceShawImgURL from "../../../../../public/assets/images/Candice-Shaw-700-px.webp";
-// import linkedinIconURL from "../../../../../public/assets/images/linkedin_icon.webp";
-// import lrhsImageURL from "../../../../../public/assets/images/LRHS.png";
-// import CarolinaPalaciosImageURL from "../../../../../public/assets/images/Carolina-Palacios.png";
-import CandiceShawImgURL from "@/public/assets/images/Candice-Shaw-700-px.webp";
-import linkedinIconURL from "@/public/assets/images/linkedin_icon.webp";
-import lrhsImageURL from "@/public/assets/images/LRHS.png";
-import CarolinaPalaciosImageURL from "@/public/assets/images/Carolina-Palacios.png";
+import CandiceShawImgURL from "../../../../../public/assets/images/Candice-Shaw-700-px.webp";
+import linkedinIconURL from "../../../../../public/assets/images/linkedin_icon.webp";
+import lrhsImageURL from "../../../../../public/assets/images/LRHS.png";
+import CarolinaPalaciosImageURL from "../../../../../public/assets/images/Carolina-Palacios.png";
 
 import BannerGlobal from "../../../_components/BannerGlobal";
 export const metadata = {
