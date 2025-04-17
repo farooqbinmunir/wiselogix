@@ -30,3 +30,22 @@ lightbox.option({
 
 
 // Akram js end
+
+
+jQuery(document).ready(function($) {
+    // Initialize the counter for the first time
+    $('.uabb-number-int').each(function() {
+        var $this = $(this);
+        var targetNumber = $this.data('target');
+        $this.prop('Counter', 0).animate({
+            Counter: targetNumber
+        }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function(now) {
+                $this.text(now.toFixed(1)); // Update the text with the current number
+            }
+        });
+    });
+});
+// This code will run when the document is ready

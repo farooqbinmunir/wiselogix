@@ -4188,7 +4188,7 @@ body.fl-builder {
 }
 
 .fl-node-yjq74acpbh09>.fl-module-content {
-    margin: 16px 0 22px
+    margin: 0 !important;
 }
 
 @media (max-width:992px) {
@@ -5803,7 +5803,8 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-    color: #333
+    color: #333;
+    text-decoration: none;
 }
 
 h1 a:hover,
@@ -5814,7 +5815,6 @@ h5 a:hover,
 h6 a:hover {
     text-decoration: none
 }
-
 h1 {
     font-size: 36px;
     line-height: 1.4;
@@ -5924,7 +5924,7 @@ body.rtl .fl-screen-reader-text {
     margin: 0 auto
 }
 
-*,
+/* *, */
 h1,
 h2,
 h3,
@@ -10507,7 +10507,6 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.6rem;
-    color: #333
 }
 
 .fl-module-content a,
@@ -15983,4 +15982,53 @@ body:not(.home) header {
 .contributers_text_section > .button_wrapper {
 	display: block !important;
 	margin-bottom: 10px;
+}
+/* 17-04-2025 */
+.fl-module.fl-module-photo .fl-photo-img {
+    display: block;
+    width: 100%;
+	object-fit: cover;
+    object-position: center;
+}
+.contributers_text_section p {
+	color: white;
+}
+.contributers_text_section .hightlighted_heading_text {
+    font-size: 2.8rem;
+    line-height: 1.357;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.hightlighted_heading {
+	font-weight: bold !important;
+}
+.uabb-number .uabb-number-string {
+    font-size: 60px !important;
+    line-height: 1.357 !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+}
+.contributers_section .fl-col-content.fl-node-content {
+	align-items: center;
+}
+#section_support_now img {
+	width: auto !important;
+}
+.contact_item p {
+	margin: 0 !important;
+}
+.title-sec {
+	width: 100% !important;
+}
+.title-sec h3{
+	font-weight: bold !important;
+    font-size: 20px !important;
+}
+.logo_img_link img {
+	width: 100%;
+	height: auto;
+	object-fit: fill;
+	display: block;
+	object-position: top;
 }

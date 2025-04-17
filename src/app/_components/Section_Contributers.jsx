@@ -4,17 +4,17 @@ import Contributer_Coutner_Item from "./Contributer_Coutner_Item";
 export default function Section_Contributers({cls=""}) {
     const counterItems = [
         {
-            counter_target_no: 0,
+            counter_target_no: 11.5,
             counter_title: "million",
             counter_icon_url: "assets/images/oxfam-urgent-assistance-icon.svg",
             counter_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },{
-            counter_target_no: 0,
+            counter_target_no: 15.5,
             counter_title: "million",
             counter_icon_url: "assets/images/icon-woman-girl.svg",
             counter_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },{
-            counter_target_no: 0,
+            counter_target_no: 15.4,
             counter_title: "million",
             counter_icon_url: "assets/images/oxfam-action-icon.svg",
             counter_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

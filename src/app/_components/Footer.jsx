@@ -137,11 +137,11 @@ export default async function Footer() {
 						</div>
 						<div className="contact_item">
 							<i className="fas fa-phone"></i>
-							<Link href={`mailto:${contactInformation.contactPhone}`}><span className="sr-only">Phone:&nbsp;</span>{contactInformation.contactPhone}</Link>
+							<Link href={`mailto:${contactInformation.contactPhone}`}>{contactInformation.contactPhone}</Link>
 						</div>
 						<div className="contact_item">
 							<i className="fas fa-paper-plane"></i>
-							<p>{contactInformation.contactAddress}</p>
+							<Link href={`#`}>{contactInformation.contactAddress}</Link>
 						</div>
 					</div>
 				</div>

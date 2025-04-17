@@ -19,7 +19,7 @@ export default function Contributer_Coutner_Item({item, cls=""}) {
                             <div className="uabb-module-content uabb-number uabb-number-default">
                                 <div className="uabb-number-text">
                                     <p className="uabb-number-string">
-                                        <span className="uabb-number-int">{item.counter_target_no}</span> {item.counter_title}
+                                        <span className="uabb-number-int" data-target={item.counter_target_no}>0</span> {item.counter_title}
                                     </p>
                                 </div>
                             </div>
