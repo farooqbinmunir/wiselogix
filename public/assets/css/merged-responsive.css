@@ -155,14 +155,14 @@
         visibility: visible
     }
     .menu-mobile-header {
-        background: #44841a;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 130px auto 66px;
-        justify-items: right;
+        display: flex;
         position: relative;
         z-index: 2;
-        padding-inline: 20px !important;
+        padding: 10px 20px !important;
+        align-items: center !important;
+    }
+    .menu-mobile-header .logo_link img {
+        display: none !important;
     }
     #main-menu {
         height: auto;
@@ -265,10 +265,10 @@
         padding: 0 20px;
         margin-left: 0
     }
-    #main-menu .menu_main_logo {
-        width: 125px;
-        height: 46px;
-        background: url(../images/white-logo.png) center center / cover no-repeat !important;
+    .menu-mobile-header #logo .menu_main_logo {
+        width: 100px !important;
+        height: 41px;
+        background: url(../images/white-logo.png) center center / contain no-repeat !important;
         left: 0 !important;
     }
     #main-menu>ul>li:last-child {
@@ -289,10 +289,12 @@
         padding: 5px 25px
     }
     .mobile_menu_toggle {
+        z-index: 99;
         border: 0 !important;
-        background: transparent !important;
-        padding: 19px 21px;
-        z-index: 99
+        background: none !important;
+        padding-top: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
     }
     .mobile_menu_toggle:focus {
         outline-style: auto;
@@ -646,6 +648,17 @@
     .filter--filter-clear {
         padding: 6px 14px !important
     }
+    h2 .fl-heading-text span,
+    span.highligh_green{
+        white-space: normal !important;
+    }
+    .ending_poverty_post_component .fl-heading {
+        margin-bottom: 15px !important;
+        font-weight: bold !important;
+    }
+    html .uabb-number .uabb-number-string{
+        font-size: 30px !important;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -962,6 +975,7 @@
     .meal_item:nth-child(3n) .meal_item_title {
         max-width: 100%
     }
+    
 }
 
 @media screen and (max-width:480px) {
@@ -1125,8 +1139,8 @@
         font-size: 40px;
         font-size: 4rem
     }
-    .hp2023_stats_item>.fl-col-content {
-        grid-template-columns: 75px auto
+    html .hp2023_stats_item>.fl-col-content {
+        grid-template-columns: 80px auto !important;
     }
 }
 
@@ -1268,12 +1282,9 @@
         font-size: 40px;
         font-size: 4rem
     }
-    .hp2023_stats_item>.fl-col-content {
-        grid-template-columns: 75px auto
-    }
 }
 
-@media only screen and (max-width:768px) {
+@media (max-width:767px) {
     .fl-row:not(.nopadding)>.fl-row-content-wrap>.fl-row-content {
         padding-left: 18px;
         padding-right: 18px
@@ -1283,6 +1294,9 @@
     }
     .page-template-single-menuoverlap #main-menu:before {
         background: none
+    }
+    .ending_poverty_post_component:not(:last-child) {
+        margin-bottom: 30px !important;
     }
 }
 
@@ -1684,3 +1698,9 @@
         width: 320px
     }
 }
+
+@media (width <= 1024px){
+    #section_news hgroup.standard_hgroup {
+        width: 100% !important;
+    }
+} /* 1024px */
