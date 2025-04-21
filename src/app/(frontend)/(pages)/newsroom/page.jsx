@@ -13,6 +13,7 @@ export default async function Newsroom(){
             nodes {
                 title
                 link
+                date
                 terms {
                     nodes {
                         ... on Category {
@@ -54,21 +55,28 @@ export default async function Newsroom(){
                         </div>
                         <div className="section_pad blogs_section">
                             <div className="blogs_item_wrap">
-                                {nodes.map((post, index) => (
-                                    <div className="blogs_item" key={index}>
-                                        <div className="blogs_meta">
-                                            <div className="blog_link">
-                                                <Link href={post.terms.nodes[0].link} className="press-release" rel="tag">{post.terms.nodes[0].name}</Link>
+                                {nodes.map((post, index) => {
+                                    const dateStr = post.date;
+                                    const date = new Date(dateStr);
+                                    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                                    const formattedDate = date.toLocaleDateString('en-US', options);
+
+                                    return (
+                                        <div className="blogs_item" key={index}>
+                                            <div className="blogs_meta">
+                                                <div className="blog_link">
+                                                    <Link href={post.terms.nodes[0].link} className="press-release" rel="tag">{post.terms.nodes[0].name}</Link>
+                                                </div>
+                                                <div className="blog_date">{formattedDate}</div>
                                             </div>
-                                            <div className="blog_date">January 15, 2025</div>
+                                            <div className="blogs_title">
+                                                <h3>
+                                                    <Link href={post.link} className="post_link" rel="tag">{post.title}</Link>
+                                                </h3>
+                                            </div>
                                         </div>
-                                        <div className="blogs_title">
-                                            <h3>
-                                                <Link href={post.link} className="post_link" rel="tag">{post.title}</Link>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                ))}
+                                    );
+                                })}
                             </div>
                             <div className="show_blogs_btn">
                                 <button>Load More...</button>
