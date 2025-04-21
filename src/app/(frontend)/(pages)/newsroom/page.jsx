@@ -82,64 +82,6 @@ export default async function Newsroom(){
                                 <button>Load More...</button>
                             </div>
                         </div>
-                        <div className="footer_above_section">
-                            <div className="section_pad get_involved_section">
-                                <div className="section_heading">
-                                    <h2>
-                                        Other Ways To Get Involved
-                                    </h2>
-                                </div>
-                                <div className="involved_icon_section_wrap">
-                                    <div className="involved_icon_item">
-                                        <div className="involved_icon">
-                                            <i className="icon-oxfam-icon-heart-2" aria-hidden="true"></i>
-                                        </div>
-                                        <div className="involved_text">
-                                            <a href="#">Volunteer</a>
-                                        </div>
-                                    </div>
-                                    <div className="involved_icon_item">
-                                        <div className="involved_icon">
-                                            <i className="icon-oxfam-icon-lightbulb" aria-hidden="true"></i>
-                                        </div>
-                                        <div className="involved_text">
-                                            <a href="#">Fundraise For Oxfam</a>
-                                        </div>
-                                    </div>
-                                    <div className="involved_icon_item">
-                                        <div className="involved_icon">
-                                            <i className="icon-oxfam-icon-dollar-circle" aria-hidden="true"></i>
-                                        </div>
-                                        <div className="involved_text">
-                                            <a href="#">Donate</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="oxfam_sharing_container">
-                                <h2 id="page_social_share_header">Share this page:</h2>
-                                <ul aria-labelledby="page_social_share_header">
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <span className="sr-only">Share to Facebook (opens in new window)</span>
-                                            <i className="fab fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <span className="sr-only">Share to Twitter (opens in new window)</span>
-                                            <i className="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;" data-enc-email="" target="_blank" className="mail-link" data-wpel-link="ignore">
-                                            <span className="sr-only">Share via email (opens in new window)</span>
-                                            <i className="fas fa-envelope"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
