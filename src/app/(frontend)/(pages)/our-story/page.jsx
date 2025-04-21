@@ -1,12 +1,23 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import BannerGlobal from "../../../_components/BannerGlobal";
+import client from '../../../../../config.js';
 
 export const metadata = {
     title: "Our Story - Wiselogix Technologies",
     description: "Lorem ipsum dolor sitm...",
 };
-export default function OurStory(){
+export default async function OurStory(){
+    let contentQuery = `{
+        page(id: "our-story", idType: URI) {
+            link
+            title(format: RAW)
+            content
+        }
+    }`;
+
+    const {page: {link, title, content}} = await client.request(contentQuery);
+    const pageTitle = title.replace(/(<([^>]+)>)/ig, '');
 
     return(
         <>
@@ -14,6 +25,9 @@ export default function OurStory(){
             <div className="container">
                 <div className="row">
                     <BannerGlobal pageSlug="our-story" />
+                    <div id="elementor-content">
+                        <div dangerouslySetInnerHTML={{__html: content}}></div>
+                    </div>
                     <div className="section_pad under_banner_section story_under_banner">
                         <div className="section_heading">
                             <h2>
