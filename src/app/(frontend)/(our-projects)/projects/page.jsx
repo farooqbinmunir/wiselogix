@@ -50,7 +50,6 @@ export default async function OurProjects(){
                         <div className="projects_item_wrap">
                             {projects.map((project, index) => {
                                 const imgURL = project?.featuredImage?.node?.sourceUrl;
-                                console.log("Image URL: ", imgURL);
                                 return (
                                     <div className="projects_item" key={index}>
                                         <div className="projects_img">
