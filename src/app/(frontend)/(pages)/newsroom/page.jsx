@@ -12,7 +12,7 @@ export default async function Newsroom(){
         posts {
             nodes {
                 title
-                link
+                slug
                 date
                 terms {
                     nodes {
@@ -65,13 +65,13 @@ export default async function Newsroom(){
                                         <div className="blogs_item" key={index}>
                                             <div className="blogs_meta">
                                                 <div className="blog_link">
-                                                    <Link href={post.terms.nodes[0].link} className="press-release" rel="tag">{post.terms.nodes[0].name}</Link>
+                                                    <Link href="javascript:void(0)" className="press-release" rel="tag">{post.terms.nodes[0].name}</Link>
                                                 </div>
                                                 <div className="blog_date">{formattedDate}</div>
                                             </div>
                                             <div className="blogs_title">
                                                 <h3>
-                                                    <Link href={post.link} className="post_link" rel="tag">{post.title}</Link>
+                                                    <Link href={`/newsroom/${post.slug}`} className="post_link" rel="tag">{post.title}</Link>
                                                 </h3>
                                             </div>
                                         </div>
