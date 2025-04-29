@@ -13151,7 +13151,7 @@ body.single-floating-page .container .fl-content {
     text-decoration: none
 }
 
-.project_readmore a:after {
+/* .project_readmore a:after {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -13168,7 +13168,8 @@ body.single-floating-page .container .fl-content {
     -moz-osx-font-smoothing: grayscale;
     content: "\00BB";
     margin: 3px 0 0 10px
-}
+} */
+
 
 .emergency_donate {
     background: #ff1d34;
@@ -16029,4 +16030,24 @@ body:not(.home) header {
 }
 .press-release {
 	text-decoration: none !important;
+}
+.banner_section h1{
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.project_category {
+	color: white !important;
+}
+.section_heading h2{
+    text-align: left !important;
+}
+.project_detailed_text .fl-module-content {
+	margin: 0;
+}
+.patner_logo img {
+	width: 100% !important;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+	display: block;
 }
