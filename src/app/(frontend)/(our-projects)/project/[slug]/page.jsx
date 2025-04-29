@@ -8,7 +8,7 @@ export default async function Project({params}){
     const {slug: projectSlug} = await params;
 
     const singleProjectQuery = `{
-        ourProject(id: "securing-rights", idType: SLUG) {
+        ourProject(id: "${projectSlug}", idType: SLUG) {
             databaseId
             title
             excerpt(format: RAW)
